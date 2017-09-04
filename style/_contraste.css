@@ -1,0 +1,368 @@
+.contraste {
+  background-color: #0d0d0d !important;
+  color: #ffffff;
+}
+.contraste a {
+  color: yellow;
+}
+.contraste a:hover,
+.contraste a:focus {
+  color: yellow;
+}
+.contraste h1 small,
+.contraste h2 small,
+.contraste h3 small,
+.contraste h4 small,
+.contraste h5 small,
+.contraste h6 small {
+  color: #cccccc;
+}
+.contraste figure figcaption {
+  background-color: #1a1a1a;
+}
+.contraste ::selection {
+  color: #111111;
+  background-color: #ffffff;
+}
+.contraste ::-moz-selection {
+  color: #111111;
+  background-color: #ffffff;
+}
+.contraste .form-control:-moz-placeholder {
+  color: #ffffff;
+}
+.contraste .form-control::-moz-placeholder {
+  color: #ffffff;
+}
+.contraste .form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+.contraste .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.contraste .form-control:focus {
+  border-color: #ffffff;
+  outline: 0;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
+}
+.contraste .btn-default {
+  background-color: #262626;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+.contraste .btn-default:hover,
+.contraste .btn-default:focus {
+  background-color: #1a1a1a;
+}
+.contraste input {
+  background-color: #262626;
+  color: #ffffff;
+}
+.contraste header {
+  /* Old browsers */
+  background-color: #000;
+  background-image: -moz-radial-gradient(center, ellipse cover, #000 1%, #000 100%);
+  /* FF3.6+ */
+  background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #000), color-stop(100%, #000));
+  /* Chrome,Safari4+ */
+  background-image: -webkit-radial-gradient(center, ellipse cover, #000 1%, #000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background-image: -o-radial-gradient(center, ellipse cover, #000 1%, #000 100%);
+  /* Opera 12+ */
+  background-image: -ms-radial-gradient(center, ellipse cover, #000 1%, #000 100%);
+  /* IE10+ */
+  background-image: radial-gradient(ellipse at center, #000 1%, #000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#000, GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  color: #fff;
+  border-top-color: #0d0d0d;
+}
+.contraste header .active a {
+  color: #ccffcc;
+}
+.contraste header #accessibility a {
+  color: yellow;
+}
+.contraste header #accessibility a:hover {
+  background: #FFF;
+  color: #000;
+}
+.contraste header #accessibility a span {
+  background: #FFF;
+  color: #000;
+}
+.contraste header #logo a {
+  color: yellow;
+}
+.contraste header .sobre {
+  background: #1c1c1c;
+  border-color: yellow;
+}
+.contraste header .sobre li {
+  border-color: #383838;
+}
+.contraste header .sobre a {
+  color: yellow;
+}
+.contraste header #portal-siteactions,
+.contraste header #language {
+  border-color: #666;
+}
+.contraste header #portal-siteactions a,
+.contraste header #language a {
+  color: yellow;
+}
+.contraste header #portal-searchbox input[placeholder],
+.contraste header #portal-searchbox [placeholder],
+.contraste header #portal-searchbox *[placeholder] {
+  color: yellow !important;
+}
+.contraste header #portal-searchbox input {
+  color: #FFF;
+}
+.contraste header #portal-searchbox input:focus {
+  background-color: #000;
+}
+.contraste header #portal-searchbox .searchButton {
+  background: yellow;
+  color: #000;
+}
+.contraste header #social-icons a {
+  color: yellow;
+}
+.contraste header #social-icons a:hover {
+  color: white;
+}
+.contraste main div.container #em-destaque h2 {
+  background: #000;
+  border-bottom: dotted #FFF 1px;
+}
+.contraste main div.container #em-destaque ul {
+  background: #1c1c1c;
+  border-bottom: dotted #FFF 1px;
+}
+.contraste main div.container #em-destaque li a {
+  color: yellow;
+}
+.contraste main div.container #navigation .mainmenu-toggle {
+  background: white !important;
+  color: black !important;
+}
+.contraste main div.container #navigation .menu-de-apoio {
+  background: transparent !important;
+}
+.contraste main div.container #navigation .menu-de-apoio a {
+  color: yellow;
+}
+.contraste main div.container #navigation nav h2 {
+  background: #1c1c1c !important;
+  border-color: #FFF !important;
+  color: #FFF !important;
+}
+.contraste main div.container #navigation nav a {
+  color: yellow;
+}
+.contraste main div.container #navigation nav,
+.contraste main div.container #navigation li,
+.contraste main div.container #navigation ul,
+.contraste main div.container #navigation a {
+  background: transparent !important;
+}
+.contraste main div.container #navigation li.active {
+  background: #1c1c1c !important;
+  border-color: yellow !important;
+}
+.contraste main div.container #navigation li.active a {
+  background: transparent !important;
+}
+.contraste main div.container #navigation li.active ul {
+  background: transparent !important;
+}
+.contraste main div.container #navigation li.active li {
+  background: transparent !important;
+}
+.contraste main div.container #navigation .central-conteudos .icon-stack-base {
+  color: white !important;
+}
+.contraste main div.container #navigation .central-conteudos .icon-light {
+  color: black !important;
+}
+.contraste footer {
+  background-image: none;
+  background-color: #000000;
+}
+.contraste footer h2,
+.contraste footer h3,
+.contraste footer h4 {
+  color: #FFF;
+}
+.contraste footer .footer-atalhos,
+.contraste footer .footer-logos {
+  background: #1c1c1c;
+  border-color: yellow;
+}
+.contraste footer .footer-atalhos a,
+.contraste footer .footer-logos a {
+  color: yellow;
+}
+.contraste footer .footer-ferramenta {
+  background: #000;
+}
+@media (max-width: 979px) {
+  .contraste main #em-destaque h2,
+  .contraste main #em-destaque ul {
+    border-bottom: none !important;
+  }
+  .contraste main .navigation-container {
+    background: #1c1c1c;
+  }
+  .contraste main .navigation-container .mainmenu-toggle {
+    border: 1px solid yellow;
+    background: #000;
+    color: yellow;
+  }
+  .contraste main .navigation-container .mainmenu-toggle .icon-list {
+    display: none !important;
+  }
+  .contraste main #navigation {
+    background: #000 !important;
+    border-color: #000 !important;
+  }
+}
+.contraste .module {
+  background: transparent !important;
+}
+.contraste .module div,
+.contraste .module .active {
+  background: transparent !important;
+}
+.contraste .module a {
+  color: yellow !important;
+}
+.contraste .module h1,
+.contraste .module h2,
+.contraste .module h3,
+.contraste .module h4,
+.contraste .module h5,
+.contraste .module h6 {
+  color: white !important;
+  font-weight: 700;
+}
+.contraste .module .outstanding-header,
+.contraste .module .outstanding-footer {
+  background: #1c1c1c !important;
+  color: white !important;
+  border-color: white !important;
+}
+.contraste .module .outstanding-header a,
+.contraste .module .outstanding-footer a {
+  color: yellow !important;
+}
+.contraste .module .outstanding-link .icon-box {
+  /* Old browsers */
+  background-color: yellow !important;
+  background-image: -moz-radial-gradient(center, ellipse cover, yellow 1%, yellow 100%) !important;
+  /* FF3.6+ */
+  background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, yellow), color-stop(100%, yellow)) !important;
+  /* Chrome,Safari4+ */
+  background-image: -webkit-radial-gradient(center, ellipse cover, yellow 1%, yellow 100%) !important;
+  /* Chrome10+,Safari5.1+ */
+  background-image: -o-radial-gradient(center, ellipse cover, yellow 1%, yellow 100%) !important;
+  /* Opera 12+ */
+  background-image: -ms-radial-gradient(center, ellipse cover, yellow 1%, yellow 100%) !important;
+  /* IE10+ */
+  background-image: radial-gradient(ellipse at center, yellow 1%, yellow 100%) !important;
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f0f000, endColorstr=yellow, GradientType=1) !important;
+  /* IE6-9 fallback on horizontal gradient */
+  color: #fff !important;
+}
+.contraste .module .outstanding-link .icon-light {
+  color: black !important;
+}
+.contraste .module .subtitle {
+  color: white !important;
+}
+.contraste .module .carousel-control {
+  opacity: 1 !important;
+}
+.contraste main div.rastro-navegacao {
+  color: #FFF;
+}
+.contraste #content.internas {
+  color: #FFF;
+}
+.contraste #content.internas h1,
+.contraste #content.internas .documentFirstHeading,
+.contraste #content.internas .secondaryHeading,
+.contraste #content.internas .borderHeading {
+  color: #FFF;
+}
+.contraste #content.internas h1 a,
+.contraste #content.internas .documentFirstHeading a,
+.contraste #content.internas .secondaryHeading a,
+.contraste #content.internas .borderHeading a {
+  color: yellow;
+}
+.contraste #content.internas .content-header-options-1 .documentByLine {
+  color: #FFF;
+}
+.contraste #content.internas .description,
+.contraste #content.internas .documentCategory,
+.contraste #content.internas .subtitle,
+.contraste #content.internas .documentByLine ul li {
+  color: #FFF;
+}
+.contraste #content.internas .below-content {
+  border-color: #FFF;
+  color: #FFF;
+}
+.contraste #content.internas .below-content .line {
+  color: #FFF;
+}
+.contraste #content.internas .below-content a.link-categoria,
+.contraste #content.internas .below-content span.selectedTag {
+  background: #000;
+  color: yellow;
+}
+.contraste #content.internas .below-content a.link-categoria:hover,
+.contraste #content.internas .below-content span.selectedTag:hover {
+  color: #000;
+  background: yellow;
+  border-color: #FFF;
+}
+.contraste #content.internas blockquote {
+  border-color: #FFF;
+}
+.contraste #content.internas .tile-list-1 .tileItem {
+  border-color: #FFF;
+}
+.contraste #content.internas .tile-list-1 .tileItem .subtitle {
+  color: #FFF;
+}
+.contraste #content.internas .tile-list-1 .tileItem .tileHeadline,
+.contraste #content.internas .tile-list-1 .tileItem .tileHeadline a {
+  color: yellow;
+}
+.contraste #content.internas .tile-list-1 .tileItem .description {
+  color: #FFF;
+}
+.contraste #content.internas .tile-list-1 .tileItem .keywords {
+  color: #FFF;
+}
+.contraste #content.internas .tile-list-1 .tileItem .keywords a {
+  color: yellow;
+}
+.contraste #content.internas .tile-list-1 .tileItem .keywords a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+.contraste #content.internas .tile-list-1 .tileInfo ul li {
+  color: #FFF;
+}
+.contraste #content.internas .tile-list-1 .tileInfo i {
+  color: yellow;
+}

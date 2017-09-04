@@ -1,0 +1,217 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page header.
+}}
+
+<header id="moodle-idg" class="pos-a-t">
+    <div class="container-fluid">
+        <div class="container-fixed-top ">
+            <div class="row-fluid accessibility-language-actions-container">
+                <div class="col-md-6 accessibility-container">
+                    <ul id="accessibility">
+                        <li>
+                            <a accesskey="1" href="#region-main" id="link-conteudo">
+                                Ir para o contedo
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nav-drawer" accesskey="2" id="link-navegacao" aria-expanded="false"
+                               aria-controls="nav-drawer" data-action="toggle-drawer" data-side="left"
+                               data-preference="drawer-open-nav">
+                                Ir para o menu <span>2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a accesskey="3" href="#searchbox-field" id="link-buscar">
+                                Ir para a busca
+                                <span>3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a accesskey="4" href="#footer" id="link-rodape">
+                                Ir para o rodap&eacute;
+                                <span>4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- fim div.col-md-6 -->
+                <div class="col-md-6 language-and-actions-container">
+                    <!-- Descomente para inserir menu de exemplo de idiomas no topo -->
+                    <!-- <ul id="language" class="pull-right">
+                        <li class="language-en">
+                            <a href="#">EN</a>
+                        </li>
+                        <li class="language-es">
+                            <a href="#">ES</a>
+                        </li>
+                    </ul>	 -->
+                    <ul id="portal-siteactions" class="pull-right">
+                        <li>
+                            <a accesskey="5" href="{{{ config.wwwroot }}}/mod/page/view.php?id=2">Acessibilidade</a>
+                        </li>
+                        <li>
+                            <a accesskey="6" href="#" class="toggle-contraste">Alto Contraste</a>
+                        </li>
+                        <li>
+                            <a accesskey="7" href="#">Mapa do Site</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- fim div.col-md-6 -->
+            </div>
+            <!-- fim .row-fluid -->
+            <div class="row-fluid">
+                <div id="logo" class="col-md-8">
+                    <!-- <div id="logo" class="col-md-8 big"> <div id="logo" class="col-md-8 small"> -->
+                    <a href="index.html" title="Descrição do Portal Padrão">
+                        <span class="portal-title-1">{{{ organization }}}</span>
+                        <h1 class="portal-title corto">{{{ fullname }}}</h1>
+                        <span class="portal-description">{{{ subordination }}}</span>
+                    </a>
+                </div>
+                <!-- fim .col-md-8 -->
+                <div class="col-md-4">
+
+                    <div id="portal-searchbox">
+                        <div class="clearfix">
+                        <div class="pull-right">
+                            <form action="#" class="form-inline">
+                                <label class="sr-only" for="searchbox-field">Buscar</label>
+                                <div class="form-group">
+                                    <input type="text" id="searchbox-field" class="form-control"
+                                           placeholder="Buscar" title="Buscar"
+                                           name="searchterm">
+                                    <button type="button" class="btn btn-default">
+                                        <span class="hidden">Buscar</span>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- fim div#portal-searchbox.row -->
+                    <div id="social-icons">
+                        <div class="pull-right">
+                        <h2 class="hidden">Redes Sociais</h2>
+                        <ul >
+                            <li class="portalredes-item"><a title="Twitter" href="https://twitter.com/twitter">
+                                <i class="fa fa-twitter-square"
+                                   aria-hidden="true"></i></i>&nbsp;<span>Twitter</span></a>
+                            </li>
+                            <li class="portalredes-item"><a title="YouTube" href="http://youtube.com/youtube">
+                                <i class="fa fa-youtube-square"
+                                   aria-hidden="true"></i></i>&nbsp;<span>Youtube</span></a>
+                            </li>
+                            <li class="portalredes-item"><a title="Facebook" href="http://facebook.com/facebook">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp;<span>Facebook</span></a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <!-- fim div#social-icons.row -->
+                </div>
+                <!-- fim .col-md-4 -->
+            </div>
+            <!-- fim .row-fluid -->
+        </div>
+        <!-- fim div.container-fixed-top -->
+    </div>
+    <!-- fim div.container -->
+    <div class="sobre">
+        <div class="container">
+            <nav class="menu-servicos pull-right">
+                <h2 class="hidden">Serviços</h2>
+                <ul>
+                    <li class="portalservicos-item">
+                        <a title="Perguntas frequentes" href="interna-perguntas-frequentes.html">Perguntas
+                            frequentes</a>
+                    </li>
+                    <li class="portalservicos-item">
+                        <a title="Contato" href="#">Contato</a>
+                    </li>
+                    <li class="portalservicos-item">
+                        <a title="Serviços da [Denominação]" href="#">Serviços da [Denominação]</a>
+                    </li>
+                    <li class="portalservicos-item">
+                        <a title="Dados abertos" href="#">Dados abertos</a>
+                    </li>
+                    <li class="portalservicos-item">
+                        <a title="Área de imprensa" href="#">Área de imprensa</a>
+                    </li>
+                </ul>
+                <span class="hidden">Fim do menu de serviços</span>
+            </nav>
+            <!-- fim #menu-servicos.pull-right -->
+        </div>
+        <!-- .container -->
+    </div>
+    <!-- fim .sobre -->
+
+    <div role="banner" class="navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex"
+         data-toggle="sticky-onscroll">
+
+        <div class="container-fluid navbar-nav">
+
+            <div data-region="drawer-toggle">
+                <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}"
+                        aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary"
+                        data-action="toggle-drawer"
+                        data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span
+                        class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
+            </div>
+
+            <a href="{{{ config.wwwroot }}}"
+               class="navbar-brand {{# output.should_display_navbar_logo }}has-logo{{/ output.should_display_navbar_logo }}
+                   {{^ output.should_display_navbar_logo }}
+                hidden-sm-down
+            {{/ output.should_display_navbar_logo }}
+                ">
+                {{# output.should_display_navbar_logo }}
+                    <span class="logo hidden-xs-down">
+                    <img src="{{output.get_compact_logo_url}}" alt="{{shortname}}">
+                </span>
+                {{/ output.should_display_navbar_logo }}
+                <span class="site-name hidden-sm-down">{{{ sitename }}}</span>
+            </a>
+
+            <!-- user_menu -->
+            {{{ output.user_menu }}}
+
+            <!-- navbar_plugin_output -->
+            {{{ output.navbar_plugin_output }}}
+
+            <!-- search_box -->
+            <span class="hidden-md-down">
+                {{{ output.search_box }}}
+            </span>
+
+            <!--
+        <nav class="nav navbar-nav hidden-md-down">
+
+            {{{ output.custom_menu }}}
+
+                {{{ output.page_heading_menu }}}
+        </nav> -->
+
+
+        </div>
+    </div>
+</header>

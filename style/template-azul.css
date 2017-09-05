@@ -185,7 +185,7 @@ a {
 .minor-font {
   font-size: 0.75em;
 }
-header#moodle-idg {
+header {
   /* Old browsers */
   background-color: #1F5DC2;
   background-image: -moz-radial-gradient(center, ellipse cover, #2773e1 1%, #1a5cbc 100%);
@@ -205,86 +205,86 @@ header#moodle-idg {
   color: #fff;
   padding: 14px 0 0 0;
 }
-header#moodle-idg .accessibility-language-actions-container {
+header .accessibility-language-actions-container {
   height: 25px;
   overflow: hidden;
 }
-header#moodle-idg #accessibility {
+header #accessibility {
   font-family: Arial, Helvetica, sans-serif !important;
   margin: 0;
   line-height: 5px;
 }
-header#moodle-idg #accessibility li {
+header #accessibility li {
   line-height: 5px;
   margin: 0 10px 0 0;
 }
-header#moodle-idg #accessibility a {
+header #accessibility a {
   color: #FFF;
   font-size: 0.7em;
 }
-header#moodle-idg #accessibility a span {
+header #accessibility a span {
   background-color: #ffffff;
   color: #1F5DC2;
   padding: 0 2px 0px 3px;
 }
-header#moodle-idg #accessibility a:hover {
+header #accessibility a:hover {
   background: #abb9cf;
 }
-header#moodle-idg #portal-siteactions,
-header#moodle-idg #language {
+header #portal-siteactions,
+header #language {
   border-bottom: 1px dotted #ebeff5;
   text-transform: uppercase;
   margin: -6px 0 0 0;
 }
-header#moodle-idg #portal-siteactions li,
-header#moodle-idg #language li {
+header #portal-siteactions li,
+header #language li {
   margin: 0 16px 0 0;
 }
-header#moodle-idg #portal-siteactions li:last-child,
-header#moodle-idg #language li:last-child {
+header #portal-siteactions li:last-child,
+header #language li:last-child {
   margin-right: 0 !important;
 }
-header#moodle-idg #portal-siteactions a,
-header#moodle-idg #language a {
+header #portal-siteactions a,
+header #language a {
   color: #FFF;
   font-size: 0.73em;
 }
-header#moodle-idg #portal-siteactions a:hover,
-header#moodle-idg #language a:hover {
+header #portal-siteactions a:hover,
+header #language a:hover {
   text-decoration: underline;
 }
-header#moodle-idg #language {
+header #language {
   margin-left: 20px;
 }
-header#moodle-idg #language li {
+header #language li {
   margin-left: 6px;
   display: block;
   float: left;
 }
-header#moodle-idg #language li:first-child {
+header #language li:first-child {
   margin-left: 0;
 }
-header#moodle-idg #language li a {
+header #language li a {
   padding: 0 0 0 16px;
 }
-header#moodle-idg #language li.language-en a {
+header #language li.language-en a {
   background: transparent url('../img/flag-en.gif') no-repeat 0 center;
 }
-header#moodle-idg #language li.language-es a {
+header #language li.language-es a {
   background: transparent url('../img/flag-es.gif') no-repeat 0 center;
 }
-header#moodle-idg #logo {
+header #logo {
   margin: 3px 0 20px 0;
 }
-header#moodle-idg #logo a {
+header #logo a {
   color: #FFF;
 }
-header#moodle-idg #logo .portal-title-1 {
+header #logo .portal-title-1 {
   font-size: 0.85em;
   display: block;
   height: 21px;
 }
-header#moodle-idg #logo h1 {
+header #logo h1 {
   font-family: "open_sansextrabold", 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 2.75em;
   line-height: 0.8em;
@@ -292,102 +292,102 @@ header#moodle-idg #logo h1 {
   letter-spacing: -1px;
   margin-bottom: 5px;
 }
-header#moodle-idg #logo .portal-description {
+header #logo .portal-description {
   font-size: 1.1em;
   text-transform: uppercase;
   position: relative;
   top: 4px;
 }
-header#moodle-idg #logo.small {
+header #logo.small {
   margin: 13px 0 10px 0;
 }
-header#moodle-idg #logo.small h1 {
+header #logo.small h1 {
   font-size: 2.4em;
   font-family: "open_sansbold", 'Open Sans', Arial, Helvetica, sans-serif;
 }
-header#moodle-idg #logo.big {
+header #logo.big {
   margin: 10px 0 13px 0;
 }
-header#moodle-idg #logo.big h1 {
+header #logo.big h1 {
   font-size: 3.6em;
   font-family: "open_sansbold", 'Open Sans', Arial, Helvetica, sans-serif;
 }
-header#moodle-idg #portal-searchbox form {
+header #portal-searchbox form {
   margin: 22px 0 0 0;
 }
-header#moodle-idg #portal-searchbox input.searchField {
+header #portal-searchbox input.searchField {
   font-size: 12px;
   width: 177px;
 }
-header#moodle-idg #portal-searchbox input.searchField:focus {
+header #portal-searchbox input.searchField:focus {
   background-color: #ffffe5;
 }
-header#moodle-idg #portal-searchbox .searchButton {
+header #portal-searchbox .searchButton {
   padding-bottom: 4px;
   padding-right: 8px;
 }
-header#moodle-idg #portal-searchbox .searchButton i.icon-search {
+header #portal-searchbox .searchButton i.icon-search {
   font-size: 1.25em;
   color: #1F5DC2;
   -webkit-text-stroke-width: 0.4px;
   -webkit-text-stroke-color: #1F5DC2;
   -webkit-font-smoothing: antialiased;
 }
-header#moodle-idg #social-icons {
+header #social-icons {
   margin: 2px 0 2px 0;
   opacity: 0.85;
   -moz-opacity: 0.85;
   filter: alpha(opacity=85);
 }
-header#moodle-idg #social-icons li {
+header #social-icons li {
   margin: 0 0 0 6px;
 }
-header#moodle-idg #social-icons a {
+header #social-icons a {
   color: #FFF;
 }
-header#moodle-idg #social-icons a i {
+header #social-icons a i {
   font-size: 1.70em;
   margin-top: 5px;
   -webkit-text-stroke-width: 0.4px;
   -webkit-text-stroke-color: #FFF;
   -webkit-font-smoothing: antialiased;
 }
-header#moodle-idg #social-icons a i.icon-youtube {
+header #social-icons a i.icon-youtube {
   -webkit-text-stroke-width: 0 !important;
   -webkit-text-stroke-color: #e5edfb !important;
   -webkit-font-smoothing: antialiased !important;
 }
-header#moodle-idg #social-icons a:hover {
+header #social-icons a:hover {
   color: #e5edfb;
   -webkit-text-stroke-width: 0.4px;
   -webkit-text-stroke-color: #e5edfb;
   -webkit-font-smoothing: antialiased;
 }
-header#moodle-idg #social-icons span {
+header #social-icons span {
   display: none !important;
 }
-header#moodle-idg div.sobre {
+header div.sobre {
   background-color: #1b52ac;
   border-bottom: 2px solid #1b52ac;
 }
-header#moodle-idg div.sobre ul {
+header div.sobre ul {
   margin: 8px 0;
   line-height: 1em;
 }
-header#moodle-idg div.sobre li {
+header div.sobre li {
   border-right: 1px solid #426fb9;
   padding: 0 10px;
   line-height: 1em;
 }
-header#moodle-idg div.sobre li:last-child {
+header div.sobre li:last-child {
   border: none;
   padding-right: 0;
 }
-header#moodle-idg div.sobre a {
+header div.sobre a {
   color: #FFF;
   font-size: 0.88em;
 }
-header#moodle-idg div.sobre a:hover {
+header div.sobre a:hover {
   text-decoration: underline;
 }
 main .container {

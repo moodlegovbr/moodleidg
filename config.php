@@ -13,7 +13,7 @@ $THEME->name = 'moodleidg';
 $THEME->parents = ['boost'];
 
 $THEME->sheets = array(
-    'template-branco',
+    'template-verde',
     'fontes',
     'font-awesome\css\font-awesome',
     'moodleidg');

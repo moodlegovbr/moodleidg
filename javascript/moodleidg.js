@@ -31,4 +31,26 @@ $(document).ready(function() {
         stickyToggle(sticky, stickyWrapper, $(window), navdrawer);
 
     });
+
+
+
+    $('a.toggle-contraste').click(function(){
+        if(!$('#layout').hasClass('contraste')) {
+            $('div.layout').addClass('contraste');
+            // layout_classes = $.cookie('layout_classes');
+            // if( layout_classes != 'undefined' )
+            //     layout_classes = layout_classes + ' contraste';
+            // else
+            //    layout_classes = 'contraste';
+            // $.cookie('layout_classes', layout_classes );
+        } else {
+            $('#layout').removeClass('contraste');
+            layout_classes = $.cookie('layout_classes');
+            layout_classes = layout_classes.replace('contraste', '');
+            // $.cookie('layout_classes', layout_classes );
+        }
+    });
+    //fim acao botao de alto contraste
+
+
 });

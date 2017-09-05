@@ -1,6 +1,5 @@
 <?php
 require_once('../../config.php');
-require_once('config.php');
 
 $PAGE->set_context(get_system_context());
 $PAGE->set_pagelayout('admin');

@@ -48,14 +48,16 @@ $string['rawscsspre_desc'] = 'In this field you can provide initialising SCSS co
 
 $string['region-side-pre'] = 'Right';
 
-
 $string['organization'] = 'Organização';
 
 $string['organization_desc'] = 'Denominação do órgão.';
 
-
 $string['subordination'] = 'Subordinação';
 
 $string['subordination_desc'] = 'Ministério ao qual faz parte.';
+
+$string['address'] = 'Endereço';
+
+$string['address_desc'] = 'Informe o endereço que você deseja colocar no rodapé.';
 
 $string['boostset'] = 'Configuração do Boost';

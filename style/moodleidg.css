@@ -5,6 +5,9 @@ body {
 #page {
   background-image: url([[pix:theme|bg]]);
 }
+header#page-header {
+  background: none;
+}
 ul#accessibility {
   padding-left: 0;
 }

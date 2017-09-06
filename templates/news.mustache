@@ -1,0 +1,22 @@
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action list-group-item-success flex-column align-items-start active">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Notícias</h5>
+        </div>
+    </a>
+
+    {{#news}}
+        {{#item}}
+    <a href="{{guid}}" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{title}}</h5>
+            <small class="text-muted">{{pubDate}}</small>
+        </div>
+        <p class="mb-1">{{description}}</p>
+    </a>
+        {{/item}}
+    {{/news}}
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <small class="text-muted">Leia mais...</small>
+    </a>
+</div>

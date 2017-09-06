@@ -71,3 +71,9 @@ footer address p {
   color: white;
   padding-left: 10px;
 }
+.card-body {
+  padding: 20px;
+}
+#region-main .card {
+  min-height: 0;
+}

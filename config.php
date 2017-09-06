@@ -29,3 +29,36 @@ $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 $THEME->scss = function($theme) {
     return theme_moodleidg_get_main_scss_content($theme);
 };
+
+$THEME->layouts = [
+    // The site home page.
+    'frontpage' => array(
+        'file' => 'frontpage.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+        'options' => array('nonavbar' => true, 'langmenu' => true),
+    ),
+    // Main course page.
+    'course' => array(
+        'file' => 'course.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+    ),
+    'incourse' => array(
+        'file' => 'course.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+    ),
+    'coursecategory' => array(
+        'file' => 'columns2.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+    ),
+];
+
+// Additional theme options.
+$THEME->supportscssoptimisation = false;
+$THEME->enable_dock = false;
+$THEME->yuicssmodules = array();
+$THEME->requiredblocks = '';
+$THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;

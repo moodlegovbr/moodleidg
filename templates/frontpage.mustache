@@ -69,21 +69,19 @@
         {{{ output.full_header }}}
 
         <div class="row">
-            {{>theme_moodleidg/featured}}
+            {{!{{>theme_moodleidg/featured}}
             {{>theme_moodleidg/carousel}}
         </div>
 
-        <br />
+        <br/>
 
         {{>theme_moodleidg/gridmarkup}}
 
-        <br />
+        <br/>
 
         <div id="page-content" class="row">
-            <div class="col-md-6">
-                {{>theme_moodleidg/news}}
-            </div>
-            <div id="region-main-box" class="col-xs-12 col-md-6">
+
+            <div id="region-main-box" class="col-xs-12 col-md-10">
                 <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
 
                     <div class="card card-block">
@@ -105,6 +103,9 @@
                         <div> {{{ output.region_main_settings_menu }}} </div>
                     </div>
                 {{/hasregionmainsettingsmenu}}
+            </div>
+            <div class="col-md-2">
+                {{>theme_moodleidg/news}}
             </div>
         </div>
     </div>

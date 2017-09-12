@@ -22,6 +22,7 @@ $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
 
 $feed = file_get_contents('http://reitoria.ifrr.edu.br/dipead/noticias/rss.xml');
 $rss = new SimpleXmlElement($feed);
+$rss->channel->item = array_slice($rss->channel->item[5]);
 
 $templatecontext = [
     'fullname' => format_string($SITE->fullname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
@@ -37,7 +38,7 @@ $templatecontext = [
     'organization' => get_config('theme_moodleidg', 'organization'),
     'subordination' => get_config('theme_moodleidg', 'subordination'),
     'address' => get_config('theme_moodleidg', 'address'),
-    'news' => $rss->channel
+    'news' => $rss->channel,
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

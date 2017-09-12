@@ -1,4 +1,4 @@
-main div.container {
+main div.container, main div.container-fluid {
     .module { padding-bottom:20px;
         h1 { font-size:2.5em; line-height:1.2em; margin:0 0 10px 0; letter-spacing:-0.05em; font-weight:600;
             a { color:@cor-preto; }
@@ -8,7 +8,7 @@ main div.container {
         }
         .outstanding-title { line-height:1em; margin:11px 8px 14px 8px; font-size:1.45em; font-weight:400; color: @cor-module-title-padrao;  }
         .subtitle { text-transform:uppercase; font-weight:400; color: @cor-module-subtitle-padrao; font-size:0.9em; line-height:1em; margin:0 0 10px 0 }
-        p { font-size:0.9em; line-height:1.35em }
+        /* p { font-size:0.9em; line-height:1.35em } */
         h2, h3 { font-size:1.1em; line-height:1em; margin-bottom:5px; font-family:@font-family; font-weight:400;
             a { color:@cor-module-header-links }
         }
@@ -62,7 +62,9 @@ main div.container {
                 }
             }
         }
-        li { margin-left:0 !important; padding:7px 5px 5px 15px; border-left:1px dotted @border-color; }
+        li { margin-left:0 !important; padding:15px 5px 5px 0px; border-bottom:1px dotted @border-color;
+            display: block;
+        }
         .outstanding-link { display:block; padding:4px 0 }
         .footer { border-top:1px solid @border-color; padding:3px 12px 6px 12px; text-align:right;
             a { font-size:0.85em; color:@cor-module-outstanding-link-padrao; text-transform:uppercase; line-height:1em;  }

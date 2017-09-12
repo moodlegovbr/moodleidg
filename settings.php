@@ -36,62 +36,15 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-    $settings->add($page);
-
-    // Aba de configuracao do Boost
-    $page = new admin_settingpage('theme_moodleidg_boostset', get_string('boostset', 'theme_moodleidg'));
-
-    $name = 'theme_moodleidg/preset';
-    $title = get_string('preset', 'theme_moodleidg');
-    $description = get_string('preset_desc', 'theme_moodleidg');
-    $default = 'default.scss';
-
-
-    $context = context_system::instance();
-    $fs = get_file_storage();
-    $files = $fs->get_area_files($context->id, 'theme_moodleidg', 'preset', 0, 'itemid, filepath, filename', false);
-
-    $choices = [];
-    foreach ($files as $file) {
-        $choices[$file->get_filename()] = $file->get_filename();
-    }
-    $choices['default.scss'] = 'default.scss';
-    $choices['plain.scss'] = 'plain.scss';
-
-    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $page->add($setting);
-
-    $name = 'theme_moodleidg/presetfiles';
-    $title = get_string('presetfiles','theme_moodleidg');
-    $description = get_string('presetfiles_desc', 'theme_moodleidg');
-
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'preset', 0,
-        array('maxfiles' => 20, 'accepted_types' => array('.scss')));
-    $page->add($setting);
-
-    $name = 'theme_moodleidg/brandcolor';
-    $title = get_string('brandcolor', 'theme_moodleidg');
-    $description = get_string('brandcolor_desc', 'theme_moodleidg');
-    $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
+    // RSS.
+    $setting = new admin_setting_configtext('theme_moodleidg/rss', get_string('rss',
+        'theme_moodleidg'), get_string('rss_desc', 'theme_moodleidg'), '',
+        PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     $settings->add($page);
 
-    // Advanced Settings
-
-    $page = new admin_settingpage('theme_moodleidg_advanced', get_string('advancedsettings', 'theme_moodleidg'));
-
-    $setting = new admin_setting_configtextarea('theme_moodleidg/scsspre',
-        get_string('rawscsspre', 'theme_moodleidg'), get_string('rawscsspre_desc', 'theme_moodleidg'), '', PARAM_RAW);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $page->add($setting);
-
-    $setting = new admin_setting_configtextarea('theme_moodleidg/scss', get_string('rawscss', 'theme_moodleidg'),
-        get_string('rawscss_desc', 'theme_moodleidg'), '', PARAM_RAW);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $page->add($setting);
-
-    $settings->add($page);
+    require('settings/boost.php');
+    require('settings/advanced.php');
 }

@@ -13,7 +13,7 @@ $THEME->name = 'moodleidg';
 $THEME->parents = ['boost'];
 
 $THEME->sheets = array(
-    'template-verde',
+    get_config('theme_moodleidg', 'preset'),
     'fontes',
     'font-awesome\css\font-awesome',
     'moodleidg');
@@ -30,29 +30,25 @@ $THEME->scss = function($theme) {
     return theme_moodleidg_get_main_scss_content($theme);
 };
 
+
 $THEME->layouts = [
+    // Most backwards compatible layout without the blocks - this is the layout used by default
+    'base' => array(
+        'file' => 'columns2.php',
+        'regions' => array(),
+    ),
+    // Standard layout with blocks, this is recommended for most pages with default information
+    'standard' => array(
+        'file' => 'columns2.php',
+        'regions' => array('side-pre', 'side-post'),
+        'defaultregion' => 'side-pre',
+    ),
     // The site home page.
     'frontpage' => array(
         'file' => 'frontpage.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar' => true, 'langmenu' => true),
-    ),
-    // Main course page.
-    'course' => array(
-        'file' => 'course.php',
-        'regions' => array('side-pre'),
-        'defaultregion' => 'side-pre',
-    ),
-    'incourse' => array(
-        'file' => 'course.php',
-        'regions' => array('side-pre'),
-        'defaultregion' => 'side-pre',
-    ),
-    'coursecategory' => array(
-        'file' => 'columns2.php',
-        'regions' => array('side-pre'),
-        'defaultregion' => 'side-pre',
     ),
 ];
 

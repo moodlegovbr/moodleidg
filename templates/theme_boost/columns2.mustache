@@ -64,8 +64,9 @@
     {{{ output.standard_top_of_body_html }}}
 
     {{>theme_boost/header}}
-
+    <main>
     <div id="page" class="container-fluid">
+        <div id="content">
         {{{ output.full_header }}}
 
         <div id="page-content" class="row">
@@ -95,7 +96,10 @@
             </div>
         </div>
     </div>
+
+</div>
     {{> theme_boost/nav-drawer }}
+    </main>
 </div>
 <div class="layout">
     <footer>
@@ -145,16 +149,10 @@
                                     <a title="Perguntas frequentes" href="#">Perguntas frequentes</a>
                                 </li>
                                 <li class="portalservicos-item">
-                                    <a title="Contato" href="#">Contato</a>
+                                    <a title="Contato" href="#">Fale com a Dipead / Reitoria</a>
                                 </li>
                                 <li class="portalservicos-item">
-                                    <a title="Serviços da [Denominação]" href="#">Serviços da [Denominação]</a>
-                                </li>
-                                <li class="portalservicos-item">
-                                    <a title="Dados abertos" href="#">Dados abertos</a>
-                                </li>
-                                <li class="portalservicos-item">
-                                    <a title="Área de imprensa" href="#">Área de imprensa</a>
+                                    <a title="Serviços da [Denominação]" href="#">Fale com o Dead / <i>Campus</i>i> Boa Vista</a>
                                 </li>
                             </ul>
                         </nav>
@@ -177,13 +175,6 @@
                         </nav>
                     </div>
                     <div class="col-md-3">
-                        <nav class="row rss nav">
-                            <h2>RSS</h2>
-                            <ul>
-                                <li><a href="#" title="O que é?">O que é?</a></li>
-                                <li><a href="#" title="Assine">Assine</a></li>
-                            </ul>
-                        </nav>
                         <nav class="row sobre nav">
                             <h2>Sobre o site</h2>
                             <ul>

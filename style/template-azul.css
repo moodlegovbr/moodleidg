@@ -763,15 +763,18 @@ footer .footer-ferramenta p {
   footer .container {
     width: 960px;
   }
+  main {
+    /*
+        #content {
+            width:750px !important; margin-left:0 !important;
+        }
+        #content.full {
+            width:960px !important; 
+        }
+        */
+  }
   main #navigation {
     width: 210px !important;
-  }
-  main #content {
-    width: 750px !important;
-    margin-left: 0 !important;
-  }
-  main #content.full {
-    width: 960px !important;
   }
   main #em-destaque .span2 {
     width: 20%;
@@ -1129,39 +1132,47 @@ footer .footer-ferramenta p {
     text-align: center;
   }
 }
-main div.container .module {
+main div.container .module,
+main div.container-fluid .module {
   padding-bottom: 20px;
+  /* p { font-size:0.9em; line-height:1.35em } */
 }
-main div.container .module h1 {
+main div.container .module h1,
+main div.container-fluid .module h1 {
   font-size: 2.5em;
   line-height: 1.2em;
   margin: 0 0 10px 0;
   letter-spacing: -0.05em;
   font-weight: 600;
 }
-main div.container .module h1 a {
+main div.container .module h1 a,
+main div.container-fluid .module h1 a {
   color: #333;
 }
-main div.container .module .outstanding-header {
+main div.container .module .outstanding-header,
+main div.container-fluid .module .outstanding-header {
   border-top: 4px solid #3268ba;
   background: #eeeff2;
   height: 57px;
   margin: 0 0 22px 0;
   position: relative;
 }
-main div.container .module .outstanding-header a.outstanding-link {
+main div.container .module .outstanding-header a.outstanding-link,
+main div.container-fluid .module .outstanding-header a.outstanding-link {
   position: absolute;
   right: 3px;
   bottom: 8px;
 }
-main div.container .module .outstanding-title {
+main div.container .module .outstanding-title,
+main div.container-fluid .module .outstanding-title {
   line-height: 1em;
   margin: 11px 8px 14px 8px;
   font-size: 1.45em;
   font-weight: 400;
   color: #3268ba;
 }
-main div.container .module .subtitle {
+main div.container .module .subtitle,
+main div.container-fluid .module .subtitle {
   text-transform: uppercase;
   font-weight: 400;
   color: #1e68d0;
@@ -1169,12 +1180,10 @@ main div.container .module .subtitle {
   line-height: 1em;
   margin: 0 0 10px 0;
 }
-main div.container .module p {
-  font-size: 0.9em;
-  line-height: 1.35em;
-}
 main div.container .module h2,
-main div.container .module h3 {
+main div.container-fluid .module h2,
+main div.container .module h3,
+main div.container-fluid .module h3 {
   font-size: 1.1em;
   line-height: 1em;
   margin-bottom: 5px;
@@ -1182,10 +1191,13 @@ main div.container .module h3 {
   font-weight: 400;
 }
 main div.container .module h2 a,
-main div.container .module h3 a {
+main div.container-fluid .module h2 a,
+main div.container .module h3 a,
+main div.container-fluid .module h3 a {
   color: #333;
 }
-main div.container .module .img-rounded {
+main div.container .module .img-rounded,
+main div.container-fluid .module .img-rounded {
   -webkit-border-radius: 8px !important;
   -moz-border-radius: 8px !important;
   -ms-border-radius: 8px !important;
@@ -1197,7 +1209,8 @@ main div.container .module .img-rounded {
   overflow: hidden;
   margin-bottom: 10px;
 }
-main div.container .module .outstanding-footer {
+main div.container .module .outstanding-footer,
+main div.container-fluid .module .outstanding-footer {
   border-top: 2px solid #3268ba;
   background: #eeeff2;
   height: 22px;
@@ -1205,7 +1218,8 @@ main div.container .module .outstanding-footer {
   padding: 10px;
   clear: both;
 }
-main div.container .module a.outstanding-link {
+main div.container .module a.outstanding-link,
+main div.container-fluid .module a.outstanding-link {
   font-size: 0.7em;
   color: #333;
   text-transform: uppercase;
@@ -1213,12 +1227,14 @@ main div.container .module a.outstanding-link {
   float: right;
   margin-right: 7px;
 }
-main div.container .module a.outstanding-link .text {
+main div.container .module a.outstanding-link .text,
+main div.container-fluid .module a.outstanding-link .text {
   display: block;
   padding: 5px;
   float: left;
 }
-main div.container .module a.outstanding-link .icon-box {
+main div.container .module a.outstanding-link .icon-box,
+main div.container-fluid .module a.outstanding-link .icon-box {
   display: block;
   float: right;
   width: 12px;
@@ -1246,24 +1262,30 @@ main div.container .module a.outstanding-link .icon-box {
   color: #fff;
   text-align: center;
 }
-main div.container .module a.outstanding-link .icon-angle-right {
+main div.container .module a.outstanding-link .icon-angle-right,
+main div.container-fluid .module a.outstanding-link .icon-angle-right {
   font-size: 18px;
 }
-main div.container .variacao-module-01 .outstanding-header {
+main div.container .variacao-module-01 .outstanding-header,
+main div.container-fluid .variacao-module-01 .outstanding-header {
   border-color: #4c0773;
   background: #eeeff2;
 }
-main div.container .variacao-module-01 .outstanding-title {
+main div.container .variacao-module-01 .outstanding-title,
+main div.container-fluid .variacao-module-01 .outstanding-title {
   color: #4c0773;
 }
-main div.container .variacao-module-01 .subtitle {
+main div.container .variacao-module-01 .subtitle,
+main div.container-fluid .variacao-module-01 .subtitle {
   color: #6c0aa4;
 }
-main div.container .variacao-module-01 .outstanding-footer {
+main div.container .variacao-module-01 .outstanding-footer,
+main div.container-fluid .variacao-module-01 .outstanding-footer {
   border-color: #4c0773;
   background: #eeeff2;
 }
-main div.container .variacao-module-01 a.outstanding-link .icon-box {
+main div.container .variacao-module-01 a.outstanding-link .icon-box,
+main div.container-fluid .variacao-module-01 a.outstanding-link .icon-box {
   background-color: #4c0773 !important;
   /* IE10 Consumer Preview */
   background-image: -ms-linear-gradient(top, #6c0aa3 0%, #2c0443 100%) !important;
@@ -1280,21 +1302,26 @@ main div.container .variacao-module-01 a.outstanding-link .icon-box {
   /* IE6-9 fallback on horizontal gradient */
   color: #fff !important;
 }
-main div.container .variacao-module-02 .outstanding-header {
+main div.container .variacao-module-02 .outstanding-header,
+main div.container-fluid .variacao-module-02 .outstanding-header {
   border-color: #cd4500;
   background: #eeeff2;
 }
-main div.container .variacao-module-02 .outstanding-title {
+main div.container .variacao-module-02 .outstanding-title,
+main div.container-fluid .variacao-module-02 .outstanding-title {
   color: #cd4500;
 }
-main div.container .variacao-module-02 .subtitle {
+main div.container .variacao-module-02 .subtitle,
+main div.container-fluid .variacao-module-02 .subtitle {
   color: #e05914;
 }
-main div.container .variacao-module-02 .outstanding-footer {
+main div.container .variacao-module-02 .outstanding-footer,
+main div.container-fluid .variacao-module-02 .outstanding-footer {
   border-color: #cd4500;
   background: #eeeff2;
 }
-main div.container .variacao-module-02 a.outstanding-link .icon-box {
+main div.container .variacao-module-02 a.outstanding-link .icon-box,
+main div.container-fluid .variacao-module-02 a.outstanding-link .icon-box {
   background-color: #cd4500 !important;
   /* IE10 Consumer Preview */
   background-image: -ms-linear-gradient(top, #ff5601 0%, #9a3400 100%) !important;
@@ -1311,21 +1338,26 @@ main div.container .variacao-module-02 a.outstanding-link .icon-box {
   /* IE6-9 fallback on horizontal gradient */
   color: #fff !important;
 }
-main div.container .variacao-module-03 .outstanding-header {
+main div.container .variacao-module-03 .outstanding-header,
+main div.container-fluid .variacao-module-03 .outstanding-header {
   border-color: #105480;
   background: #eeeff2;
 }
-main div.container .variacao-module-03 .outstanding-title {
+main div.container .variacao-module-03 .outstanding-title,
+main div.container-fluid .variacao-module-03 .outstanding-title {
   color: #105480;
 }
-main div.container .variacao-module-03 .subtitle {
+main div.container .variacao-module-03 .subtitle,
+main div.container-fluid .variacao-module-03 .subtitle {
   color: #0779c3;
 }
-main div.container .variacao-module-03 .outstanding-footer {
+main div.container .variacao-module-03 .outstanding-footer,
+main div.container-fluid .variacao-module-03 .outstanding-footer {
   border-color: #105480;
   background: #eeeff2;
 }
-main div.container .variacao-module-03 a.outstanding-link .icon-box {
+main div.container .variacao-module-03 a.outstanding-link .icon-box,
+main div.container-fluid .variacao-module-03 a.outstanding-link .icon-box {
   background-color: #105480 !important;
   /* IE10 Consumer Preview */
   background-image: -ms-linear-gradient(top, #1672ad 0%, #0a3653 100%) !important;
@@ -1342,7 +1374,8 @@ main div.container .variacao-module-03 a.outstanding-link .icon-box {
   /* IE6-9 fallback on horizontal gradient */
   color: #fff !important;
 }
-main div.container .module-box-01 {
+main div.container .module-box-01,
+main div.container-fluid .module-box-01 {
   padding-bottom: 0;
   background: #eeeff2;
   border: 1px solid #c3c0c0;
@@ -1353,94 +1386,128 @@ main div.container .module-box-01 {
   border-radius: 8px;
   margin-bottom: 20px !important;
 }
-main div.container .module-box-01 .header {
+main div.container .module-box-01 .header,
+main div.container-fluid .module-box-01 .header {
   border-bottom: 1px solid #c3c0c0;
   padding: 10px 12px 2px 12px;
 }
 main div.container .module-box-01 .header h2,
+main div.container-fluid .module-box-01 .header h2,
 main div.container .module-box-01 .header h3,
+main div.container-fluid .module-box-01 .header h3,
 main div.container .module-box-01 .header h4,
+main div.container-fluid .module-box-01 .header h4,
 main div.container .module-box-01 .header h4,
-main div.container .module-box-01 .header h6 {
+main div.container-fluid .module-box-01 .header h4,
+main div.container .module-box-01 .header h6,
+main div.container-fluid .module-box-01 .header h6 {
   text-transform: uppercase;
   font-family: "open_sanssemibold", 'Open Sans', Arial, Helvetica, sans-serif;
 }
-main div.container .module-box-01 .lista {
+main div.container .module-box-01 .lista,
+main div.container-fluid .module-box-01 .lista {
   margin: 0 !important;
 }
 main div.container .module-box-01 .lista h2 a,
+main div.container-fluid .module-box-01 .lista h2 a,
 main div.container .module-box-01 .lista h3 a,
+main div.container-fluid .module-box-01 .lista h3 a,
 main div.container .module-box-01 .lista h4 a,
+main div.container-fluid .module-box-01 .lista h4 a,
 main div.container .module-box-01 .lista h5 a,
-main div.container .module-box-01 .lista h6 a {
+main div.container-fluid .module-box-01 .lista h5 a,
+main div.container .module-box-01 .lista h6 a,
+main div.container-fluid .module-box-01 .lista h6 a {
   color: #355075;
   font-size: 1em;
 }
 main div.container .module-box-01 .lista h2 a:hover,
+main div.container-fluid .module-box-01 .lista h2 a:hover,
 main div.container .module-box-01 .lista h3 a:hover,
+main div.container-fluid .module-box-01 .lista h3 a:hover,
 main div.container .module-box-01 .lista h4 a:hover,
+main div.container-fluid .module-box-01 .lista h4 a:hover,
 main div.container .module-box-01 .lista h5 a:hover,
-main div.container .module-box-01 .lista h6 a:hover {
+main div.container-fluid .module-box-01 .lista h5 a:hover,
+main div.container .module-box-01 .lista h6 a:hover,
+main div.container-fluid .module-box-01 .lista h6 a:hover {
   text-decoration: underline;
 }
-main div.container .module-box-01 li {
+main div.container .module-box-01 li,
+main div.container-fluid .module-box-01 li {
   margin-left: 0 !important;
-  padding: 7px 5px 5px 15px;
-  border-left: 1px dotted #c3c0c0;
+  padding: 15px 5px 5px 0px;
+  border-bottom: 1px dotted #c3c0c0;
+  display: block;
 }
-main div.container .module-box-01 .outstanding-link {
+main div.container .module-box-01 .outstanding-link,
+main div.container-fluid .module-box-01 .outstanding-link {
   display: block;
   padding: 4px 0;
 }
-main div.container .module-box-01 .footer {
+main div.container .module-box-01 .footer,
+main div.container-fluid .module-box-01 .footer {
   border-top: 1px solid #c3c0c0;
   padding: 3px 12px 6px 12px;
   text-align: right;
 }
-main div.container .module-box-01 .footer a {
+main div.container .module-box-01 .footer a,
+main div.container-fluid .module-box-01 .footer a {
   font-size: 0.85em;
   color: #333;
   text-transform: uppercase;
   line-height: 1em;
 }
-main div.container .module-box-01 .gallery-pane .carousel {
+main div.container .module-box-01 .gallery-pane .carousel,
+main div.container-fluid .module-box-01 .gallery-pane .carousel {
   margin-bottom: 0;
 }
-main div.container .module-box-01 .gallery-pane .carousel-control {
+main div.container .module-box-01 .gallery-pane .carousel-control,
+main div.container-fluid .module-box-01 .gallery-pane .carousel-control {
   border: none;
   line-height: 1em;
   font-size: 35px;
 }
-main div.container .module-box-01 .gallery-pane .item img {
+main div.container .module-box-01 .gallery-pane .item img,
+main div.container-fluid .module-box-01 .gallery-pane .item img {
   width: 100%;
   height: auto;
 }
-main div.container .module-box-01 .gallery-pane .galleria-info {
+main div.container .module-box-01 .gallery-pane .galleria-info,
+main div.container-fluid .module-box-01 .gallery-pane .galleria-info {
   padding: 10px;
 }
 main div.container .module-box-01 .gallery-pane h3 a,
+main div.container-fluid .module-box-01 .gallery-pane h3 a,
 main div.container .module-box-01 .gallery-pane h4 a,
+main div.container-fluid .module-box-01 .gallery-pane h4 a,
 main div.container .module-box-01 .gallery-pane h5 a,
-main div.container .module-box-01 .gallery-pane h6 a {
+main div.container-fluid .module-box-01 .gallery-pane h5 a,
+main div.container .module-box-01 .gallery-pane h6 a,
+main div.container-fluid .module-box-01 .gallery-pane h6 a {
   color: #333;
   font-size: 0.85em;
   font-weight: 700;
 }
-main div.container .module-box-01 .gallery-pane .galleria-info-description {
+main div.container .module-box-01 .gallery-pane .galleria-info-description,
+main div.container-fluid .module-box-01 .gallery-pane .galleria-info-description {
   display: block;
   margin-bottom: 5px;
   font-size: 0.85em;
 }
-main div.container .module-box-01 .gallery-pane .rights {
+main div.container .module-box-01 .gallery-pane .rights,
+main div.container-fluid .module-box-01 .gallery-pane .rights {
   display: block;
   margin-bottom: 5px;
   font-size: 0.85em;
   font-style: italic;
 }
-main div.container .module-twitter-facebook .header {
+main div.container .module-twitter-facebook .header,
+main div.container-fluid .module-twitter-facebook .header {
   padding-bottom: 0 !important;
 }
-main div.container .module-twitter-facebook .header h2 {
+main div.container .module-twitter-facebook .header h2,
+main div.container-fluid .module-twitter-facebook .header h2 {
   display: block;
   padding: 6px 10px 0 10px;
   border-top: 1px solid #c3c0c0;
@@ -1455,13 +1522,16 @@ main div.container .module-twitter-facebook .header h2 {
   text-align: center;
   font-size: 0.9em;
 }
-main div.container .module-twitter-facebook .header h2.active {
+main div.container .module-twitter-facebook .header h2.active,
+main div.container-fluid .module-twitter-facebook .header h2.active {
   background: #eeeff2;
 }
-main div.container .module-twitter-facebook .header h2.hide {
+main div.container .module-twitter-facebook .header h2.hide,
+main div.container-fluid .module-twitter-facebook .header h2.hide {
   display: none !important;
 }
-main div.container .module-twitter-facebook .pane {
+main div.container .module-twitter-facebook .pane,
+main div.container-fluid .module-twitter-facebook .pane {
   padding-bottom: 0;
   background: #eeeff2;
   border: 1px solid #c3c0c0;
@@ -1472,13 +1542,16 @@ main div.container .module-twitter-facebook .pane {
   -o-border-radius: 0 8px 8px 8px;
   border-radius: 0 8px 8px 8px;
 }
-main div.container .module-twitter-facebook .twitter-content {
+main div.container .module-twitter-facebook .twitter-content,
+main div.container-fluid .module-twitter-facebook .twitter-content {
   min-height: 350px;
 }
-main div.container .module-twitter-facebook .twitter-content iframe {
+main div.container .module-twitter-facebook .twitter-content iframe,
+main div.container-fluid .module-twitter-facebook .twitter-content iframe {
   min-height: 350px;
 }
-main div.container .module-box-01-top-adjust {
+main div.container .module-box-01-top-adjust,
+main div.container-fluid .module-box-01-top-adjust {
   margin-top: 29px;
 }
 #system-message-container {

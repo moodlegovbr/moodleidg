@@ -19,10 +19,16 @@ $blockshtml = $OUTPUT->blocks('side-pre');
 $hasblocks = strpos($blockshtml, 'data-block=') !== false;
 $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
 
-
-$feed = file_get_contents('http://reitoria.ifrr.edu.br/dipead/noticias/rss.xml');
-$rss = new SimpleXmlElement($feed);
-$rss->channel->item = array_slice($rss->channel->item[5]);
+// Feeds de Noticias
+$feed = file_get_contents(get_config('theme_moodleidg', 'rss'));
+$xml = new SimpleXmlElement($feed);
+$news['link'] = (string) $xml->channel->link;
+foreach($xml->channel->item as $value) {
+    $news['item'][] = (array) $value;
+}
+$news['featured'] = $news['item'][0];
+$news['item'] = array_slice($news['item'],1 ,3);
+// .fim do Feeds de Noticias
 
 $templatecontext = [
     'fullname' => format_string($SITE->fullname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
@@ -38,7 +44,7 @@ $templatecontext = [
     'organization' => get_config('theme_moodleidg', 'organization'),
     'subordination' => get_config('theme_moodleidg', 'subordination'),
     'address' => get_config('theme_moodleidg', 'address'),
-    'news' => $rss->channel,
+    'news' => $news,
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

@@ -10,7 +10,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['choosereadme'] = 'Theme photo is a child theme of Boost. It adds the ability to upload background photos.';
 
-$string['pluginname'] = 'moodleidg';
+$string['pluginname'] = 'Moodle IDG';
 
 $string['region-side-pre'] = 'Right';
 
@@ -24,7 +24,7 @@ $string['brandcolor_desc'] = 'The accent colour.';
 
 $string['choosereadme'] = 'O tema MoodleIDG é um tema filho do boost. É um tema baseado na identidade digital do governo brasileiro.';
 
-$string['configtitle'] = 'Configurações do MoodleIDG';
+$string['configtitle'] = 'Configurações do Moodle IDG';
 
 $string['generalsettings'] = 'Configurações Gerais';
 
@@ -60,4 +60,8 @@ $string['address'] = 'Endereço';
 
 $string['address_desc'] = 'Informe o endereço que você deseja colocar no rodapé.';
 
-$string['boostset'] = 'Configuração do Boost';
+$string['boostset'] = 'Configuração do Tema';
+
+$string['rss'] = 'Sindicalização';
+
+$string['rss_desc'] = 'Configurações de uma fonte de notícias';

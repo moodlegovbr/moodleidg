@@ -21,13 +21,21 @@ $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
 
 // Feeds de Noticias
 $feed = file_get_contents(get_config('theme_moodleidg', 'rss'));
-$xml = new SimpleXmlElement($feed);
-$news['link'] = (string) $xml->channel->link;
-foreach($xml->channel->item as $value) {
-    $news['item'][] = (array) $value;
+
+try {
+    $xml = new SimpleXmlElement($feed);
+    $news['link'] = (string) $xml->channel->link;
+    foreach($xml->channel->item as $value) {
+        $news['item'][] = (array) $value;
+    }
+    $news['featured'] = $news['item'][0];
+    $news['item'] = array_slice($news['item'],1 ,3);
+
+} catch (Exception $e) {
+    $xml = false;
+    $news = null;
 }
-$news['featured'] = $news['item'][0];
-$news['item'] = array_slice($news['item'],1 ,3);
+
 // .fim do Feeds de Noticias
 
 $templatecontext = [

@@ -36,6 +36,13 @@ try {
     $news = null;
 }
 
+$slides['images'][0]['img'] = $OUTPUT->pix_url('Bannerteste/banner_teste-01', 'theme_moodleidg');
+$slides['images'][0]['active'] = 'active';
+$slides['images'][]['img'] = $OUTPUT->pix_url('Bannerteste/banner_teste-02', 'theme_moodleidg');
+$slides['images'][]['img'] = $OUTPUT->pix_url('Bannerteste/banner_teste-03', 'theme_moodleidg');
+var_dump($slides);
+exit();
+
 // .fim do Feeds de Noticias
 
 $templatecontext = [
@@ -53,6 +60,7 @@ $templatecontext = [
     'subordination' => get_config('theme_moodleidg', 'subordination'),
     'address' => get_config('theme_moodleidg', 'address'),
     'news' => $news,
+    'slides' => $slides,
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

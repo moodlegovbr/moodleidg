@@ -78,9 +78,9 @@ footer address p {
   min-height: 0;
 }
 #videoplayer {
-  max-width: fit-content;
+  max-width: 32.4%;
 }
 #news_featured {
-  min-width: 1216px;
+  width: 66.2%;
   min-height: 363px;
 }

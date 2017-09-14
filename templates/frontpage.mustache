@@ -66,68 +66,73 @@
     {{>theme_boost/header}}
 
     <main>
-    <div id="page" class="container-fluid">
-        <div id="content">
-        {{{ output.full_header }}}
+        <div id="page" class="container-fluid">
+            <div id="content">
+                {{{ output.full_header }}}
 
-        <div class="row">
-            {{>theme_moodleidg/carousel}}
-        </div>
-
-        <br/>
-            <div class="module">
-                <div class="outstanding-header">
-                    <h2 class="outstanding-title">Programas</h2>
+                <div class="row">
+                    {{>theme_moodleidg/carousel}}
                 </div>
-                {{>theme_moodleidg/gridmarkup}}
-            </div>
 
-        <div class="module">
-            <div class="clearfix">
-            <div class="outstanding-header">
-                <h2 class="outstanding-title">Educação à Distância</h2>
-            </div>
-            {{>theme_moodleidg/news_featured}}
-            <div class="col-md-5">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL4A1F702CEBDEAAA3" frameborder="0" allowfullscreen></iframe>
-            </div>
-            </div>
-        </div>
+                <br/>
+                <div class="module">
+                    <div class="outstanding-header">
+                        <h2 class="outstanding-title">Programas</h2>
+                    </div>
+                    {{>theme_moodleidg/gridmarkup}}
+                </div>
 
-        <div id="page-content" class="row">
+                <div class="module">
+                    <div class="clearfix">
+                        <div class="outstanding-header">
+                            <h2 class="outstanding-title">Educação à Distância</h2>
+                        </div>
+                        <div id="news_featured" class="col-md-5 card card-block">
+                            {{>theme_moodleidg/news_featured}}
+                        </div>
+                        <div id="videoplayer" class="col-md-5 card card-block pull-right">
+                            <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/videoseries?list=PL4A1F702CEBDEAAA3"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
 
-            <div id="region-main-box" class="col-xs-12 col-md-8">
-                <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
+                <div id="page-content" class="row">
 
-                    <div class="card card-block">
+                    <div id="region-main-box" class="col-xs-12 col-md-8">
+                        <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
+
+                            <div class="card card-block">
+                                {{#hasregionmainsettingsmenu}}
+                                    <div class="region_main_settings_menu_proxy"></div>
+                                {{/hasregionmainsettingsmenu}}
+                                {{{ output.course_content_header }}}
+                                {{{ output.main_content }}}
+                                {{{ output.course_content_footer }}}
+                            </div>
+                        </section>
+                        {{#hasblocks}}
+                            <section data-region="blocks-column" class="hidden-print">
+                                {{{ sidepreblocks }}}
+                            </section>
+                        {{/hasblocks}}
                         {{#hasregionmainsettingsmenu}}
-                            <div class="region_main_settings_menu_proxy"></div>
+                            <div id="region-main-settings-menu"
+                                 class="hidden-print {{#hasblocks}}has-blocks{{/hasblocks}}">
+                                <div> {{{ output.region_main_settings_menu }}} </div>
+                            </div>
                         {{/hasregionmainsettingsmenu}}
-                        {{{ output.course_content_header }}}
-                        {{{ output.main_content }}}
-                        {{{ output.course_content_footer }}}
                     </div>
-                </section>
-                {{#hasblocks}}
-                    <section data-region="blocks-column" class="hidden-print">
-                        {{{ sidepreblocks }}}
-                    </section>
-                {{/hasblocks}}
-                {{#hasregionmainsettingsmenu}}
-                    <div id="region-main-settings-menu" class="hidden-print {{#hasblocks}}has-blocks{{/hasblocks}}">
-                        <div> {{{ output.region_main_settings_menu }}} </div>
+                    <div class="col-md-4">
+                        {{>theme_moodleidg/news_front}}
                     </div>
-                {{/hasregionmainsettingsmenu}}
+                </div>
             </div>
-            <div class="col-md-4">
-                {{>theme_moodleidg/news_front}}
-            </div>
+
         </div>
-    </div>
 
-    </div>
-
-    {{> theme_boost/nav-drawer }}
+        {{> theme_boost/nav-drawer }}
     </main>
 </div>
 <div class="layout">

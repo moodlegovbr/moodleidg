@@ -38,8 +38,12 @@ try {
 
 $slides['images'][0]['img'] = $OUTPUT->pix_url('Bannerteste/banner_teste-01', 'theme_moodleidg');
 $slides['images'][0]['active'] = 'active';
-$slides['images'][]['img'] = $OUTPUT->pix_url('Bannerteste/banner_teste-02', 'theme_moodleidg');
-$slides['images'][]['img'] = $OUTPUT->pix_url('Bannerteste/banner_teste-03', 'theme_moodleidg');
+$slides['images'][0]['url'] = '#';
+$slides['images'][1]['img'] = $OUTPUT->pix_url('Bannerteste/dead-01', 'theme_moodleidg');
+$slides['images'][1]['url']='http://boavista.ifrr.edu.br/dead';
+$slides['images'][2]['img'] = $OUTPUT->pix_url('Bannerteste/dipead-01', 'theme_moodleidg');
+$slides['images'][2]['url']='http://ead.ifrr.edu.br/moodle/';
+
 
 // .fim do Feeds de Noticias
 

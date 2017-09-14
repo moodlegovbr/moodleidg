@@ -13,10 +13,8 @@
                 {{#slides}}
                     {{#images}}
                         <div class="carousel-item {{active}}">
-                            <img src="{{{img}}}" class="left">
+                            <a href={{url}}><img src="{{{img}}}" class="left"></a>
                             <div class="carousel-caption d-none d-md-block">
-                                <h3>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                     {{/images}}

@@ -24,26 +24,34 @@ $feed = file_get_contents(get_config('theme_moodleidg', 'rss'));
 
 try {
     $xml = new SimpleXmlElement($feed);
-    $news['link'] = (string) $xml->channel->link;
-    foreach($xml->channel->item as $value) {
-        $news['item'][] = (array) $value;
+    $news['link'] = (string)$xml->channel->link;
+    foreach ($xml->channel->item as $value) {
+        $news['item'][] = (array)$value;
     }
     $news['featured'] = $news['item'][0];
-    $news['item'] = array_slice($news['item'],1 ,3);
+    $news['item'] = array_slice($news['item'], 1, 3);
 
 } catch (Exception $e) {
     $xml = false;
     $news = null;
 }
 
-$slides['images'][0]['img'] = $OUTPUT->pix_url('Bannerteste/banner_teste-01', 'theme_moodleidg');
-$slides['images'][0]['active'] = 'active';
-$slides['images'][0]['url'] = '#';
-$slides['images'][1]['img'] = $OUTPUT->pix_url('Bannerteste/dead-01', 'theme_moodleidg');
-$slides['images'][1]['url']='http://boavista.ifrr.edu.br/dead';
-$slides['images'][2]['img'] = $OUTPUT->pix_url('Bannerteste/dipead-01', 'theme_moodleidg');
-$slides['images'][2]['url']='http://ead.ifrr.edu.br/moodle/';
+//slide
+$slides['numerosslides'] = get_config('theme_moodleidg', 'numberofslides');
 
+for ($i = 1; $i <= $slides['numerosslides']; $i++) {
+    $slides['images'][] = [
+        'id' => $i-1,
+        'info' => get_config('theme_moodleidg',  'slide'.$i.'info'),
+        'titulo' => get_config('theme_moodleidg',  'slide'.$i),
+        'img'=> $OUTPUT->pix_url(get_config('theme_moodleidg','slide'.$i.'image')),
+        //'img' => $OUTPUT->pix_url('Bannerteste/banner_teste-01', 'theme_moodleidg'),
+        'url' => get_config('theme_moodleidg',  'slide'.$i.'url'),
+        'caption' => get_config('theme_moodleidg', 'slide'.$i.'caption'),
+        'active' => $i==1?'active':''
+    ];
+}
+//fimslide
 
 // .fim do Feeds de Noticias
 
@@ -66,7 +74,6 @@ $templatecontext = [
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;
-
 $PAGE->requires->jquery();
 // $PAGE->requires->js('/theme/moodleidg/javascript/jquery.cookie.js'); // precisa de atualização
 // $PAGE->requires->js('/theme/moodleidg/javascript/template.js'); // precisa de atualização

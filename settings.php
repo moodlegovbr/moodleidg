@@ -42,9 +42,16 @@ if ($ADMIN->fulltree) {
         PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
-
     $settings->add($page);
 
+
+
+
+
+
+
+
+    require('settings/slide.php');
     require('settings/boost.php');
     require('settings/advanced.php');
 }

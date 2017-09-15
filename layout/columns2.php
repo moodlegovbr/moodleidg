@@ -54,6 +54,7 @@ $templatecontext = [
     'organization' => get_config('theme_moodleidg', 'organization'),
     'subordination' => get_config('theme_moodleidg', 'subordination'),
     'address' => get_config('theme_moodleidg', 'address'),
+
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

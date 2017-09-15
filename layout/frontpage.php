@@ -63,6 +63,13 @@ $templatecontext = [
     'address' => get_config('theme_moodleidg', 'address'),
     'news' => $news,
     'slides' => $slides,
+    'card1_title' => get_config('theme_moodleidg', 'card1_title'),
+    'card1_content' => get_config('theme_moodleidg', 'card1_content'),
+    'card2_title' => get_config('theme_moodleidg', 'card2_title'),
+    'card2_content' => get_config('theme_moodleidg', 'card2_content'),
+    'card3_title' => get_config('theme_moodleidg', 'card3_title'),
+    'card3_content' => get_config('theme_moodleidg', 'card3_content'),
+    'video' => get_config('theme_moodleidg', 'video')
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

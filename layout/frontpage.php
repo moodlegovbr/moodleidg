@@ -18,6 +18,17 @@ $bodyattributes = $OUTPUT->body_attributes($extraclasses);
 $blockshtml = $OUTPUT->blocks('side-pre');
 $hasblocks = strpos($blockshtml, 'data-block=') !== false;
 $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
+$string = get_config('theme_moodleidg', 'video');
+$stringvideo = str_replace('watch?v=','embed/', $string);
+$string2 = get_config('theme_moodleidg', 'saibamais1');
+$stringsaibamais1 = str_replace('http://','', $string2);
+$stringsaibamais1 = str_replace('https://','', $string2);
+$string3 = get_config('theme_moodleidg', 'saibamais2');
+$stringsaibamais2 = str_replace('http://','', $string3);
+$stringsaibamais2 = str_replace('https://','', $string3);
+$string4 = get_config('theme_moodleidg', 'saibamais3');
+$stringsaibamais3 = str_replace('http://','', $string4);
+$stringsaibamais3 = str_replace('https://','', $string4);
 
 // Feeds de Noticias
 $feed = file_get_contents(get_config('theme_moodleidg', 'rss'));
@@ -73,11 +84,14 @@ $templatecontext = [
     'slides' => $slides,
     'card1_title' => get_config('theme_moodleidg', 'card1_title'),
     'card1_content' => get_config('theme_moodleidg', 'card1_content'),
+    'saibamais1' => $stringsaibamais1,
     'card2_title' => get_config('theme_moodleidg', 'card2_title'),
     'card2_content' => get_config('theme_moodleidg', 'card2_content'),
+    'saibamais2' => $stringsaibamais2,
     'card3_title' => get_config('theme_moodleidg', 'card3_title'),
     'card3_content' => get_config('theme_moodleidg', 'card3_content'),
-    'video' => get_config('theme_moodleidg', 'video')
+    'saibamais3' => $stringsaibamais3,
+    'video' => $stringvideo,
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

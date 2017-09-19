@@ -49,7 +49,7 @@
     }
 }}
 {{{ output.doctype }}}
-<html {{{ output.htmlattributes }}}>
+<html {{{ output.htmlattributes }}} xmlns="http://www.w3.org/1999/html">
 <head>
     <title>{{{ output.page_title }}}</title>
     <link rel="shortcut icon" href="{{{ output.favicon }}}"/>
@@ -91,7 +91,7 @@
                             {{>theme_moodleidg/news_featured}}
                         </div>
                         <div id="videoplayer" class="col-md-5 pull-right">
-                            <pre id="myCode"></pre>
+                            <iframe width="560" height="315" src={{{video}}} frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>

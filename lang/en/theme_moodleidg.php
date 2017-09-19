@@ -74,6 +74,10 @@ $string['card1_content'] = 'Conteudo do primeiro card';
 
 $string['card1_content_desc'] = 'Conteudo que vai aparecer no primeiro card na pagina inicial do site';
 
+$string['saibamais1'] = 'Link do primeiro card';
+
+$string['saibamais1_desc'] = 'Link que o usuario será redirecionado quando clicar no saiba mais do primeiro card';
+
 $string['card2_title'] = 'Titulo do segundo card';
 
 $string['card2_title_desc'] ='Titulo que vai aparecer no segundo card na pagina inicial do site';
@@ -81,6 +85,10 @@ $string['card2_title_desc'] ='Titulo que vai aparecer no segundo card na pagina 
 $string['card2_content'] = 'Conteudo do segundo card';
 
 $string['card2_content_desc'] = 'Conteudo que vai aparecer no segundo card na pagina inicial do site';
+
+$string['saibamais2'] = 'Link do segundo card';
+
+$string['saibamais2_desc'] = 'Link que o usuario será redirecionado quando clicar no saiba mais do segundo card';
 
 $string['card3_title'] = 'Titulo do terceiro card';
 
@@ -90,6 +98,10 @@ $string['card3_content'] = 'Conteudo do terceiro card';
 
 $string['card3_content_desc'] = 'Conteudo que vai aparecer no terceiro card na pagina inicial do site';
 
+$string['saibamais3'] = 'Link do terceiro card';
+
+$string['saibamais3_desc'] = 'Link que o usuario será redirecionado quando clicar no saiba mais do terceiro card';
+
 $string['video'] = 'Video';
 
-$string['video_desc'] = 'Video que vai aparecer na pagina inicial do site';
+$string['video_desc'] = 'Coloque um link do youtube Ex: https://www.youtube.com/watch?v=0DpK6qDA0pk ';

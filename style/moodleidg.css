@@ -78,7 +78,10 @@ footer address p {
   min-height: 0;
 }
 #videoplayer {
-  max-width: 32.4%;
+  width: 32%;
+}
+#videoplayer iframe {
+  width: 103%;
 }
 #news_featured {
   width: 66.2%;

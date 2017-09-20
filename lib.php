@@ -37,7 +37,7 @@ function theme_moodleidg_get_main_scss_content($theme) {
     return $scss;
 }
 
-function theme_photo_update_settings_images($settingname) {
+/*function theme_photo_update_settings_images($settingname) {
     global $CFG;
 
     // The setting name that was updated comes as a string like 's_theme_photo_loginbackgroundimage'.
@@ -84,3 +84,4 @@ function theme_photo_update_settings_images($settingname) {
     // Reset theme caches.
     theme_reset_all_caches();
 }
+*/

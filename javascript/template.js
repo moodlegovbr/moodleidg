@@ -224,7 +224,7 @@ function delaySocialItems()
 
 
 //funcao de controle de player de audio
-function playAudio(element, urls, formats, basePath)
+/*function playAudio(element, urls, formats, basePath)
 {
     var audio  = document.createElement("audio"),
         canPlayMP3 = (typeof audio.canPlayType === "function" && audio.canPlayType("audio/mpeg") !== "");
@@ -264,6 +264,7 @@ function playAudio(element, urls, formats, basePath)
 }
 //fim funcao de controle de player de audio
 //funcao para controle de itens de videos, do listagem-box02-videos
+*/
 function setModuleBox02clicks()
 {
     jQuery('.module-box-02-videos .video-list .link-video-item').click(function(){

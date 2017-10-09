@@ -87,3 +87,15 @@ footer address p {
   width: 66.2%;
   min-height: 363px;
 }
+.navigation button.btn:after {
+  content: '\25BC';
+  /*icone baixo */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.navigation button.btn[aria-expanded=true]:after {
+  content: "\25B2";
+  /*icone cima */
+}

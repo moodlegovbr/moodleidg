@@ -40,7 +40,7 @@ try {
         $news['item'][] = (array)$value;
     }
     $news['featured'] = $news['item'][0];
-    $news['item'] = array_slice($news['item'], 1, 3);
+    $news['item'] = array_slice($news['item'], 0, 5);
 
 } catch (Exception $e) {
     $xml = false;
@@ -81,6 +81,8 @@ $templatecontext = [
     'subordination' => get_config('theme_moodleidg', 'subordination'),
     'address' => get_config('theme_moodleidg', 'address'),
     'news' => $news,
+    'message_title' => get_config('theme_moodleidg', 'message_title'),
+    'message_content' => get_config('theme_moodleidg', 'message_content'),
     'slides' => $slides,
     'card1_title' => get_config('theme_moodleidg', 'card1_title'),
     'card1_content' => get_config('theme_moodleidg', 'card1_content'),

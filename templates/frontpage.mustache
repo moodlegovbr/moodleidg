@@ -83,10 +83,11 @@
                 </div>
 
                 <div class="module ">
+                    <div class="outstanding-header">
+                    <h2 class="outstanding-title">Educação à Distância</h2>
+                </div>
                     <div class="clearfix card card-block">
-                        <div class="outstanding-header">
-                            <h2 class="outstanding-title">Educação à Distância</h2>
-                        </div>
+
                         <div id="news_featured" class="col-md-5">
                             {{>theme_moodleidg/news_featured}}
                         </div>
@@ -94,13 +95,15 @@
                             <iframe width="560" height="315" src={{{video}}} frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
+                    <div class="outstanding-header col-md-8">
+                        <h2 class="outstanding-title">Cursos</h2>
+                    </div>
                 </div>
 
                 <div id="page-content" class="row">
-
                     <div id="region-main-box" class="col-xs-12 col-md-8">
-                        <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
 
+                        <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
                             <div class="card card-block">
                                 {{#hasregionmainsettingsmenu}}
                                     <div class="region_main_settings_menu_proxy"></div>
@@ -110,6 +113,7 @@
                                 {{{ output.course_content_footer }}}
                             </div>
                         </section>
+
                         {{#hasblocks}}
                             <section data-region="blocks-column" class="hidden-print">
                                 {{{ sidepreblocks }}}
@@ -132,12 +136,11 @@
 
         {{> theme_boost/nav-drawer }}
     </main>
-</div>
-<div class="layout">
-    <footer>
-        <div class="footer-atalhos">
-            <div class="container">
-                <div class="pull-right voltar-ao-topo">
+
+                    <footer>
+                        <div class="footer-atalhos">
+                            <div class="container">
+                                <div class="pull-right voltar-ao-topo">
                     <a href="#layout"><i accesskey="8" class="fa fa-chevron-up"></i>&nbsp;Voltar para o topo</a>
                 </div>
             </div>

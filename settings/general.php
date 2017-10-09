@@ -38,4 +38,17 @@ $setting = new admin_setting_configtext('theme_moodleidg/rss', get_string('rss',
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
+//Message.
+$setting = new admin_setting_configtext('theme_moodleidg/message_title', get_string('message_title',
+    'theme_moodleidg'), get_string('message_title_desc', 'theme_moodleidg'), '',
+    PARAM_RAW);
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
+
+$setting = new admin_setting_confightmleditor('theme_moodleidg/message_content', get_string('message_content',
+    'theme_moodleidg'), get_string('message_content_desc', 'theme_moodleidg'), '',
+    PARAM_RAW);
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
+
 $settings->add($page);

@@ -42,7 +42,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         global $SITE, $PAGE;
         $output = parent::standard_head_html();
 
-        var_dump($PAGE->pagelayout);
+        // var_dump($PAGE->pagelayout);
         // exit();
 
         if ($PAGE->pagelayout == 'frontpage') {

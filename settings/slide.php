@@ -105,14 +105,14 @@ $page->add($setting);
 $numberofslides = get_config('theme_moodleidg', 'numberofslides');
 for ($i = 1; $i <= $numberofslides; $i++) {
     // This is the descriptor for the slide.
-    $name = 'theme_moodleidg/slide'.$i.'info';
+    $name = 'theme_moodleidg/slide_info_'.$i;
     $heading = get_string('slideno', 'theme_moodleidg', array('slide' => $i));
     $information = get_string('slidenodesc', 'theme_moodleidg', array('slide' => $i));
     $setting = new admin_setting_heading($name, $heading, $information);
     $page->add($setting);
 
     // Title.
-    $name = 'theme_moodleidg/slide'.$i;
+    $name = 'theme_moodleidg/slide_'.$i;
     $title = get_string('slidetitle', 'theme_moodleidg');
     $description = get_string('slidetitledesc', 'theme_moodleidg');
     $default = '';
@@ -121,7 +121,7 @@ for ($i = 1; $i <= $numberofslides; $i++) {
     $page->add($setting);
 
     // Image.
-    $name = 'theme_moodleidg/slide'.$i.'image';
+    $name = 'theme_moodleidg/slide_image_'.$i;
     $title = get_string('slideimage', 'theme_moodleidg');
     $description = get_string('slideimagedesc', 'theme_moodleidg');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'slide'.$i.'image');
@@ -129,7 +129,7 @@ for ($i = 1; $i <= $numberofslides; $i++) {
     $page->add($setting);
 
     // Caption text.
-    $name = 'theme_moodleidg/slide'.$i.'caption';
+    $name = 'theme_moodleidg/slide_caption_'.$i;
     $title = get_string('slidecaption', 'theme_moodleidg');
     $description = get_string('slidecaptiondesc', 'theme_moodleidg');
     $default = '';
@@ -138,7 +138,7 @@ for ($i = 1; $i <= $numberofslides; $i++) {
     $page->add($setting);
 
     // URL.
-    $name = 'theme_moodleidg/slide'.$i.'url';
+    $name = 'theme_moodleidg/slide_url_'.$i;
     $title = get_string('slideurl', 'theme_moodleidg');
     $description = get_string('slideurldesc', 'theme_moodleidg');
     $default = '';
@@ -147,7 +147,7 @@ for ($i = 1; $i <= $numberofslides; $i++) {
     $page->add($setting);
 
     // URL target.
-    $name = 'theme_moodleidg/slide'.$i.'target';
+    $name = 'theme_moodleidg/slide_target_'.$i;
     $title = get_string('slideurltarget', 'theme_moodleidg');
     $description = get_string('slideurltargetdesc', 'theme_moodleidg');
     $target1 = get_string('slideurltargetself', 'theme_moodleidg');

@@ -38,4 +38,11 @@ $setting = new admin_setting_configtext('theme_moodleidg/rss', get_string('rss',
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
+// Fluid.
+$setting = new admin_setting_configcheckbox('theme_moodleidg/fluid', get_string('fluid',
+    'theme_moodleidg'), get_string('fluid_desc', 'theme_moodleidg'), '',
+    PARAM_RAW);
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
+
 $settings->add($page);

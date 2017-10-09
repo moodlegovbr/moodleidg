@@ -35,8 +35,10 @@ $(document).ready(function () {
 
     // Alto contrast
     $('a.toggle-contraste').click(function () {
-        if (!$('#layout').hasClass('contraste')) {
+        if (!$('div.layout').hasClass('contraste')) {
             $('div.layout').addClass('contraste');
+            $('#menu-nav').removeClass('navbar-light bg-faded');
+            $('#menu-nav').addClass('navbar-dark bg-dark');
             // layout_classes = $.cookie('layout_classes');
             // if( layout_classes != 'undefined' )
             //     layout_classes = layout_classes + ' contraste';
@@ -44,15 +46,15 @@ $(document).ready(function () {
             //    layout_classes = 'contraste';
             // $.cookie('layout_classes', layout_classes );
         } else {
-            $('#layout').removeClass('contraste');
-            layout_classes = $.cookie('layout_classes');
-            layout_classes = layout_classes.replace('contraste', '');
+            $('div.layout').removeClass('contraste');
+            $('#menu-nav').addClass('navbar-light bg-faded');
+            $('#menu-nav').removeClass('navbar-dark bg-dark');
+            /* layout_classes = $.cookie('layout_classes');
+            layout_classes = layout_classes.replace('contraste', ''); */
             // $.cookie('layout_classes', layout_classes );
         }
     });
 
     //fim acao botao de alto contraste
-
-
 
 });

@@ -40,6 +40,9 @@ $bodyattributes = $OUTPUT->body_attributes($extraclasses);
 $blockshtml = $OUTPUT->blocks('side-pre');
 $hasblocks = strpos($blockshtml, 'data-block=') !== false;
 $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
+
+$container = get_config('theme_moodleidg', 'fluid')?'container-fluid':'container';
+
 $templatecontext = [
     'fullname' => format_string($SITE->fullname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'shortname' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
@@ -54,6 +57,8 @@ $templatecontext = [
     'organization' => get_config('theme_moodleidg', 'organization'),
     'subordination' => get_config('theme_moodleidg', 'subordination'),
     'address' => get_config('theme_moodleidg', 'address'),
+
+    'container' => $container
 
 ];
 

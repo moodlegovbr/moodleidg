@@ -37,7 +37,7 @@ function theme_moodleidg_get_main_scss_content($theme) {
     return $scss;
 }
 
-function theme_photo_update_settings_images($settingname) {
+/*function theme_photo_update_settings_images($settingname) {
     global $CFG;
 
     // The setting name that was updated comes as a string like 's_theme_photo_loginbackgroundimage'.
@@ -64,13 +64,13 @@ function theme_photo_update_settings_images($settingname) {
     if ($file = $fs->get_file_by_hash(sha1($fullpath))) {
         // We got the stored file - copy it to dataroot.
         // This location matches the searched for location in theme_config::resolve_image_location.
-        $pathname = $CFG->dataroot . '/pix_plugins/theme/moodleidg/' . $settingname . '.' . $extension;
+        $pathname = $CFG->dirroot . '/theme/moodleidg/pix/images/' . $settingname . '.' . $extension;
 
         // This pattern matches any previous files with maybe different file extensions.
-        $pathpattern = $CFG->dataroot . '/pix_plugins/theme/moodleidg/' . $settingname . '.*';
+        $pathpattern = $CFG->dirroot . '/theme/moodleidg/pix/images/' . $settingname . '.*';
 
         // Make sure this dir exists.
-        @mkdir($CFG->dataroot . '/pix_plugins/theme/moodleidg/', $CFG->directorypermissions, true);
+        @mkdir($CFG->dirroot . '/theme/moodleidg/pix/images/', $CFG->directorypermissions, true);
 
         // Delete any existing files for this setting.
         foreach (glob($pathpattern) as $filename) {
@@ -84,3 +84,4 @@ function theme_photo_update_settings_images($settingname) {
     // Reset theme caches.
     theme_reset_all_caches();
 }
+*/

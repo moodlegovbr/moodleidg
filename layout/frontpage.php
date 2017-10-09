@@ -51,17 +51,25 @@ try {
 $slides['numerosslides'] = get_config('theme_moodleidg', 'numberofslides');
 
 for ($i = 1; $i <= $slides['numerosslides']; $i++) {
+
+   /* $settingname = 's_theme_moodleidg_slide'.$i.'image';
+    $parts = explode('_', $settingname);
+    $settingname = end($parts);
+    $extension = substr($filename, strrpos($filename, '.') + 1); */
+
     $slides['images'][] = [
         'id' => $i-1,
         'info' => get_config('theme_moodleidg',  'slide'.$i.'info'),
         'titulo' => get_config('theme_moodleidg',  'slide'.$i),
-        'img'=> $OUTPUT->pix_url(get_config('theme_moodleidg','slide'.$i.'image')),
+        'img'=> $OUTPUT->pix_url('images/slide-image-'.$i, 'theme_moodleidg'),
         //'img' => $OUTPUT->pix_url('Bannerteste/banner_teste-01', 'theme_moodleidg'),
         'url' => get_config('theme_moodleidg',  'slide'.$i.'url'),
         'caption' => get_config('theme_moodleidg', 'slide'.$i.'caption'),
         'active' => $i==1?'active':''
     ];
 }
+
+$container = get_config('theme_moodleidg', 'fluid')?'container-fluid':'container';
 //fimslide
 
 // .fim do Feeds de Noticias
@@ -92,9 +100,11 @@ $templatecontext = [
     'card3_content' => get_config('theme_moodleidg', 'card3_content'),
     'saibamais3' => $stringsaibamais3,
     'video' => $stringvideo,
+    'container' => $container
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;
+
 $PAGE->requires->jquery();
 // $PAGE->requires->js('/theme/moodleidg/javascript/jquery.cookie.js'); // precisa de atualização
 // $PAGE->requires->js('/theme/moodleidg/javascript/template.js'); // precisa de atualização

@@ -87,3 +87,91 @@ footer address p {
   width: 66.2%;
   min-height: 363px;
 }
+#nav-drawer nav a.list-group-item:first-child {
+  border-top: 3px solid #0a5517;
+  /*padding: 12px 5px 5px 10px;
+  /*height: 32px;*/
+  background: #eeeff2;
+  text-transform: uppercase;
+  font-size: .85em;
+  line-height: 1em;
+  color: #0a5517;
+  font-weight: bold;
+}
+#nav-drawer nav a.font-weight-bold {
+  background: #eeefff url("../img/menu-ativo.gif") no-repeat 10px 14px;
+  border-top: 2px solid #0a5517;
+  border-bottom: 2px solid #0a5517;
+  /* padding-left: 0;
+   padding-right: 0;
+  padding-bottom: 0; */
+}
+/* CONTRASTE */
+.contraste .card,
+.contraste #page-enrol-users #filterform,
+.contraste .que .history,
+.contraste .userprofile .profile_tree section,
+.contraste .groupinfobox,
+.contraste .forumpost,
+.contraste .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-right,
+.contraste .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-bottom,
+.contraste .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .chat-message.course-theme,
+.contraste .well {
+  background-color: #0d0d0d;
+  border-bottom-color: #565656;
+  color: white;
+}
+.contraste .courses .coursebox.even,
+.contraste .courses .coursebox:hover {
+  background-color: #454649;
+}
+.contraste .table-striped tbody tr:nth-of-type(odd),
+.contraste table.collection tbody tr:nth-of-type(odd),
+.contraste table#explaincaps tbody tr:nth-of-type(odd),
+.contraste table#defineroletable tbody tr:nth-of-type(odd),
+.contraste table.grading-report tbody tr:nth-of-type(odd),
+.contraste table#listdirectories tbody tr:nth-of-type(odd),
+.contraste table.rolecaps tbody tr:nth-of-type(odd),
+.contraste table.userenrolment tbody tr:nth-of-type(odd),
+.contraste form#movecourses table tbody tr:nth-of-type(odd),
+.contraste #page-admin-course-index .editcourse tbody tr:nth-of-type(odd),
+.contraste .forumheaderlist tbody tr:nth-of-type(odd),
+.contraste table.flexible tbody tr:nth-of-type(odd),
+.contraste .generaltable tbody tr:nth-of-type(odd) {
+  background-color: #3e3e3e;
+}
+.contraste .table th,
+.contraste table.collection th,
+.contraste table.flexible th,
+.contraste .generaltable th,
+.contraste .table td,
+.contraste table.collection td,
+.contraste table.flexible td,
+.contraste .generaltable td {
+  border-top: 1px solid #616161;
+}
+.contraste .table-hover tbody tr:hover,
+.contraste table.grading-report tbody tr:hover,
+.contraste .forumheaderlist tbody tr:hover,
+.contraste .generaltable tbody tr:hover,
+.contraste table.flexible tbody tr:hover,
+.contraste .category_subcategories tbody tr:hover,
+.contraste table#modules tbody tr:hover,
+.contraste table#permissions tbody tr:hover {
+  background-color: #636565;
+}
+.contraste .bg-dark {
+  background-color: black;
+}
+.contraste .dropdown-menu,
+.contraste #nav-drawer nav a {
+  background-color: black;
+}
+.contraste #nav-drawer nav a.font-weight-bold {
+  background-color: #3a3a3e;
+}
+.contraste #nav-drawer nav a.list-group-item:first-child {
+  background-color: black;
+  color: white;
+}
+/* FIM CONTRASTE*/

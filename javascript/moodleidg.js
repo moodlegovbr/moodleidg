@@ -52,7 +52,4 @@ $(document).ready(function () {
     });
 
     //fim acao botao de alto contraste
-
-
-
 });

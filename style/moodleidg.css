@@ -170,8 +170,4 @@ footer address p {
 .contraste #nav-drawer nav a.font-weight-bold {
   background-color: #3a3a3e;
 }
-.contraste #nav-drawer nav a.list-group-item:first-child {
-  background-color: black;
-  color: white;
-}
 /* FIM CONTRASTE*/

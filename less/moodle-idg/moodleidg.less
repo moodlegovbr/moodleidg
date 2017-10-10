@@ -106,16 +106,14 @@ footer {
   }
 }
 
-#videoplayer{
+#videoplayer {
   width: 32%;
   iframe {
     width: 103%;
   }
 }
 
-
-
-#news_featured{
+#news_featured {
   width: 66.2%;
   min-height: 363px;
 }
@@ -183,3 +181,17 @@ footer {
 }
 
 /* FIM CONTRASTE*/
+
+.navigation {
+  button.btn:after {
+    content: '\25BC'; /*icone baixo */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+
+  button.btn[aria-expanded=true]:after {
+    content: "\25B2"; /*icone cima */
+  }
+}

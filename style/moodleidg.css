@@ -171,3 +171,15 @@ footer address p {
   background-color: #3a3a3e;
 }
 /* FIM CONTRASTE*/
+.navigation button.btn:after {
+  content: '\25BC';
+  /*icone baixo */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.navigation button.btn[aria-expanded=true]:after {
+  content: "\25B2";
+  /*icone cima */
+}

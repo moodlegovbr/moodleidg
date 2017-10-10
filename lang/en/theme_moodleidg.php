@@ -66,6 +66,14 @@ $string['rss'] = 'Sindicalização';
 
 $string['rss_desc'] = 'Configurações de uma fonte de notícias';
 
+$string['message_title'] = 'Titulo da mensagem em destaque';
+
+$string['message_title_desc'] = 'Titulo da mensagem em destaque na pagina inicial do site';
+
+$string['message_content'] = 'Conteudo da mensagem em destaque';
+
+$string['message_content_desc'] = 'Conteudo da mensagem em destaque na pagina inicial do site';
+
 $string['card1_title'] = 'Titulo do primeiro card';
 
 $string['card1_title_desc'] = 'Titulo que vai aparecer no primeiro card na pagina inicial do site';

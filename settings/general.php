@@ -25,8 +25,15 @@ $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
 // Address.
-$setting = new admin_setting_confightmleditor('theme_moodleidg/address', get_string('address',
+$setting = new admin_setting_configtext('theme_moodleidg/address', get_string('address',
     'theme_moodleidg'), get_string('address_desc', 'theme_moodleidg'), '',
+    PARAM_RAW);
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
+
+// Rodapé Manual.
+$setting = new admin_setting_confightmleditor('theme_moodleidg/addressm', get_string('addressm',
+    'theme_moodleidg'), get_string('addressm_desc', 'theme_moodleidg'), '',
     PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
@@ -41,6 +48,26 @@ $page->add($setting);
 // Fluid.
 $setting = new admin_setting_configcheckbox('theme_moodleidg/fluid', get_string('fluid',
     'theme_moodleidg'), get_string('fluid_desc', 'theme_moodleidg'), '',
+    PARAM_RAW);
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
+
+//Message.
+$setting = new admin_setting_configtext('theme_moodleidg/message_title', get_string('message_title',
+    'theme_moodleidg'), get_string('message_title_desc', 'theme_moodleidg'), '',
+    PARAM_RAW);
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
+
+$setting = new admin_setting_confightmleditor('theme_moodleidg/message_content', get_string('message_content',
+    'theme_moodleidg'), get_string('message_content_desc', 'theme_moodleidg'), '',
+    PARAM_RAW);
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
+
+// Acessibilidade.
+$setting = new admin_setting_confightmleditor('theme_moodleidg/acessibilidade', get_string('acessibilidade',
+    'theme_moodleidg'), get_string('acessibilidade_desc', 'theme_moodleidg'), '',
     PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);

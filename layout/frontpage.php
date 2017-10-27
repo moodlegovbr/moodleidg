@@ -47,6 +47,16 @@ try {
     $news = null;
 }
 
+// Rodapé
+$polos = array();
+$rodape = file_get_contents(get_config('theme_moodleidg', 'address'));
+$foot = json_decode($rodape);
+foreach ($foot as $linha){
+    if ($tmp++ >6) {
+        $polos[]['info'] = $linha->Info;
+    }
+}
+
 //slide
 $slides['numerosslides'] = get_config('theme_moodleidg', 'numberofslides');
 
@@ -87,7 +97,7 @@ $templatecontext = [
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
     'organization' => get_config('theme_moodleidg', 'organization'),
     'subordination' => get_config('theme_moodleidg', 'subordination'),
-    'address' => get_config('theme_moodleidg', 'address'),
+    'addressm' => get_config('theme_moodleidg', 'addressm'),
     'news' => $news,
     'message_title' => get_config('theme_moodleidg', 'message_title'),
     'message_content' => get_config('theme_moodleidg', 'message_content'),
@@ -102,7 +112,8 @@ $templatecontext = [
     'card3_content' => get_config('theme_moodleidg', 'card3_content'),
     'saibamais3' => $stringsaibamais3,
     'video' => $stringvideo,
-    'container' => $container
+    'container' => $container,
+    'polos' => $polos
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

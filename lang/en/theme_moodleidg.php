@@ -58,7 +58,11 @@ $string['subordination_desc'] = 'Ministério ao qual faz parte.';
 
 $string['address'] = 'Endereço';
 
-$string['address_desc'] = 'Informe o endereço que você deseja colocar no rodapé.';
+$string['address_desc'] = 'json do endereço que você deseja colocar no rodapé.';
+
+$string['addressm'] = 'Rodapé Manual';
+
+$string['addressm_desc'] = 'Digite alguma coisa que você deseja colocar no rodapé.';
 
 $string['boostset'] = 'Configuração do Tema';
 
@@ -109,3 +113,6 @@ $string['video_desc'] = 'Coloque um link do youtube Ex: https://www.youtube.com/
 
 $string['fluid'] = 'Layout Fluído';
 $string['fluid_desc'] = 'Esta opção ativa o layout fluído que o padrão do tema Boost do Moodle 3';
+
+$string['acessibilidade'] = 'Acessibilidade';
+$string['acessibilidade_desc'] = 'Conteúdo da página de acessibilidade.';

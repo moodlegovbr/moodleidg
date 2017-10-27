@@ -43,6 +43,16 @@ $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
 
 $container = get_config('theme_moodleidg', 'fluid')?'container-fluid':'container';
 
+// Rodapé
+$polos = array();
+$rodape = file_get_contents(get_config('theme_moodleidg', 'address'));
+$foot = json_decode($rodape);
+foreach ($foot as $linha){
+    if ($tmp++ >6) {
+        $polos[]['info'] = $linha->Info;
+    }
+}
+
 $templatecontext = [
     'fullname' => format_string($SITE->fullname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'shortname' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
@@ -56,8 +66,8 @@ $templatecontext = [
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
     'organization' => get_config('theme_moodleidg', 'organization'),
     'subordination' => get_config('theme_moodleidg', 'subordination'),
-    'address' => get_config('theme_moodleidg', 'address'),
-
+    'addressm' => get_config('theme_moodleidg', 'addressm'),
+    'polos' => $polos,
     'container' => $container
 
 ];

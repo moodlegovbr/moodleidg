@@ -18,7 +18,6 @@ $PAGE->set_url($thispageurl, $thispageurl->params());
 $PAGE->set_docs_path('');
 $PAGE->set_pagelayout('standard');
 
-
 echo $OUTPUT->header();
 echo get_config('theme_moodleidg', 'acessibilidade');
 echo $OUTPUT->footer();

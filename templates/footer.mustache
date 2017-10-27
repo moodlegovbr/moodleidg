@@ -12,71 +12,20 @@
         <div class="container">
             <div id="footer" class="row footer-menus">
                 <span class="hide">Início da navegação de rodapé</span>
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <nav class="row assuntos nav">
                         <address>
-                            {{{ address }}}
+                            {{{ addressm }}}
                         </address>
                     </nav>
-                    <div class="rodapesaida">
-                        <div id="course-footer">{{{ output.course_footer }}}</div>
-
-                        {{# output.page_doc_link }}
-                            <p class="helplink">{{{ output.page_doc_link }}}</p>
-                        {{/ output.page_doc_link }}
-
-                        {{{ output.login_info }}}
-                        {{{ output.home_link }}}
-                        <nav class="nav navbar-nav hidden-lg-up">
-                            {{# output.custom_menu_flat }}
-                                <ul class="list-unstyled p-t-1">
-                                    {{> theme_boost/custom_menu_footer }}
-                                </ul>
-                            {{/ output.custom_menu_flat }}
-                        </nav>
-                        {{{ output.standard_footer_html }}}
-                        {{{ output.standard_end_of_body_html }}}
-                    </div>
                 </div>
+                {{#polos}}
                 <div class="col-md-3">
                     <nav class="row servicos nav">
-                        <h2>Serviços</h2>
-                        <ul>
-                            <li class="portalservicos-item">
-                                <a title="Perguntas frequentes" href="#">Perguntas frequentes</a>
-                            </li>
-                            <li class="portalservicos-item">
-                                <a title="Contato" href="#">Contato</a>
-                            </li>
-                            <li class="portalservicos-item">
-                                <a title="Serviços da [Denominação]" href="#">Serviços da [Denominação]</a>
-                            </li>
-                            <li class="portalservicos-item">
-                                <a title="Dados abertos" href="#">Dados abertos</a>
-                            </li>
-                            <li class="portalservicos-item">
-                                <a title="Área de imprensa" href="#">Área de imprensa</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="row redes-sociais nav">
-                        <h2>Redes Sociais</h2>
-                        <ul>
-                            <li class="portalredes-item"><a title="Twitter" href="https://twitter.com/twitter">
-                                Twitter</a>
-                            </li>
-                            <li class="portalredes-item"><a title="YouTube" href="http://youtube.com/youtube">
-                                Youtube</a>
-                            </li>
-                            <li class="portalredes-item"><a title="Facebook" href="http://facebook.com/facebook">
-                                Facebook</a>
-                            </li>
-                            <li class="portalredes-item"><a title="Flickr" href="http://flickr.com/flickr">
-                                Flickr</a>
-                            </li>
-                        </ul>
+                        {{{info}}}
                     </nav>
                 </div>
+                {{/polos}}
                 <div class="col-md-3">
                     <nav class="row rss nav">
                         <h2>RSS</h2>
@@ -85,6 +34,8 @@
                             <li><a href="#" title="Assine">Assine</a></li>
                         </ul>
                     </nav>
+                </div>
+                <div class="col-md-3">
                     <nav class="row sobre nav">
                         <h2>Sobre o site</h2>
                         <ul>
@@ -95,7 +46,27 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="col-md-12">
+                <div class="rodapesaida">
+                    <div id="course-footer">{{{ output.course_footer }}}</div>
 
+                    {{# output.page_doc_link }}
+                        <p class="helplink">{{{ output.page_doc_link }}}</p>
+                    {{/ output.page_doc_link }}
+
+                    {{{ output.login_info }}}
+                    {{{ output.home_link }}}
+                    <nav class="nav navbar-nav hidden-lg-up">
+                        {{# output.custom_menu_flat }}
+                            <ul class="list-unstyled p-t-1">
+                                {{> theme_boost/custom_menu_footer }}
+                            </ul>
+                        {{/ output.custom_menu_flat }}
+                    </nav>
+                    {{{ output.standard_footer_html }}}
+                    {{{ output.standard_end_of_body_html }}}
+                </div>
+                </div>
                 <span class="hide">Fim da navegação de rodapé</span>
             </div>
             <!-- fim .row -->

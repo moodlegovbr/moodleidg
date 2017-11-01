@@ -88,6 +88,9 @@
                 </div>
                     <div class="clearfix card card-block">
 
+                        <div class="fb-post" href="{{url}}" data-width="{{tamanho}}" data-show-text="true">
+                            fkapkfaspokfpsaokfpasokfpaoskfopask
+                        </div>
                         <div id="news_featured" class="col-md-5">
                             {{>theme_moodleidg/news_featured}}
                         </div>
@@ -135,3 +138,7 @@
     </main>
 </div>
 {{> theme_moodleidg/footer }}
+
+{{#js}}
+    require(['theme_moodleidg/javascript/moodleidg.js])
+{{/js}}

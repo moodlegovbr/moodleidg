@@ -57,28 +57,6 @@ foreach ($foot as $linha){
     }
 }
 
-//slide
-$slides['numerosslides'] = get_config('theme_moodleidg', 'numberofslides');
-
-for ($i = 1; $i <= $slides['numerosslides']; $i++) {
-
-   /* $settingname = 's_theme_moodleidg_slide'.$i.'image';
-    $parts = explode('_', $settingname);
-    $settingname = end($parts);
-    $extension = substr($filename, strrpos($filename, '.') + 1); */
-
-    $slides['images'][] = [
-        'id' => $i-1,
-        'info' => get_config('theme_moodleidg',  'slide'.$i.'info'),
-        'titulo' => get_config('theme_moodleidg',  'slide'.$i),
-        'img'=> $OUTPUT->pix_url('images/slide-image-'.$i, 'theme_moodleidg'),
-        //'img' => $OUTPUT->pix_url('Bannerteste/banner_teste-01', 'theme_moodleidg'),
-        'url' => get_config('theme_moodleidg',  'slide'.$i.'url'),
-        'caption' => get_config('theme_moodleidg', 'slide'.$i.'caption'),
-        'active' => $i==1?'active':''
-    ];
-}
-
 $container = get_config('theme_moodleidg', 'fluid')?'container-fluid':'container';
 //fimslide
 
@@ -101,7 +79,6 @@ $templatecontext = [
     'news' => $news,
     'message_title' => get_config('theme_moodleidg', 'message_title'),
     'message_content' => get_config('theme_moodleidg', 'message_content'),
-    'slides' => $slides,
     'card1_title' => get_config('theme_moodleidg', 'card1_title'),
     'card1_content' => get_config('theme_moodleidg', 'card1_content'),
     'saibamais1' => $stringsaibamais1,
@@ -113,7 +90,9 @@ $templatecontext = [
     'saibamais3' => $stringsaibamais3,
     'video' => $stringvideo,
     'container' => $container,
-    'polos' => $polos
+    'polos' => $polos,
+    'url'=> get_config('theme_moodleidg','facebookurl'),
+    'tamanho' => get_config('theme_moodleidg','facebooktam')
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

@@ -13,4 +13,5 @@ if ($ADMIN->fulltree) {
     require('settings/cards_video.php');
     require('settings/boost.php');
     require('settings/advanced.php');
+    require('settings/redesocial.php');
 }

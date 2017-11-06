@@ -6,8 +6,6 @@
  * Time: 14:05
  */
 
-// Advanced Settings
-
 $page = new admin_settingpage('theme_moodleidg_redesocial', get_string('redesocial', 'theme_moodleidg'));
 ECHO ("Facebook");
 $setting = new admin_setting_configtext('theme_moodleidg/facebookurl',
@@ -17,6 +15,13 @@ $page->add($setting);
 
 $setting = new admin_setting_configtext('theme_moodleidg/facebooktam', get_string('facebooktam', 'theme_moodleidg'),
     get_string('facebooktam', 'theme_moodleidg'), '', PARAM_RAW);
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
+
+// Twitter
+$setting = new admin_setting_configtext('theme_moodleidg/twittertam', get_string('twittertam',
+    'theme_moodleidg'), get_string('twittertam_desc', 'theme_moodleidg'), '',
+    PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 

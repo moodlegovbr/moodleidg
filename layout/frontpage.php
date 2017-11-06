@@ -47,6 +47,10 @@ try {
     $news = null;
 }
 
+// twitter
+$str = get_config('theme_moodleidg', 'twittertam')."?ref_src=twsrc%5Etfw";
+
+
 // Rodapé
 $polos = array();
 $rodape = file_get_contents(get_config('theme_moodleidg', 'address'));
@@ -92,6 +96,7 @@ $templatecontext = [
     'container' => $container,
     'polos' => $polos,
     'url'=> get_config('theme_moodleidg','facebookurl'),
+    'twittertam' => $str,
     'tamanho' => get_config('theme_moodleidg','facebooktam')
 ];
 

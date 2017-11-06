@@ -116,3 +116,7 @@ $string['fluid_desc'] = 'Esta opção ativa o layout fluído que o padrão do te
 
 $string['acessibilidade'] = 'Acessibilidade';
 $string['acessibilidade_desc'] = 'Conteúdo da página de acessibilidade.';
+
+$string['twittertam'] = 'Twitter';
+$string['twittertam_desc'] = 'Link para a pagina do usuário desejado';
+

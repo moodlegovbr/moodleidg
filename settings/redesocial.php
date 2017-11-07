@@ -7,16 +7,13 @@
  */
 
 $page = new admin_settingpage('theme_moodleidg_redesocial', get_string('redesocial', 'theme_moodleidg'));
+
 //facebook frame
 $setting = new admin_setting_configtext('theme_moodleidg/facebookurl',
     get_string('facebookurl', 'theme_moodleidg'), get_string('URL', 'theme_moodleidg'), '', PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
-$setting = new admin_setting_configcheckbox_with_advanced('theme_moodleidg/facebookcabe', get_string('facebookcabe', 'theme_moodleidg'),
-    get_string('facebookcabe', 'theme_moodleidg'), '', PARAM_RAW);
-$setting->set_updatedcallback('theme_reset_all_caches');
-$page->add($setting);
 
 // Twitter
 $setting = new admin_setting_configtext('theme_moodleidg/twittertam', get_string('twittertam',

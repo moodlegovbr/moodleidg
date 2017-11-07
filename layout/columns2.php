@@ -48,9 +48,9 @@ $polos = array();
 $rodape = file_get_contents(get_config('theme_moodleidg', 'address'));
 $foot = json_decode($rodape);
 foreach ($foot as $linha){
-    if ($tmp++ >6) {
+//    if ($tmp++ >6) {
         $polos[]['info'] = $linha->Info;
-    }
+//    }
 }
 
 $templatecontext = [

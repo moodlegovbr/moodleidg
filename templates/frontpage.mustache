@@ -87,27 +87,6 @@
                         <h2 class="outstanding-title">Educação à Distância</h2>
                     </div>
                     <div class="clearfix card card-block">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#facebook">Facebook</a></li>
-                            <li><a data-toggle="tab" href="#twitter">Twitter</a></li>
-                        </ul>
-
-                        <div class="tab-content">
-                            <div class="tab-pane fade in active" id="facebook">
-                                <div class="fb-page" data-href="{{url}}" data-tabs="timeline" data-show-facepile="true" data-adapt-container-width="true">
-                                </div>
-                            </div>
-                            <div class="tab-pane fade " id="twitter" >
-                                <div style="width: 500px;height: 450px; padding: 0px;overflow:auto;">
-                                    <a class="twitter-timeline" href="{{twittertam}}">Tweets by TwitterDev</a>
-                                    <script async src="https://platform.twitter.com/widgets.js"
-                                            charset="utf-8"></script>
-                                </div>
-                            </div>
-
-                        </div>
-
-
                         <div id="news_featured" class="col-md-5">
                             {{>theme_moodleidg/news_featured}}
                         </div>
@@ -143,6 +122,34 @@
                     </div>
                     <div class="col-md-4">
                         {{>theme_moodleidg/news_front}}
+
+                        <div role="tabpanel">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#twitter" role="tab" aria-controls="twitter" aria-expanded="true">Twitter</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#facebook" role="tab" aria-controls="facebook" aria-expanded="true">Facebook</a>
+                                </li>
+                            </ul>
+
+                            <div class="pane tab-content">
+
+                                <div class="tab-pane active" id="twitter" role="tabpanel" aria-labelledby="twitter" aria-expanded="true">
+                                    <div style="width: 100%;height: 450px; padding: 0px;overflow:auto;">
+                                        <a class="twitter-timeline" href="{{twittertam}}">Tweets by TwitterDev</a>
+                                        <script async src="https://platform.twitter.com/widgets.js"
+                                                charset="utf-8"></script>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="facebook" role="tabpanel" aria-labelledby="facebook" aria-expanded="true">
+                                    <div class="fb-page" data-href="{{url}}" data-tabs="timeline" data-show-facepile="true" data-adapt-container-width="true"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -153,7 +160,3 @@
     </main>
 </div>
 {{> theme_moodleidg/footer }}
-
-{{#js}}
-    require(['theme_moodleidg/javascript/moodleidg.js])
-{{/js}}

@@ -187,3 +187,15 @@ footer address p {
   content: "\25B2";
   /*icone cima */
 }
+.fb-page,
+.fb-page span,
+.fb-page span iframe[style] {
+  width: 100% !important;
+}
+#menu-nav a,
+#menu-nav nav {
+  float: left;
+}
+#menu-nav a {
+  margin-right: 20px;
+}

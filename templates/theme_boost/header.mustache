@@ -110,17 +110,32 @@
                         <div class="pull-right">
                         <h2 class="hidden">Redes Sociais</h2>
                         <ul >
-                            <li class="portalredes-item"><a title="Twitter" href="{{{twitter}}}">
+                            {{#twitter}}
+                            <li class="portalredes-item">
+                                <a title="Twitter" href="{{twitter}}">
                                 <i class="fa fa-twitter-square"
                                    aria-hidden="true"></i></i>&nbsp;<span>Twitter</span></a>
                             </li>
-                            <li class="portalredes-item"><a title="YouTube" href="{{{youtube}}}">
+                            {{/twitter}}
+                            {{#youtube}}
+                            <li class="portalredes-item">
+                                <a title="YouTube" href="{{youtube}}">
                                 <i class="fa fa-youtube-square"
                                    aria-hidden="true"></i></i>&nbsp;<span>Youtube</span></a>
                             </li>
-                            <li class="portalredes-item"><a title="Facebook" href="{{{facebook}}}">
+                            {{/youtube}}
+                            {{#facebook}}
+                            <li class="portalredes-item">
+                                <a title="Facebook" href="{{facebook}}">
                                 <i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp;<span>Facebook</span></a>
                             </li>
+                            {{/facebook}}
+                            {{#instagram}}
+                            <li class="portalredes-item">
+                                <a title="Instagram" href="{{instagram}}">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;<span>Instagram</span></a>
+                            </li>
+                            {{/instagram}}
                         </ul>
                         </div>
                     </div>

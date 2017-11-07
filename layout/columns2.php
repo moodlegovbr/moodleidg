@@ -68,8 +68,11 @@ $templatecontext = [
     'subordination' => get_config('theme_moodleidg', 'subordination'),
     'addressm' => get_config('theme_moodleidg', 'addressm'),
     'polos' => $polos,
-    'container' => $container
-
+    'container' => $container,
+    'twitter' => get_config('theme_moodleidg','twitterurlicon'),
+    'facebook' => get_config('theme_moodleidg','facebookurlicon'),
+    'youtube' => get_config('theme_moodleidg','youtubeurlicon'),
+    'instagram' => get_config('theme_moodleidg','instagramurlicon')
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

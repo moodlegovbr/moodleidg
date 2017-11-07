@@ -84,24 +84,30 @@
 
                 <div class="module ">
                     <div class="outstanding-header">
-                    <h2 class="outstanding-title">Educação à Distância</h2>
-                </div>
+                        <h2 class="outstanding-title">Educação à Distância</h2>
+                    </div>
                     <div class="clearfix card card-block">
-                        <div class="fb-post" href="{{url}}" data-width="{{tamanho}}" data-show-text="true"></div>
-                        <div class="span4 module module-twitter-facebook">
-                            <div class="header tabs row-fluid">
-                                <h2 class="title active span6">Twitter</h2>
-                                <h2 class="title span6 hide">Facebook</h2>
-                            </div>
-                            <div class="pane">
-                                <div class="twitter-content">
-                                    <div style="position: static; visibility: visible; display: inline-block; width: 520px;height: 250px; padding: 0px;border: none; max-width: 100%;
-                                     min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;overflow:auto;">
-                                        <a class="twitter-timeline" href="{{twittertam}}">Tweets by TwitterDev</a>
-                                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                    </div>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#facebook">Facebook</a></li>
+                            <li><a data-toggle="tab" href="#twitter">Twitter</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="facebook">
+                                <div class="fb-page" data-href="{{url}}" data-tabs="timeline" data-show-facepile="true" data-adapt-container-width="true">
                                 </div>
                             </div>
+                            <div class="tab-pane fade " id="twitter" >
+                                <div style="width: 500px;height: 450px; padding: 0px;overflow:auto;">
+                                    <a class="twitter-timeline" href="{{twittertam}}">Tweets by TwitterDev</a>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                            charset="utf-8"></script>
+                                </div>
+                            </div>
+
+                        </div>
+
+
                         <div id="news_featured" class="col-md-5">
                             {{>theme_moodleidg/news_featured}}
                         </div>
@@ -110,9 +116,7 @@
                         </div>
                     </div>
                 </div>
-
                 <div id="page-content" class="row">
-
                     <div id="region-main-box" class="col-xs-12 col-md-8">
                         <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
 

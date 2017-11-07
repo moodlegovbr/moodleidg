@@ -97,7 +97,11 @@ $templatecontext = [
     'polos' => $polos,
     'url'=> get_config('theme_moodleidg','facebookurl'),
     'twittertam' => $str,
-    'tamanho' => get_config('theme_moodleidg','facebooktam')
+    'url'=> get_config('theme_moodleidg','facebookurl'),
+    'twitter' => get_config('theme_moodleidg','twitterurlicon'),
+    'facebook' => get_config('theme_moodleidg','facebookurlicon'),
+    'youtube' => get_config('theme_moodleidg','youtubeurlicon'),
+    'instagram' => get_config('theme_moodleidg','instagramurlicon')
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

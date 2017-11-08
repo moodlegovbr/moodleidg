@@ -1,34 +1,28 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-defined('MOODLE_INTERNAL') || die();
+/**
+ * A two column layout for the boost theme.
+ *
+ * @package   theme_boost
+ * @copyright 2016 Damyon Wiese
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
-user_preference_allow_ajax_update('drawer-open-nav', PARAM_ALPHA);
-require_once($CFG->libdir . '/behat/lib.php');
-
-if (isloggedin()) {
-    $navdraweropen = (get_user_preferences('drawer-open-nav', 'true') == 'true');
-} else {
-    $navdraweropen = false;
-}
-$extraclasses = [];
-if ($navdraweropen) {
-    $extraclasses[] = 'drawer-open-left';
-}
-$bodyattributes = $OUTPUT->body_attributes($extraclasses);
-$blockshtml = $OUTPUT->blocks('side-pre');
-$hasblocks = strpos($blockshtml, 'data-block=') !== false;
-$regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
-$string = get_config('theme_moodleidg', 'video');
-$stringvideo = str_replace('watch?v=','embed/', $string);
-$string2 = get_config('theme_moodleidg', 'saibamais1');
-$stringsaibamais1 = str_replace('http://','', $string2);
-$stringsaibamais1 = str_replace('https://','', $string2);
-$string3 = get_config('theme_moodleidg', 'saibamais2');
-$stringsaibamais2 = str_replace('http://','', $string3);
-$stringsaibamais2 = str_replace('https://','', $string3);
-$string4 = get_config('theme_moodleidg', 'saibamais3');
-$stringsaibamais3 = str_replace('http://','', $string4);
-$stringsaibamais3 = str_replace('https://','', $string4);
+include 'layout.inc.php';
 
 // Feeds de Noticias
 $feed = file_get_contents(get_config('theme_moodleidg', 'rss'));
@@ -47,19 +41,17 @@ try {
     $news = null;
 }
 
-// twitter
-$str = get_config('theme_moodleidg', 'twittertam')."?ref_src=twsrc%5Etfw";
-
-
-// Rodapé
-$polos = array();
-$rodape = file_get_contents(get_config('theme_moodleidg', 'address'));
-$foot = json_decode($rodape);
-foreach ($foot as $linha){
-//    if ($tmp++ >6) {
-        $polos[]['info'] = $linha->Info;
-//    }
-}
+$string = get_config('theme_moodleidg', 'video');
+$stringvideo = str_replace('watch?v=','embed/', $string);
+$string2 = get_config('theme_moodleidg', 'saibamais1');
+$stringsaibamais1 = str_replace('http://','', $string2);
+$stringsaibamais1 = str_replace('https://','', $string2);
+$string3 = get_config('theme_moodleidg', 'saibamais2');
+$stringsaibamais2 = str_replace('http://','', $string3);
+$stringsaibamais2 = str_replace('https://','', $string3);
+$string4 = get_config('theme_moodleidg', 'saibamais3');
+$stringsaibamais3 = str_replace('http://','', $string4);
+$stringsaibamais3 = str_replace('https://','', $string4);
 
 $container = get_config('theme_moodleidg', 'fluid')?'container-fluid':'container';
 //fimslide
@@ -96,19 +88,12 @@ $templatecontext = [
     'container' => $container,
     'polos' => $polos,
     'url'=> get_config('theme_moodleidg','facebookurl'),
-    'twittertam' => $str,
+    'twittertam' => get_config('theme_moodleidg', 'twittertam')."?ref_src=twsrc%5Etfw",
     'url'=> get_config('theme_moodleidg','facebookurl'),
     'twitter' => get_config('theme_moodleidg','twitterurlicon'),
     'facebook' => get_config('theme_moodleidg','facebookurlicon'),
     'youtube' => get_config('theme_moodleidg','youtubeurlicon'),
     'instagram' => get_config('theme_moodleidg','instagramurlicon')
 ];
-
-$templatecontext['flatnavigation'] = $PAGE->flatnav;
-
-$PAGE->requires->jquery();
-// $PAGE->requires->js('/theme/moodleidg/javascript/jquery.cookie.js'); // precisa de atualização
-// $PAGE->requires->js('/theme/moodleidg/javascript/template.js'); // precisa de atualização
-$PAGE->requires->js('/theme/moodleidg/javascript/moodleidg.js');
 
 echo $OUTPUT->render_from_template('theme_moodleidg/frontpage', $templatecontext);

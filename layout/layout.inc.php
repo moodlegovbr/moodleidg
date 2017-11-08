@@ -60,8 +60,6 @@ foreach ($foot as $linha){
 //    }
 }
 
-$templatecontext['flatnavigation'] = $PAGE->flatnav;
-
 $PAGE->requires->jquery();
 // $PAGE->requires->js('/theme/moodleidg/javascript/jquery.cookie.js'); // precisa de atualização
 // $PAGE->requires->js('/theme/moodleidg/javascript/template.js'); // precisa de atualização

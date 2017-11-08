@@ -96,4 +96,6 @@ $templatecontext = [
     'instagram' => get_config('theme_moodleidg','instagramurlicon')
 ];
 
+$templatecontext['flatnavigation'] = $PAGE->flatnav;
+
 echo $OUTPUT->render_from_template('theme_moodleidg/frontpage', $templatecontext);

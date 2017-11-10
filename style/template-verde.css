@@ -417,7 +417,7 @@ main #em-destaque a {
   text-transform: uppercase;
 }
 main #em-destaque h2 {
-  background: #717782 url('../img/em-destaque.png') no-repeat right center;
+  background: #717782 url([[pix:theme|em-destaque]]) no-repeat right center;
   color: #FFF;
   padding: 7px 0 7px 0;
   -webkit-border-radius: 5px 0 0 5px;
@@ -443,7 +443,7 @@ main #em-destaque ul {
 main #em-destaque li {
   display: block;
   float: left;
-  background: transparent url('../img/linha-cinza.gif') repeat-y right 0;
+  background: transparent url([[pix:theme|linha-cinza]]) repeat-y right 0;
 }
 main #em-destaque li:last-child {
   background: none;
@@ -1597,13 +1597,26 @@ main div.rastro-navegacao {
 main div.rastro-navegacao a:hover {
   text-decoration: underline;
 }
-#content.internas {
+#page-header .page-header-headings h1 {
+  color: #1A2A39;
+  font-size: 2.7em;
+  margin: 0 0 18px 0;
+  text-transform: none;
+  letter-spacing: -1px;
+}
+#page-header .page-header-headings h1 a {
+  color: #333;
+}
+#content.internas,
+#region-main {
   color: #000;
   /* Internas geral  */
   /* Categorias ao Final do texto - Padrão para todas as Páginas  */
 }
 #content.internas h1,
-#content.internas .documentFirstHeading {
+#region-main h1,
+#content.internas .documentFirstHeading,
+#region-main .documentFirstHeading {
   color: #1A2A39;
   font-size: 2.7em;
   margin: 0 0 18px 0;
@@ -1611,10 +1624,13 @@ main div.rastro-navegacao a:hover {
   letter-spacing: -1px;
 }
 #content.internas h1 a,
-#content.internas .documentFirstHeading a {
+#region-main h1 a,
+#content.internas .documentFirstHeading a,
+#region-main .documentFirstHeading a {
   color: #333;
 }
-#content.internas .secondaryHeading {
+#content.internas .secondaryHeading,
+#region-main .secondaryHeading {
   color: #1A2A39;
   font-size: 2.2em;
   line-height: 1.2em;
@@ -1622,10 +1638,14 @@ main div.rastro-navegacao a:hover {
   text-transform: none;
   letter-spacing: .4px;
 }
-#content.internas .secondaryHeading a {
+#content.internas .secondaryHeading a,
+#region-main .secondaryHeading a {
   color: #333;
 }
-#content.internas .borderHeading {
+#content.internas .borderHeading,
+#region-main .borderHeading,
+#content.internas h2,
+#region-main h2 {
   color: #1e68d0;
   font-size: 2em;
   text-transform: uppercase;
@@ -1634,16 +1654,22 @@ main div.rastro-navegacao a:hover {
   margin-bottom: 10px;
 }
 #content.internas h2,
+#region-main h2,
 #content.internas h3,
+#region-main h3,
 #content.internas h4,
+#region-main h4,
 #content.internas h5,
-#content.internas h6 {
+#region-main h5,
+#content.internas h6,
+#region-main h6 {
   font-size: 1.6em;
   font-weight: 700;
   margin-bottom: 0.8em;
   margin-top: 0.8em;
 }
-#content.internas .documentCategory {
+#content.internas .documentCategory,
+#region-main .documentCategory {
   display: block;
   color: #1e68d0;
   text-transform: uppercase;
@@ -1651,52 +1677,65 @@ main div.rastro-navegacao a:hover {
   font-size: 1.2em;
   margin-bottom: 25px;
 }
-#content.internas .content-header-options-1 {
+#content.internas .content-header-options-1,
+#region-main .content-header-options-1 {
   margin-bottom: 30px;
 }
 #content.internas .content-header-options-1 span strong,
-#content.internas .content-header-options-1 li strong {
+#region-main .content-header-options-1 span strong,
+#content.internas .content-header-options-1 li strong,
+#region-main .content-header-options-1 li strong {
   font-weight: normal;
 }
-#content.internas .content-header-options-1 .documentByLine {
+#content.internas .content-header-options-1 .documentByLine,
+#region-main .content-header-options-1 .documentByLine {
   color: #666;
   font-size: 0.75em;
 }
-#content.internas .content-header-options-1 .documentByLine ul {
+#content.internas .content-header-options-1 .documentByLine ul,
+#region-main .content-header-options-1 .documentByLine ul {
   color: #1e68d0;
   margin: 8px 0 0 0 !important;
   font-size: 1.1em;
 }
-#content.internas .content-header-options-1 .documentByLine ul li {
+#content.internas .content-header-options-1 .documentByLine ul li,
+#region-main .content-header-options-1 .documentByLine ul li {
   list-style: none !important;
   margin: 0 0 2px 0 !important;
   font-size: 1em !important;
 }
-#content.internas .content-header-options-1 .documentByLine ul li.documentAuthor {
+#content.internas .content-header-options-1 .documentByLine ul li.documentAuthor,
+#region-main .content-header-options-1 .documentByLine ul li.documentAuthor {
   font-weight: bold;
 }
-#content.internas .content-header-options-1 .documentByLine ul li.documentAuthor strong {
+#content.internas .content-header-options-1 .documentByLine ul li.documentAuthor strong,
+#region-main .content-header-options-1 .documentByLine ul li.documentAuthor strong {
   font-weight: bold;
 }
-#content.internas .content-header-options-1 .btns-social-like {
+#content.internas .content-header-options-1 .btns-social-like,
+#region-main .content-header-options-1 .btns-social-like {
   padding-top: 8px;
   border-left: 1px dotted #999999;
 }
 #content.internas .content-header-options-1 .btns-social-like .twitter,
-#content.internas .content-header-options-1 .btns-social-like .facebook {
+#region-main .content-header-options-1 .btns-social-like .twitter,
+#content.internas .content-header-options-1 .btns-social-like .facebook,
+#region-main .content-header-options-1 .btns-social-like .facebook {
   display: block;
   width: 102px;
   height: 30px;
   overflow: hidden;
 }
-#content.internas .content-header-options-1 .btns-social-like .googleplus {
+#content.internas .content-header-options-1 .btns-social-like .googleplus,
+#region-main .content-header-options-1 .btns-social-like .googleplus {
   display: block;
   width: 80px;
   height: 30px;
   overflow: hidden;
   margin-left: 10px;
 }
-#content.internas .subtitle {
+#content.internas .subtitle,
+#region-main .subtitle {
   border-bottom: 1px solid #e8e7e7;
   color: #1A2A39;
   font-family: Arial, Helvetica, sans-serif;
@@ -1705,10 +1744,12 @@ main div.rastro-navegacao a:hover {
   margin-top: 1.2em;
   padding-bottom: 1.539em;
 }
-#content.internas .subtitle p {
+#content.internas .subtitle p,
+#region-main .subtitle p {
   line-height: 1.3em;
 }
-#content.internas .description {
+#content.internas .description,
+#region-main .description {
   display: block;
   font-size: 1.1em;
   margin: 0 0 35px 0;
@@ -1717,32 +1758,38 @@ main div.rastro-navegacao a:hover {
   font-weight: bold;
   font-size: 1.18em;
 }
-#content.internas .description p {
+#content.internas .description p,
+#region-main .description p {
   line-height: 1.3em !important;
 }
-#content.internas p {
+#content.internas p,
+#region-main p {
   font-size: 1.0em !important;
   line-height: 1.75em;
 }
-#content.internas ul li {
+#content.internas ul li,
+#region-main ul li {
   display: list-item !important;
-  list-style: square outside !important;
+  /* list-style: square outside !important; */
   line-height: 1.5em !important;
   font-size: 0.9em;
   margin-bottom: 0.25em;
 }
-#content.internas ol li {
+#content.internas ol li,
+#region-main ol li {
   display: list-item !important;
   list-style: decimal outside !important;
   line-height: 1.5em !important;
   font-size: 0.9em;
   margin-bottom: 0.25em;
 }
-#content.internas .below-content {
+#content.internas .below-content,
+#region-main .below-content {
   margin-top: 2.5em;
   border-top: 4px solid #1A2A39;
 }
-#content.internas .below-content .line {
+#content.internas .below-content .line,
+#region-main .below-content .line {
   display: block;
   margin: 0;
   padding: 1em 0;
@@ -1752,13 +1799,16 @@ main div.rastro-navegacao a:hover {
   font-size: 0.8em;
   font-family: Arial, Helvetica, sans-serif;
 }
-#content.internas .below-content .line span {
+#content.internas .below-content .line span,
+#region-main .below-content .line span {
   display: inline-block;
   margin-left: 5px;
   line-height: 30px;
 }
 #content.internas .below-content .line a.link-categoria,
-#content.internas .below-content .line span.selectedTag {
+#region-main .below-content .line a.link-categoria,
+#content.internas .below-content .line span.selectedTag,
+#region-main .below-content .line span.selectedTag {
   margin: 0;
   padding: 4px 9px;
   border: 1px solid #cfcdcd;
@@ -1771,17 +1821,23 @@ main div.rastro-navegacao a:hover {
   color: #3a70d1;
 }
 #content.internas .below-content .line a.link-categoria:hover,
-#content.internas .below-content .line span.selectedTag:hover {
+#region-main .below-content .line a.link-categoria:hover,
+#content.internas .below-content .line span.selectedTag:hover,
+#region-main .below-content .line span.selectedTag:hover {
   background: #205C90;
   border-color: #205C90;
   color: #FFF;
 }
-#content.internas .below-content .content-links li {
+#content.internas .below-content .content-links li,
+#region-main .below-content .content-links li {
   font-size: 1.3em;
 }
 #content.internas blockquote,
+#region-main blockquote,
 #content.internas .lateralquote,
-#content.internas .pullquote {
+#region-main .lateralquote,
+#content.internas .pullquote,
+#region-main .pullquote {
   float: right;
   clear: right;
   border-bottom: 1px solid #717782;
@@ -1799,17 +1855,25 @@ main div.rastro-navegacao a:hover {
   padding: 1em 0 !important;
 }
 #content.internas blockquote p,
+#region-main blockquote p,
 #content.internas .lateralquote p,
+#region-main .lateralquote p,
 #content.internas .pullquote p,
+#region-main .pullquote p,
 #content.internas blockquote a,
+#region-main blockquote a,
 #content.internas .lateralquote a,
-#content.internas .pullquote a {
+#region-main .lateralquote a,
+#content.internas .pullquote a,
+#region-main .pullquote a {
   font-weight: bold;
 }
-#content.internas .tile-list-1 li.hide {
+#content.internas .tile-list-1 li.hide,
+#region-main .tile-list-1 li.hide {
   display: none !important;
 }
-#content.internas .tile-list-1 .tileItem {
+#content.internas .tile-list-1 .tileItem,
+#region-main .tile-list-1 .tileItem {
   border-bottom: 1px solid #e8e7e7;
   clear: both;
   font-size: 1em;
@@ -1818,56 +1882,67 @@ main div.rastro-navegacao a:hover {
   padding: 2em 0;
   position: relative;
 }
-#content.internas .tile-list-1 .tileItem .tileContent {
+#content.internas .tile-list-1 .tileItem .tileContent,
+#region-main .tile-list-1 .tileItem .tileContent {
   float: right;
   border-left: 1px dotted #cfcdcd;
   overflow: hidden;
   padding-left: 22px;
   margin-right: 15px;
 }
-#content.internas .tile-list-1 .tileItem .tileContent .subtitle {
+#content.internas .tile-list-1 .tileItem .tileContent .subtitle,
+#region-main .tile-list-1 .tileItem .tileContent .subtitle {
   border: none;
   margin: 0 !important;
   font-size: 0.83em;
   color: #3a70d1;
   text-transform: uppercase;
 }
-#content.internas .tile-list-1 .tileItem .tileContent .tileHeadline {
+#content.internas .tile-list-1 .tileItem .tileContent .tileHeadline,
+#region-main .tile-list-1 .tileItem .tileContent .tileHeadline {
   font-size: 1.1em;
   font-weight: bold;
   margin: 0 0 0.438em;
   padding: 0;
   line-height: 1.7em;
 }
-#content.internas .tile-list-1 .tileItem .tileContent .tileHeadline a {
+#content.internas .tile-list-1 .tileItem .tileContent .tileHeadline a,
+#region-main .tile-list-1 .tileItem .tileContent .tileHeadline a {
   color: #1A2A39;
 }
-#content.internas .tile-list-1 .tileItem .tileContent .tileHeadline a:hover {
+#content.internas .tile-list-1 .tileItem .tileContent .tileHeadline a:hover,
+#region-main .tile-list-1 .tileItem .tileContent .tileHeadline a:hover {
   text-decoration: underline;
 }
-#content.internas .tile-list-1 .tileItem .tileContent .description {
+#content.internas .tile-list-1 .tileItem .tileContent .description,
+#region-main .tile-list-1 .tileItem .tileContent .description {
   font-weight: normal;
   font-size: 1em;
   color: #000;
   line-height: 1.6em;
   margin-bottom: 18px;
 }
-#content.internas .tile-list-1 .tileItem .tileContent .keywords {
+#content.internas .tile-list-1 .tileItem .tileContent .keywords,
+#region-main .tile-list-1 .tileItem .tileContent .keywords {
   color: #596E7F;
   font-size: 0.9em;
   line-height: 1.1em;
 }
-#content.internas .tile-list-1 .tileItem .tileContent .keywords a {
+#content.internas .tile-list-1 .tileItem .tileContent .keywords a,
+#region-main .tile-list-1 .tileItem .tileContent .keywords a {
   color: #3a70d1;
 }
-#content.internas .tile-list-1 .tileItem .tileContent .keywords a:hover {
+#content.internas .tile-list-1 .tileItem .tileContent .keywords a:hover,
+#region-main .tile-list-1 .tileItem .tileContent .keywords a:hover {
   color: #000;
 }
-#content.internas .tile-list-1 .tileItem .tileContent .keywords p {
+#content.internas .tile-list-1 .tileItem .tileContent .keywords p,
+#region-main .tile-list-1 .tileItem .tileContent .keywords p {
   margin: 0 !important;
   line-height: 1.5em;
 }
-#content.internas .tile-list-1 .tileItem .tileImage {
+#content.internas .tile-list-1 .tileItem .tileImage,
+#region-main .tile-list-1 .tileItem .tileImage {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1876,143 +1951,189 @@ main div.rastro-navegacao a:hover {
   float: left;
   margin: 3px 6px 6px 0;
 }
-#content.internas .tile-list-1 .tileItem .tileInfo {
+#content.internas .tile-list-1 .tileItem .tileInfo,
+#region-main .tile-list-1 .tileItem .tileInfo {
   float: left;
   margin: 0;
 }
-#content.internas .tile-list-1 .tileItem .tileInfo ul {
+#content.internas .tile-list-1 .tileItem .tileInfo ul,
+#region-main .tile-list-1 .tileItem .tileInfo ul {
   margin: 0 0 0 10px;
 }
-#content.internas .tile-list-1 .tileItem .tileInfo ul li {
+#content.internas .tile-list-1 .tileItem .tileInfo ul li,
+#region-main .tile-list-1 .tileItem .tileInfo ul li {
   list-style: none !important;
   margin: 0 0 10px 0;
   color: #717782;
 }
-#content.internas .tile-list-1 .tileItem .tileInfo i {
+#content.internas .tile-list-1 .tileItem .tileInfo i,
+#region-main .tile-list-1 .tileItem .tileInfo i {
   color: #1b9501;
 }
-#content.internas .tile-list-1 .tileItem .tileInfo .icon-calendar {
+#content.internas .tile-list-1 .tileItem .tileInfo .icon-calendar,
+#region-main .tile-list-1 .tileItem .tileInfo .icon-calendar {
   font-size: 0.9em;
 }
-#content.internas .tile-list-1 .tileItem .tileInfo .icon-time {
+#content.internas .tile-list-1 .tileItem .tileInfo .icon-time,
+#region-main .tile-list-1 .tileItem .tileInfo .icon-time {
   font-size: 1.1em;
   margin-left: -2px;
 }
 #content.internas .tile-list-1 .tileItem .tileHeader h2,
+#region-main .tile-list-1 .tileItem .tileHeader h2,
 #content.internas .tile-list-1 .tileItem .tileHeader h3,
-#content.internas .tile-list-1 .tileItem .tileHeader h4 {
+#region-main .tile-list-1 .tileItem .tileHeader h3,
+#content.internas .tile-list-1 .tileItem .tileHeader h4,
+#region-main .tile-list-1 .tileItem .tileHeader h4 {
   font-size: 1.6em;
   font-weight: 700;
   margin-bottom: 0.1em;
   margin-top: 0em;
 }
 #content.internas .tile-list-1 .tileItem .tileHeader h2 a,
+#region-main .tile-list-1 .tileItem .tileHeader h2 a,
 #content.internas .tile-list-1 .tileItem .tileHeader h3 a,
-#content.internas .tile-list-1 .tileItem .tileHeader h4 a {
+#region-main .tile-list-1 .tileItem .tileHeader h3 a,
+#content.internas .tile-list-1 .tileItem .tileHeader h4 a,
+#region-main .tile-list-1 .tileItem .tileHeader h4 a {
   color: #000;
 }
 #content.internas .tile-list-1 .tileItem .tileHeader h2 a:hover,
+#region-main .tile-list-1 .tileItem .tileHeader h2 a:hover,
 #content.internas .tile-list-1 .tileItem .tileHeader h3 a:hover,
-#content.internas .tile-list-1 .tileItem .tileHeader h4 a:hover {
+#region-main .tile-list-1 .tileItem .tileHeader h3 a:hover,
+#content.internas .tile-list-1 .tileItem .tileHeader h4 a:hover,
+#region-main .tile-list-1 .tileItem .tileHeader h4 a:hover {
   text-decoration: underline;
 }
-#content.internas .tile-list-1 .items-leading .description {
+#content.internas .tile-list-1 .items-leading .description,
+#region-main .tile-list-1 .items-leading .description {
   font-size: 1.1em !important;
 }
-#content.internas .tile-list-1 .items-leading .keywords {
+#content.internas .tile-list-1 .items-leading .keywords,
+#region-main .tile-list-1 .items-leading .keywords {
   font-size: 0.8em !important;
 }
-#content.internas .tile-list-1 .items-leading .readmore {
+#content.internas .tile-list-1 .items-leading .readmore,
+#region-main .tile-list-1 .items-leading .readmore {
   margin-top: 12px;
   font-size: 1.1em;
   font-weight: 700;
 }
-#content.internas .tile-list-1 .items-leading .readmore a:hover {
+#content.internas .tile-list-1 .items-leading .readmore a:hover,
+#region-main .tile-list-1 .items-leading .readmore a:hover {
   text-decoration: underline;
 }
 #content.internas .tile-list-1 .cols-2 .tileItem,
-#content.internas .tile-list-1 .cols-3 .tileItem {
+#region-main .tile-list-1 .cols-2 .tileItem,
+#content.internas .tile-list-1 .cols-3 .tileItem,
+#region-main .tile-list-1 .cols-3 .tileItem {
   clear: none !important;
   border-left: 1px dotted #cfcdcd;
   overflow: hidden;
   padding: 15px;
 }
 #content.internas .tile-list-1 .cols-2 .tileContent,
-#content.internas .tile-list-1 .cols-3 .tileContent {
+#region-main .tile-list-1 .cols-2 .tileContent,
+#content.internas .tile-list-1 .cols-3 .tileContent,
+#region-main .tile-list-1 .cols-3 .tileContent {
   width: 100%;
   border: none;
   margin: 0;
   padding: 0;
 }
 #content.internas .tile-list-1 .cols-2 .tileInfo,
-#content.internas .tile-list-1 .cols-3 .tileInfo {
+#region-main .tile-list-1 .cols-2 .tileInfo,
+#content.internas .tile-list-1 .cols-3 .tileInfo,
+#region-main .tile-list-1 .cols-3 .tileInfo {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 #content.internas .tile-list-1 .cols-2 .tileInfo ul,
-#content.internas .tile-list-1 .cols-3 .tileInfo ul {
+#region-main .tile-list-1 .cols-2 .tileInfo ul,
+#content.internas .tile-list-1 .cols-3 .tileInfo ul,
+#region-main .tile-list-1 .cols-3 .tileInfo ul {
   float: left;
   margin: 5px 0;
   padding: 0;
 }
 #content.internas .tile-list-1 .cols-2 .tileInfo ul li,
-#content.internas .tile-list-1 .cols-3 .tileInfo ul li {
+#region-main .tile-list-1 .cols-2 .tileInfo ul li,
+#content.internas .tile-list-1 .cols-3 .tileInfo ul li,
+#region-main .tile-list-1 .cols-3 .tileInfo ul li {
   display: block;
   float: left;
   margin-right: 10px;
 }
 #content.internas .tile-list-1 .cols-3 .subtitle,
+#region-main .tile-list-1 .cols-3 .subtitle,
 #content.internas .tile-list-1 .cols-3 .keywords,
-#content.internas .tile-list-1 .cols-3 .readmore {
+#region-main .tile-list-1 .cols-3 .keywords,
+#content.internas .tile-list-1 .cols-3 .readmore,
+#region-main .tile-list-1 .cols-3 .readmore {
   display: none;
 }
-#content.internas .tile-list-1 .search-results .result-title a {
+#content.internas .tile-list-1 .search-results .result-title a,
+#region-main .tile-list-1 .search-results .result-title a {
   color: #1c78e4 !important;
 }
-#content.internas .tile-list-1 .search-results span.highlight {
+#content.internas .tile-list-1 .search-results span.highlight,
+#region-main .tile-list-1 .search-results span.highlight {
   background: yellow;
 }
-#content.internas .tile-list-1 .search-results .result-tags span.highlight {
+#content.internas .tile-list-1 .search-results .result-tags span.highlight,
+#region-main .tile-list-1 .search-results .result-tags span.highlight {
   background: #eeeff2;
   font-weight: 600;
 }
-#content.internas div.container-items-more-cat-children {
+#content.internas div.container-items-more-cat-children,
+#region-main div.container-items-more-cat-children {
   border-bottom: 1px solid #e8e7e7;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-#content.internas div.items-more h3 {
+#content.internas div.items-more h3,
+#region-main div.items-more h3 {
   font-size: 1.2em;
 }
 #content.internas div.cat-children dt,
-#content.internas div.cat-children dd {
+#region-main div.cat-children dt,
+#content.internas div.cat-children dd,
+#region-main div.cat-children dd {
   display: inline;
   clear: none;
   font-weight: 300;
   color: #717782;
 }
-#content.internas div.cat-children h3 {
+#content.internas div.cat-children h3,
+#region-main div.cat-children h3 {
   font-size: 1.2em;
 }
-#content.internas div.pagination p.counter {
+#content.internas div.pagination p.counter,
+#region-main div.pagination p.counter {
   display: block;
   width: 114px;
   padding-top: 3px;
 }
 #content.internas div.pagination ul,
-#content.internas div.pagination li {
+#region-main div.pagination ul,
+#content.internas div.pagination li,
+#region-main div.pagination li {
   list-style: none !important;
   float: left;
 }
-#content.internas div.pagination li {
+#content.internas div.pagination li,
+#region-main div.pagination li {
   float: left;
 }
-#content.internas div.direct-image {
+#content.internas div.direct-image,
+#region-main div.direct-image {
   margin: 0 0 21px 0;
   display: table;
 }
-#content.internas div.direct-image .caption-top {
+#content.internas div.direct-image .caption-top,
+#region-main div.direct-image .caption-top {
   background: #eeeff2;
   padding: 3px 6px;
   -webkit-border-radius: 5px 5px 0 0;
@@ -2024,7 +2145,8 @@ main div.rastro-navegacao a:hover {
   color: #717782;
   font-size: 0.91em;
 }
-#content.internas div.direct-image .image-alt {
+#content.internas div.direct-image .image-alt,
+#region-main div.direct-image .image-alt {
   background: #eeeff2;
   padding: 6px;
   -webkit-border-radius: 0 0 5px 5px;
@@ -2033,56 +2155,70 @@ main div.rastro-navegacao a:hover {
   -o-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
 }
-#content.internas div.lightbox-image .caption-top {
+#content.internas div.lightbox-image .caption-top,
+#region-main div.lightbox-image .caption-top {
   padding: 3px 6px 3px 0;
   font-style: italic;
   font-size: 0.82em;
 }
-#content.internas div.lightbox-image .image-alt {
+#content.internas div.lightbox-image .image-alt,
+#region-main div.lightbox-image .image-alt {
   padding: 6px 6px 6px 0;
   font-size: 0.78em;
   line-height: 1.4em;
 }
-#content.internas div.light-image-left {
+#content.internas div.light-image-left,
+#region-main div.light-image-left {
   margin-right: 15px;
 }
-#content.internas div.light-image-right {
+#content.internas div.light-image-right,
+#region-main div.light-image-right {
   margin-left: 15px;
 }
-#content.internas div.light-image-horz {
+#content.internas div.light-image-horz,
+#region-main div.light-image-horz {
   width: 230px;
 }
-#content.internas div.light-image-vert {
+#content.internas div.light-image-vert,
+#region-main div.light-image-vert {
   max-width: 180px;
 }
-#content.internas #fulltext-modal {
+#content.internas #fulltext-modal,
+#region-main #fulltext-modal {
   width: 770px !important;
 }
-#content.internas #fulltext-modal .modal-body {
+#content.internas #fulltext-modal .modal-body,
+#region-main #fulltext-modal .modal-body {
   text-align: center;
   max-height: 500px;
 }
-#content.internas #fulltext-modal .modal-footer {
+#content.internas #fulltext-modal .modal-footer,
+#region-main #fulltext-modal .modal-footer {
   text-align: left;
   font-size: 0.91em;
 }
-#content.internas div.pull-none {
+#content.internas div.pull-none,
+#region-main div.pull-none {
   width: 100%;
   margin: 10px 0;
   text-align: center;
 }
-#content.internas #content-links-modal {
+#content.internas #content-links-modal,
+#region-main #content-links-modal {
   width: 94% !important;
   margin-left: -47%;
 }
-#content.internas #content-links-modal .modal-header {
+#content.internas #content-links-modal .modal-header,
+#region-main #content-links-modal .modal-header {
   height: 30px;
 }
-#content.internas #content-links-modal .modal-body {
+#content.internas #content-links-modal .modal-body,
+#region-main #content-links-modal .modal-body {
   text-align: center;
   max-height: 500px;
 }
-#content.internas #content-links-modal .modal-footer {
+#content.internas #content-links-modal .modal-footer,
+#region-main #content-links-modal .modal-footer {
   height: 30px;
 }
 /* Categorias ao Final do texto - Padrão para todas as Páginas  */

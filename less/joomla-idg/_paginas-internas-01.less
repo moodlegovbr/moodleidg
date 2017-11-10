@@ -14,7 +14,14 @@ main div.rastro-navegacao {
     }
 }
 
-#content.internas {
+#page-header {
+    .page-header-headings h1 {
+        color: @cor-preto-detalhes-conteudo; font-size: 2.7em; margin: 0 0 18px 0; text-transform: none; letter-spacing:-1px;
+        a { color:@cor-preto }
+    }
+}
+
+#content.internas, #region-main {
     color:@cor-preto-conteudo;
     // h1, .documentFirstHeading {
     //     color: #1A2A39; 
@@ -33,7 +40,7 @@ main div.rastro-navegacao {
         a { color:@cor-preto }
     }
 
-    .borderHeading { color:@cor-category-conteudo; font-size: 2em; text-transform: uppercase; padding-bottom: 15px; border-bottom: 1px solid @cor-cinza-medio; margin-bottom:10px;
+    .borderHeading, h2 { color:@cor-category-conteudo; font-size: 2em; text-transform: uppercase; padding-bottom: 15px; border-bottom: 1px solid @cor-cinza-medio; margin-bottom:10px;
 
     }
     
@@ -80,7 +87,7 @@ main div.rastro-navegacao {
     
 
     // li.bullet-internas      { display: list-item !important; list-style: square outside !important; line-height: 1.5em !important; font-size: 0.83em; margin-bottom: 0.25em;}
-    ul li { display: list-item !important; list-style: square outside !important; line-height: 1.5em !important; font-size: 0.9em; margin-bottom: 0.25em; }
+    ul li { display: list-item !important; /* list-style: square outside !important; */ line-height: 1.5em !important; font-size: 0.9em; margin-bottom: 0.25em; }
 
     // li.numeros-internas      { display: list-item !important; list-style: decimal outside !important; line-height: 1.5em !important; font-size: 1.0em; margin-bottom: 0.25em;}
     ol li { display: list-item !important; list-style: decimal outside !important; line-height: 1.5em !important; font-size: 0.9em; margin-bottom: 0.25em; }

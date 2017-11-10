@@ -98,16 +98,11 @@ $(document).ready(function () {
 
     });
 
-
     // Alto contrast
     $('a.toggle-contraste').click(function () {
         contraste("click")
     });
-
-
-
     //fim acao botao de alto contraste
-
 
     //Facebook Plugin.
     $(function(d, s, id) {

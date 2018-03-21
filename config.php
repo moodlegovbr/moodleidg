@@ -9,7 +9,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $THEME->name = 'moodleidg';
-
 $THEME->parents = ['boost'];
 
 $THEME->sheets = array(
@@ -18,18 +17,17 @@ $THEME->sheets = array(
     'font-awesome\css\font-awesome',
     'moodleidg');
 
+// Additional theme options.
+//$THEME->supportscssoptimisation = false;
+
+$THEME->yuicssmodules = array();
 $THEME->enable_dock = false;
-
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
-
 $THEME->requiredblocks = '';
-
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
-
 $THEME->scss = function($theme) {
     return theme_moodleidg_get_main_scss_content($theme);
 };
-
 
 $THEME->layouts = [
     // Most backwards compatible layout without the blocks - this is the layout used by default
@@ -52,9 +50,3 @@ $THEME->layouts = [
     ),
 ];
 
-// Additional theme options.
-$THEME->supportscssoptimisation = false;
-$THEME->enable_dock = false;
-$THEME->yuicssmodules = array();
-$THEME->requiredblocks = '';
-$THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;

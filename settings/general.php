@@ -47,8 +47,8 @@ $page->add($setting);
 
 // Fluid.
 $setting = new admin_setting_configcheckbox('theme_moodleidg/fluid', get_string('fluid',
-    'theme_moodleidg'), get_string('fluid_desc', 'theme_moodleidg'), '',
-    PARAM_RAW);
+    'theme_moodleidg'), get_string('fluid_desc', 'theme_moodleidg'), true,
+    true, false);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 

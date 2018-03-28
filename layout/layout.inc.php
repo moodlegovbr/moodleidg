@@ -52,13 +52,13 @@ $container = get_config('theme_moodleidg', 'fluid')?'container-fluid':'container
 
 // Rodapé
 $polos = array();
-$rodape = file_get_contents(get_config('theme_moodleidg', 'address'));
+//$rodape = file_get_contents(get_config('theme_moodleidg', 'address'));
 $foot = json_decode($rodape);
-foreach ($foot as $linha){
+//foreach ($foot as $linha){
 //    if ($tmp++ >6) {
-    $polos[]['info'] = $linha->Info;
+//    $polos[]['info'] = $linha->Info;
 //    }
-}
+//}
 
 $PAGE->requires->jquery();
 // $PAGE->requires->js('/theme/moodleidg/javascript/jquery.cookie.js'); // precisa de atualização

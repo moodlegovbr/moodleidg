@@ -77,16 +77,6 @@ footer address p {
 #region-main .card {
   min-height: 0;
 }
-#videoplayer {
-  width: 32%;
-}
-#videoplayer iframe {
-  width: 103%;
-}
-#news_featured {
-  width: 66.2%;
-  min-height: 363px;
-}
 #nav-drawer nav a.list-group-item:first-child {
   border-top: 3px solid #0a5517;
   /*padding: 12px 5px 5px 10px;
@@ -219,3 +209,10 @@ footer address p {
   font-size: 1.2em;
   margin-bottom: 25px;
 }
+main div.container .block_rss_client .header,
+main div.container-fluid .block_rss_client .header {
+  border: none;
+  padding: 0;
+  margin-top: -5px;
+}
+/*# sourceMappingURL=moodleidg.css.map */

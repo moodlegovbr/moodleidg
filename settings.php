@@ -10,8 +10,7 @@ defined('MOODLE_INTERNAL') || die();
 
 if ($ADMIN->fulltree) {
     require('settings/general.php');
-    require('settings/cards_video.php');
+    require('settings/homepage.php');
     require('settings/boost.php');
     require('settings/advanced.php');
-    require('settings/redesocial.php');
 }

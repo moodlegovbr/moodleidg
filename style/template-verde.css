@@ -1133,12 +1133,16 @@ footer .footer-ferramenta p {
   }
 }
 main div.container .module,
-main div.container-fluid .module {
+main div.container-fluid .module,
+main div.container .block,
+main div.container-fluid .block {
   padding-bottom: 20px;
   /* p { font-size:0.9em; line-height:1.35em } */
 }
 main div.container .module h1,
-main div.container-fluid .module h1 {
+main div.container-fluid .module h1,
+main div.container .block h1,
+main div.container-fluid .block h1 {
   font-size: 2.5em;
   line-height: 1.2em;
   margin: 0 0 10px 0;
@@ -1146,11 +1150,15 @@ main div.container-fluid .module h1 {
   font-weight: 600;
 }
 main div.container .module h1 a,
-main div.container-fluid .module h1 a {
+main div.container-fluid .module h1 a,
+main div.container .block h1 a,
+main div.container-fluid .block h1 a {
   color: #333;
 }
 main div.container .module .outstanding-header,
-main div.container-fluid .module .outstanding-header {
+main div.container-fluid .module .outstanding-header,
+main div.container .block .outstanding-header,
+main div.container-fluid .block .outstanding-header {
   border-top: 4px solid #3268ba;
   background: #eeeff2;
   height: 57px;
@@ -1158,13 +1166,17 @@ main div.container-fluid .module .outstanding-header {
   position: relative;
 }
 main div.container .module .outstanding-header a.outstanding-link,
-main div.container-fluid .module .outstanding-header a.outstanding-link {
+main div.container-fluid .module .outstanding-header a.outstanding-link,
+main div.container .block .outstanding-header a.outstanding-link,
+main div.container-fluid .block .outstanding-header a.outstanding-link {
   position: absolute;
   right: 3px;
   bottom: 8px;
 }
 main div.container .module .outstanding-title,
-main div.container-fluid .module .outstanding-title {
+main div.container-fluid .module .outstanding-title,
+main div.container .block .outstanding-title,
+main div.container-fluid .block .outstanding-title {
   line-height: 1em;
   margin: 11px 8px 14px 8px;
   font-size: 1.45em;
@@ -1172,7 +1184,9 @@ main div.container-fluid .module .outstanding-title {
   color: #3268ba;
 }
 main div.container .module .subtitle,
-main div.container-fluid .module .subtitle {
+main div.container-fluid .module .subtitle,
+main div.container .block .subtitle,
+main div.container-fluid .block .subtitle {
   text-transform: uppercase;
   font-weight: 400;
   color: #1e68d0;
@@ -1182,8 +1196,12 @@ main div.container-fluid .module .subtitle {
 }
 main div.container .module h2,
 main div.container-fluid .module h2,
+main div.container .block h2,
+main div.container-fluid .block h2,
 main div.container .module h3,
-main div.container-fluid .module h3 {
+main div.container-fluid .module h3,
+main div.container .block h3,
+main div.container-fluid .block h3 {
   font-size: 1.1em;
   line-height: 1em;
   margin-bottom: 5px;
@@ -1192,12 +1210,18 @@ main div.container-fluid .module h3 {
 }
 main div.container .module h2 a,
 main div.container-fluid .module h2 a,
+main div.container .block h2 a,
+main div.container-fluid .block h2 a,
 main div.container .module h3 a,
-main div.container-fluid .module h3 a {
+main div.container-fluid .module h3 a,
+main div.container .block h3 a,
+main div.container-fluid .block h3 a {
   color: #333;
 }
 main div.container .module .img-rounded,
-main div.container-fluid .module .img-rounded {
+main div.container-fluid .module .img-rounded,
+main div.container .block .img-rounded,
+main div.container-fluid .block .img-rounded {
   -webkit-border-radius: 8px !important;
   -moz-border-radius: 8px !important;
   -ms-border-radius: 8px !important;
@@ -1210,7 +1234,9 @@ main div.container-fluid .module .img-rounded {
   margin-bottom: 10px;
 }
 main div.container .module .outstanding-footer,
-main div.container-fluid .module .outstanding-footer {
+main div.container-fluid .module .outstanding-footer,
+main div.container .block .outstanding-footer,
+main div.container-fluid .block .outstanding-footer {
   border-top: 2px solid #3268ba;
   background: #eeeff2;
   height: 22px;
@@ -1219,7 +1245,9 @@ main div.container-fluid .module .outstanding-footer {
   clear: both;
 }
 main div.container .module a.outstanding-link,
-main div.container-fluid .module a.outstanding-link {
+main div.container-fluid .module a.outstanding-link,
+main div.container .block a.outstanding-link,
+main div.container-fluid .block a.outstanding-link {
   font-size: 0.7em;
   color: #333;
   text-transform: uppercase;
@@ -1228,13 +1256,17 @@ main div.container-fluid .module a.outstanding-link {
   margin-right: 7px;
 }
 main div.container .module a.outstanding-link .text,
-main div.container-fluid .module a.outstanding-link .text {
+main div.container-fluid .module a.outstanding-link .text,
+main div.container .block a.outstanding-link .text,
+main div.container-fluid .block a.outstanding-link .text {
   display: block;
   padding: 5px;
   float: left;
 }
 main div.container .module a.outstanding-link .icon-box,
-main div.container-fluid .module a.outstanding-link .icon-box {
+main div.container-fluid .module a.outstanding-link .icon-box,
+main div.container .block a.outstanding-link .icon-box,
+main div.container-fluid .block a.outstanding-link .icon-box {
   display: block;
   float: right;
   width: 12px;
@@ -1263,7 +1295,9 @@ main div.container-fluid .module a.outstanding-link .icon-box {
   text-align: center;
 }
 main div.container .module a.outstanding-link .icon-angle-right,
-main div.container-fluid .module a.outstanding-link .icon-angle-right {
+main div.container-fluid .module a.outstanding-link .icon-angle-right,
+main div.container .block a.outstanding-link .icon-angle-right,
+main div.container-fluid .block a.outstanding-link .icon-angle-right {
   font-size: 18px;
 }
 main div.container .variacao-module-01 .outstanding-header,
@@ -1375,7 +1409,9 @@ main div.container-fluid .variacao-module-03 a.outstanding-link .icon-box {
   color: #fff !important;
 }
 main div.container .module-box-01,
-main div.container-fluid .module-box-01 {
+main div.container-fluid .module-box-01,
+main div.container .block_rss_client,
+main div.container-fluid .block_rss_client {
   padding-bottom: 0;
   background: #eeeff2;
   border: 1px solid #c3c0c0;
@@ -1387,116 +1423,178 @@ main div.container-fluid .module-box-01 {
   margin-bottom: 20px !important;
 }
 main div.container .module-box-01 .header,
-main div.container-fluid .module-box-01 .header {
+main div.container-fluid .module-box-01 .header,
+main div.container .block_rss_client .header,
+main div.container-fluid .block_rss_client .header {
   border-bottom: 1px solid #c3c0c0;
   padding: 10px 12px 2px 12px;
 }
 main div.container .module-box-01 .header h2,
 main div.container-fluid .module-box-01 .header h2,
+main div.container .block_rss_client .header h2,
+main div.container-fluid .block_rss_client .header h2,
 main div.container .module-box-01 .header h3,
 main div.container-fluid .module-box-01 .header h3,
+main div.container .block_rss_client .header h3,
+main div.container-fluid .block_rss_client .header h3,
 main div.container .module-box-01 .header h4,
 main div.container-fluid .module-box-01 .header h4,
+main div.container .block_rss_client .header h4,
+main div.container-fluid .block_rss_client .header h4,
 main div.container .module-box-01 .header h4,
 main div.container-fluid .module-box-01 .header h4,
+main div.container .block_rss_client .header h4,
+main div.container-fluid .block_rss_client .header h4,
 main div.container .module-box-01 .header h6,
-main div.container-fluid .module-box-01 .header h6 {
+main div.container-fluid .module-box-01 .header h6,
+main div.container .block_rss_client .header h6,
+main div.container-fluid .block_rss_client .header h6 {
   text-transform: uppercase;
   font-family: "open_sanssemibold", 'Open Sans', Arial, Helvetica, sans-serif;
 }
 main div.container .module-box-01 .lista,
-main div.container-fluid .module-box-01 .lista {
+main div.container-fluid .module-box-01 .lista,
+main div.container .block_rss_client .lista,
+main div.container-fluid .block_rss_client .lista {
   margin: 0 !important;
 }
 main div.container .module-box-01 .lista h2 a,
 main div.container-fluid .module-box-01 .lista h2 a,
+main div.container .block_rss_client .lista h2 a,
+main div.container-fluid .block_rss_client .lista h2 a,
 main div.container .module-box-01 .lista h3 a,
 main div.container-fluid .module-box-01 .lista h3 a,
+main div.container .block_rss_client .lista h3 a,
+main div.container-fluid .block_rss_client .lista h3 a,
 main div.container .module-box-01 .lista h4 a,
 main div.container-fluid .module-box-01 .lista h4 a,
+main div.container .block_rss_client .lista h4 a,
+main div.container-fluid .block_rss_client .lista h4 a,
 main div.container .module-box-01 .lista h5 a,
 main div.container-fluid .module-box-01 .lista h5 a,
+main div.container .block_rss_client .lista h5 a,
+main div.container-fluid .block_rss_client .lista h5 a,
 main div.container .module-box-01 .lista h6 a,
-main div.container-fluid .module-box-01 .lista h6 a {
+main div.container-fluid .module-box-01 .lista h6 a,
+main div.container .block_rss_client .lista h6 a,
+main div.container-fluid .block_rss_client .lista h6 a {
   color: #355075;
   font-size: 1em;
 }
 main div.container .module-box-01 .lista h2 a:hover,
 main div.container-fluid .module-box-01 .lista h2 a:hover,
+main div.container .block_rss_client .lista h2 a:hover,
+main div.container-fluid .block_rss_client .lista h2 a:hover,
 main div.container .module-box-01 .lista h3 a:hover,
 main div.container-fluid .module-box-01 .lista h3 a:hover,
+main div.container .block_rss_client .lista h3 a:hover,
+main div.container-fluid .block_rss_client .lista h3 a:hover,
 main div.container .module-box-01 .lista h4 a:hover,
 main div.container-fluid .module-box-01 .lista h4 a:hover,
+main div.container .block_rss_client .lista h4 a:hover,
+main div.container-fluid .block_rss_client .lista h4 a:hover,
 main div.container .module-box-01 .lista h5 a:hover,
 main div.container-fluid .module-box-01 .lista h5 a:hover,
+main div.container .block_rss_client .lista h5 a:hover,
+main div.container-fluid .block_rss_client .lista h5 a:hover,
 main div.container .module-box-01 .lista h6 a:hover,
-main div.container-fluid .module-box-01 .lista h6 a:hover {
+main div.container-fluid .module-box-01 .lista h6 a:hover,
+main div.container .block_rss_client .lista h6 a:hover,
+main div.container-fluid .block_rss_client .lista h6 a:hover {
   text-decoration: underline;
 }
 main div.container .module-box-01 li,
-main div.container-fluid .module-box-01 li {
+main div.container-fluid .module-box-01 li,
+main div.container .block_rss_client li,
+main div.container-fluid .block_rss_client li {
   margin-left: 0 !important;
   padding: 15px 5px 5px 0px;
   border-bottom: 1px dotted #c3c0c0;
   display: block;
 }
 main div.container .module-box-01 .outstanding-link,
-main div.container-fluid .module-box-01 .outstanding-link {
+main div.container-fluid .module-box-01 .outstanding-link,
+main div.container .block_rss_client .outstanding-link,
+main div.container-fluid .block_rss_client .outstanding-link {
   display: block;
   padding: 4px 0;
 }
 main div.container .module-box-01 .footer,
-main div.container-fluid .module-box-01 .footer {
+main div.container-fluid .module-box-01 .footer,
+main div.container .block_rss_client .footer,
+main div.container-fluid .block_rss_client .footer {
   border-top: 1px solid #c3c0c0;
   padding: 3px 12px 6px 12px;
   text-align: right;
 }
 main div.container .module-box-01 .footer a,
-main div.container-fluid .module-box-01 .footer a {
+main div.container-fluid .module-box-01 .footer a,
+main div.container .block_rss_client .footer a,
+main div.container-fluid .block_rss_client .footer a {
   font-size: 0.85em;
   color: #333;
   text-transform: uppercase;
   line-height: 1em;
 }
 main div.container .module-box-01 .gallery-pane .carousel,
-main div.container-fluid .module-box-01 .gallery-pane .carousel {
+main div.container-fluid .module-box-01 .gallery-pane .carousel,
+main div.container .block_rss_client .gallery-pane .carousel,
+main div.container-fluid .block_rss_client .gallery-pane .carousel {
   margin-bottom: 0;
 }
 main div.container .module-box-01 .gallery-pane .carousel-control,
-main div.container-fluid .module-box-01 .gallery-pane .carousel-control {
+main div.container-fluid .module-box-01 .gallery-pane .carousel-control,
+main div.container .block_rss_client .gallery-pane .carousel-control,
+main div.container-fluid .block_rss_client .gallery-pane .carousel-control {
   border: none;
   line-height: 1em;
   font-size: 35px;
 }
 main div.container .module-box-01 .gallery-pane .item img,
-main div.container-fluid .module-box-01 .gallery-pane .item img {
+main div.container-fluid .module-box-01 .gallery-pane .item img,
+main div.container .block_rss_client .gallery-pane .item img,
+main div.container-fluid .block_rss_client .gallery-pane .item img {
   width: 100%;
   height: auto;
 }
 main div.container .module-box-01 .gallery-pane .galleria-info,
-main div.container-fluid .module-box-01 .gallery-pane .galleria-info {
+main div.container-fluid .module-box-01 .gallery-pane .galleria-info,
+main div.container .block_rss_client .gallery-pane .galleria-info,
+main div.container-fluid .block_rss_client .gallery-pane .galleria-info {
   padding: 10px;
 }
 main div.container .module-box-01 .gallery-pane h3 a,
 main div.container-fluid .module-box-01 .gallery-pane h3 a,
+main div.container .block_rss_client .gallery-pane h3 a,
+main div.container-fluid .block_rss_client .gallery-pane h3 a,
 main div.container .module-box-01 .gallery-pane h4 a,
 main div.container-fluid .module-box-01 .gallery-pane h4 a,
+main div.container .block_rss_client .gallery-pane h4 a,
+main div.container-fluid .block_rss_client .gallery-pane h4 a,
 main div.container .module-box-01 .gallery-pane h5 a,
 main div.container-fluid .module-box-01 .gallery-pane h5 a,
+main div.container .block_rss_client .gallery-pane h5 a,
+main div.container-fluid .block_rss_client .gallery-pane h5 a,
 main div.container .module-box-01 .gallery-pane h6 a,
-main div.container-fluid .module-box-01 .gallery-pane h6 a {
+main div.container-fluid .module-box-01 .gallery-pane h6 a,
+main div.container .block_rss_client .gallery-pane h6 a,
+main div.container-fluid .block_rss_client .gallery-pane h6 a {
   color: #333;
   font-size: 0.85em;
   font-weight: 700;
 }
 main div.container .module-box-01 .gallery-pane .galleria-info-description,
-main div.container-fluid .module-box-01 .gallery-pane .galleria-info-description {
+main div.container-fluid .module-box-01 .gallery-pane .galleria-info-description,
+main div.container .block_rss_client .gallery-pane .galleria-info-description,
+main div.container-fluid .block_rss_client .gallery-pane .galleria-info-description {
   display: block;
   margin-bottom: 5px;
   font-size: 0.85em;
 }
 main div.container .module-box-01 .gallery-pane .rights,
-main div.container-fluid .module-box-01 .gallery-pane .rights {
+main div.container-fluid .module-box-01 .gallery-pane .rights,
+main div.container .block_rss_client .gallery-pane .rights,
+main div.container-fluid .block_rss_client .gallery-pane .rights {
   display: block;
   margin-bottom: 5px;
   font-size: 0.85em;
@@ -2594,3 +2692,4 @@ main div.rastro-navegacao a:hover {
 .contraste #content.internas .tile-list-1 .tileInfo i {
   color: yellow;
 }
+/*# sourceMappingURL=template-verde.css.map */

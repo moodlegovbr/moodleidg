@@ -12,21 +12,14 @@ $page = new admin_settingpage('theme_moodleidg_general', get_string('generalsett
 
 // Organization.
 $setting = new admin_setting_configtext('theme_moodleidg/organization', get_string('organization',
-    'theme_moodleidg'), get_string('organization_desc', 'theme_moodleidg'), '',
+    'theme_moodleidg'), get_string('organization_desc', 'theme_moodleidg'), 'Instituição Federal de Ensino',
     PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
 // Subordination.
 $setting = new admin_setting_configtext('theme_moodleidg/subordination', get_string('subordination',
-    'theme_moodleidg'), get_string('subordination_desc', 'theme_moodleidg'), '',
-    PARAM_RAW);
-$setting->set_updatedcallback('theme_reset_all_caches');
-$page->add($setting);
-
-// Address.
-$setting = new admin_setting_configtext('theme_moodleidg/address', get_string('address',
-    'theme_moodleidg'), get_string('address_desc', 'theme_moodleidg'), '',
+    'theme_moodleidg'), get_string('subordination_desc', 'theme_moodleidg'), 'Ministério da Educação',
     PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
@@ -38,30 +31,9 @@ $setting = new admin_setting_confightmleditor('theme_moodleidg/addressm', get_st
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
-// RSS.
-$setting = new admin_setting_configtext('theme_moodleidg/rss', get_string('rss',
-    'theme_moodleidg'), get_string('rss_desc', 'theme_moodleidg'), '',
-    PARAM_RAW);
-$setting->set_updatedcallback('theme_reset_all_caches');
-$page->add($setting);
-
-// Fluid.
-$setting = new admin_setting_configcheckbox('theme_moodleidg/fluid', get_string('fluid',
-    'theme_moodleidg'), get_string('fluid_desc', 'theme_moodleidg'), true,
-    true, false);
-$setting->set_updatedcallback('theme_reset_all_caches');
-$page->add($setting);
-
-//Message.
-$setting = new admin_setting_configtext('theme_moodleidg/message_title', get_string('message_title',
-    'theme_moodleidg'), get_string('message_title_desc', 'theme_moodleidg'), '',
-    PARAM_RAW);
-$setting->set_updatedcallback('theme_reset_all_caches');
-$page->add($setting);
-
-$setting = new admin_setting_confightmleditor('theme_moodleidg/message_content', get_string('message_content',
-    'theme_moodleidg'), get_string('message_content_desc', 'theme_moodleidg'), '',
-    PARAM_RAW);
+// Layout Fixo ou Fluid.
+$setting = new admin_setting_configcheckbox('theme_moodleidg/layout', get_string('layout',
+    'theme_moodleidg'), get_string('layout_desc', 'theme_moodleidg'), 'Fluid', 'Fluid', 'Fixed');
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
@@ -71,5 +43,6 @@ $setting = new admin_setting_confightmleditor('theme_moodleidg/acessibilidade', 
     PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
+
 
 $settings->add($page);

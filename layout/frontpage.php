@@ -25,8 +25,10 @@
 include 'layout.inc.php';
 
 // Feeds de Noticias
+
 $feed = file_get_contents(get_config('theme_moodleidg', 'rss'));
 
+/*
 try {
     $xml = new SimpleXmlElement($feed);
     $news['link'] = (string)$xml->channel->link;
@@ -39,9 +41,8 @@ try {
 } catch (Exception $e) {
     $xml = false;
     $news = null;
-}
+} */
 
-$string = get_config('theme_moodleidg', 'video');
 $stringvideo = str_replace('watch?v=','embed/', $string);
 $string2 = get_config('theme_moodleidg', 'saibamais1');
 $stringsaibamais1 = str_replace('http://','', $string2);
@@ -72,7 +73,6 @@ $templatecontext = [
     'organization' => get_config('theme_moodleidg', 'organization'),
     'subordination' => get_config('theme_moodleidg', 'subordination'),
     'addressm' => get_config('theme_moodleidg', 'addressm'),
-    'news' => $news,
     'message_title' => get_config('theme_moodleidg', 'message_title'),
     'message_content' => get_config('theme_moodleidg', 'message_content'),
     'card1_title' => get_config('theme_moodleidg', 'card1_title'),
@@ -84,16 +84,8 @@ $templatecontext = [
     'card3_title' => get_config('theme_moodleidg', 'card3_title'),
     'card3_content' => get_config('theme_moodleidg', 'card3_content'),
     'saibamais3' => $stringsaibamais3,
-    'video' => $stringvideo,
     'container' => $container,
-    'polos' => $polos,
     'url'=> get_config('theme_moodleidg','facebookurl'),
-    'twittertam' => get_config('theme_moodleidg', 'twittertam')."?ref_src=twsrc%5Etfw",
-    'url'=> get_config('theme_moodleidg','facebookurl'),
-    'twitter' => get_config('theme_moodleidg','twitterurlicon'),
-    'facebook' => get_config('theme_moodleidg','facebookurlicon'),
-    'youtube' => get_config('theme_moodleidg','youtubeurlicon'),
-    'instagram' => get_config('theme_moodleidg','instagramurlicon')
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

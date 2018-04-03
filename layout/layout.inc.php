@@ -48,12 +48,13 @@ $blockshtml = $OUTPUT->blocks('side-pre');
 $hasblocks = strpos($blockshtml, 'data-block=') !== false;
 $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
 
-$container = get_config('theme_moodleidg', 'fluid')?'container-fluid':'container';
+$container = get_config('theme_moodleidg', 'layout')?'container-fluid':'container';
 
+/* Problema de lentidão no tema ao carregar o dodapé de um json */
 // Rodapé
-$polos = array();
+//$polos = array();
 //$rodape = file_get_contents(get_config('theme_moodleidg', 'address'));
-$foot = json_decode($rodape);
+//$foot = json_decode($rodape);
 //foreach ($foot as $linha){
 //    if ($tmp++ >6) {
 //    $polos[]['info'] = $linha->Info;

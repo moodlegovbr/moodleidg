@@ -26,7 +26,7 @@ include 'layout.inc.php';
 
 // Feeds de Noticias
 
-$feed = file_get_contents(get_config('theme_moodleidg', 'rss'));
+//$feed = file_get_contents(get_config('theme_moodleidg', 'rss'));
 
 /*
 try {
@@ -43,7 +43,7 @@ try {
     $news = null;
 } */
 
-$stringvideo = str_replace('watch?v=','embed/', $string);
+//$stringvideo = str_replace('watch?v=','embed/', $string);
 $string2 = get_config('theme_moodleidg', 'saibamais1');
 $stringsaibamais1 = str_replace('http://','', $string2);
 $stringsaibamais1 = str_replace('https://','', $string2);

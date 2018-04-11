@@ -223,3 +223,70 @@ main div.container .block_rss_client .header, main div.container-fluid .block_rs
   padding: 0;
   margin-top: -5px
 }
+
+header {
+  div.sobre .menubar .dropdown-menu a {
+    color: black;
+  }
+  div.contraste {
+    div.sobre .menubar .dropdown-menu a {
+      color: yellow;
+    }
+    .dropdown-menu .dropdown-item {
+      background: none;
+    }
+  }
+}
+
+#nav-drawer nav {
+  a.list-group-item {
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  a.list-group-item:first-child {
+    border-top: 3px solid #0a5517;
+    padding: 12px 5px 5px 10px;
+    height: 45px;
+    background: #eeeff2;
+    text-transform: uppercase;
+    font-size: .85em;
+    line-height: 1em;
+    color: #0a5517;
+  }
+}
+
+div.contraste {
+  [data-region="drawer"] {
+    background-color: #000!important;
+  }
+
+  #nav-drawer nav a.list-group-item:first-child {
+    background: #1c1c1c !important;
+
+  }
+  div.sobre .menubar {
+    .dropdown-menu a {
+      color: yellow;
+    }
+
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    background: #1c1c1c !important
+  }
+  .btn-primary {
+      color: white;
+      background-color: #000;
+      border-color: #000;
+  }
+
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+  background: none;
+}
+
+.navbar {
+  position: relative;
+  padding: .3rem 1rem;
+}

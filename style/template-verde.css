@@ -1,3 +1,8 @@
+.btn-primary {
+  color: #fff;
+  background-color: #0A5517;
+  border-color: #0A5517;
+}
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -2558,36 +2563,51 @@ main div.rastro-navegacao a:hover {
     border-color: #000 !important;
   }
 }
-.contraste .module {
+.contraste .module,
+.contraste .block {
   background: transparent !important;
 }
 .contraste .module div,
-.contraste .module .active {
+.contraste .block div,
+.contraste .module .active,
+.contraste .block .active {
   background: transparent !important;
 }
-.contraste .module a {
+.contraste .module a,
+.contraste .block a {
   color: yellow !important;
 }
 .contraste .module h1,
+.contraste .block h1,
 .contraste .module h2,
+.contraste .block h2,
 .contraste .module h3,
+.contraste .block h3,
 .contraste .module h4,
+.contraste .block h4,
 .contraste .module h5,
-.contraste .module h6 {
+.contraste .block h5,
+.contraste .module h6,
+.contraste .block h6 {
   color: white !important;
   font-weight: 700;
 }
 .contraste .module .outstanding-header,
-.contraste .module .outstanding-footer {
+.contraste .block .outstanding-header,
+.contraste .module .outstanding-footer,
+.contraste .block .outstanding-footer {
   background: #1c1c1c !important;
   color: white !important;
   border-color: white !important;
 }
 .contraste .module .outstanding-header a,
-.contraste .module .outstanding-footer a {
+.contraste .block .outstanding-header a,
+.contraste .module .outstanding-footer a,
+.contraste .block .outstanding-footer a {
   color: yellow !important;
 }
-.contraste .module .outstanding-link .icon-box {
+.contraste .module .outstanding-link .icon-box,
+.contraste .block .outstanding-link .icon-box {
   /* Old browsers */
   background-color: yellow !important;
   background-image: -moz-radial-gradient(center, ellipse cover, yellow 1%, yellow 100%) !important;
@@ -2606,13 +2626,16 @@ main div.rastro-navegacao a:hover {
   /* IE6-9 fallback on horizontal gradient */
   color: #fff !important;
 }
-.contraste .module .outstanding-link .icon-light {
+.contraste .module .outstanding-link .icon-light,
+.contraste .block .outstanding-link .icon-light {
   color: black !important;
 }
-.contraste .module .subtitle {
+.contraste .module .subtitle,
+.contraste .block .subtitle {
   color: white !important;
 }
-.contraste .module .carousel-control {
+.contraste .module .carousel-control,
+.contraste .block .carousel-control {
   opacity: 1 !important;
 }
 .contraste main div.rastro-navegacao {

@@ -27,10 +27,12 @@ function contraste(evento){
         if(evento=="click") {
             setCookie("contraste", "", 365);
             $('div.layout').removeClass('contraste');
+            $('body').removeClass('contraste');
             $('#menu-nav').addClass('navbar-light bg-faded');
             $('#menu-nav').removeClass('navbar-dark bg-dark');
         } else {
             $('div.layout').addClass('contraste');
+            $('body').addClass('contraste');
             $('#menu-nav').addClass('navbar-dark bg-dark');
         }
         /* layout_classes = $.cookie('layout_classes');
@@ -41,10 +43,12 @@ function contraste(evento){
         if (evento == "click") {
             setCookie("contraste", "ligado", 365);
             $('div.layout').addClass('contraste');
+            $('body').addClass('contraste');
             $('#menu-nav').removeClass('navbar-light bg-faded');
             $('#menu-nav').addClass('navbar-dark bg-dark');
         } else {
             $('div.layout').removeClass('contraste');
+            $('body').removeClass('contraste');
             $('#menu-nav').removeClass('navbar-dark bg-dark');
         }
         // layout_classes = $.cookie('layout_classes');

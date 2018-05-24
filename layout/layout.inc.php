@@ -44,8 +44,16 @@ if ($navdraweropen) {
     $extraclasses[] = 'drawer-open-left';
 }
 $bodyattributes = $OUTPUT->body_attributes($extraclasses);
+
 $blockshtml = $OUTPUT->blocks('side-pre');
 $hasblocks = strpos($blockshtml, 'data-block=') !== false;
+
+$homeleftblock = $OUTPUT->blocks('home-left');
+$homelefthasblocks = strpos($homeleftblock, 'data-block=') !== false;
+$homemiddleblock = $OUTPUT->blocks('home-middle');
+$homemiddlehasblocks = strpos($homemiddleblock, 'data-block=') !== false;
+$homerightblock = $OUTPUT->blocks('home-right');
+$homerighthasblocks = strpos($homerightblock, 'data-block=') !== false;
 $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
 
 $container = get_config('theme_moodleidg', 'layout')?'container-fluid':'container';

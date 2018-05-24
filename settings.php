@@ -10,7 +10,6 @@ defined('MOODLE_INTERNAL') || die();
 
 if ($ADMIN->fulltree) {
     require('settings/general.php');
-    require('settings/homepage.php');
     require('settings/boost.php');
     require('settings/advanced.php');
 }

@@ -24,25 +24,6 @@
 
 include 'layout.inc.php';
 
-// Feeds de Noticias
-
-//$feed = file_get_contents(get_config('theme_moodleidg', 'rss'));
-
-/*
-try {
-    $xml = new SimpleXmlElement($feed);
-    $news['link'] = (string)$xml->channel->link;
-    foreach ($xml->channel->item as $value) {
-        $news['item'][] = (array)$value;
-    }
-    $news['featured'] = $news['item'][0];
-    $news['item'] = array_slice($news['item'], 0, 5);
-
-} catch (Exception $e) {
-    $xml = false;
-    $news = null;
-} */
-
 //$stringvideo = str_replace('watch?v=','embed/', $string);
 $string2 = get_config('theme_moodleidg', 'saibamais1');
 $stringsaibamais1 = str_replace('http://','', $string2);
@@ -64,8 +45,19 @@ $templatecontext = [
     'shortname' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
+
     'sidepreblocks' => $blockshtml,
     'hasblocks' => $hasblocks,
+
+    'homeleftblocks' => $homeleftblock,
+    'homelefthasblocks' => $homelefthasblocks,
+
+    'homemiddleblocks' => $homemiddleblock,
+    'homemiddlehasblocks' => $homemiddlehasblocks,
+
+    'homerightblocks' => $homerightblock,
+    'homerighthasblocks' => $homerighthasblocks,
+
     'bodyattributes' => $bodyattributes,
     'navdraweropen' => $navdraweropen,
     'regionmainsettingsmenu' => $regionmainsettingsmenu,
@@ -73,17 +65,7 @@ $templatecontext = [
     'organization' => get_config('theme_moodleidg', 'organization'),
     'subordination' => get_config('theme_moodleidg', 'subordination'),
     'addressm' => get_config('theme_moodleidg', 'addressm'),
-    'message_title' => get_config('theme_moodleidg', 'message_title'),
-    'message_content' => get_config('theme_moodleidg', 'message_content'),
-    'card1_title' => get_config('theme_moodleidg', 'card1_title'),
-    'card1_content' => get_config('theme_moodleidg', 'card1_content'),
-    'saibamais1' => $stringsaibamais1,
-    'card2_title' => get_config('theme_moodleidg', 'card2_title'),
-    'card2_content' => get_config('theme_moodleidg', 'card2_content'),
-    'saibamais2' => $stringsaibamais2,
-    'card3_title' => get_config('theme_moodleidg', 'card3_title'),
-    'card3_content' => get_config('theme_moodleidg', 'card3_content'),
-    'saibamais3' => $stringsaibamais3,
+
     'container' => $container,
     'url'=> get_config('theme_moodleidg','facebookurl'),
 ];

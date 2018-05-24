@@ -93,15 +93,14 @@ $string['rawscsspre'] = 'SCSS inicial bruto';
 $string['rawscsspre_desc'] = 'Neste campo você pode fornecer o código SCSS de inicialização, ele será injetado antes de tudo. Na maior parte do tempo, você usará essa configuração para definir variáveis.';
 
 /* Regions */
-$string['region-side-post'] = 'Right';
-$string['region-side-pre'] = 'Left';
-$string['region-home-left'] = 'Home (Left)';
-$string['region-home-middle'] = 'Home (Middle)';
-$string['region-home-right'] = 'Home (Right)';
-$string['region-footer-left'] = 'Footer (Left)';
-$string['region-footer-middle'] = 'Footer (Middle)';
-$string['region-footer-right'] = 'Footer (Right)';
-$string['region-hidden-dock'] = 'Hidden from users';
-
+$string['region-side-post'] = 'Direita';
+$string['region-side-pre'] = 'Esquerda';
+$string['region-home-left'] = 'Início (Esquerda)';
+$string['region-home-middle'] = 'Início (Centro)';
+$string['region-home-right'] = 'Início (Direita)';
+$string['region-footer-left'] = 'Rodapé (Esquerda)';
+$string['region-footer-middle'] = 'Rodapé (Centro)';
+$string['region-footer-right'] = 'Rodapé (Direita)';
+$string['region-hidden-dock'] = 'Invisível para usuários';
 
 

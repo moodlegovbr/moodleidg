@@ -79,11 +79,6 @@
                     {{>theme_moodleidg/gridmarkup}}
                 </div>
 
-                    <div class="clearfix">
-                        <div id="news_featured" class="col-md-12 module">
-                            {{>theme_moodleidg/news_featured}}
-                        </div>
-                    </div>
                 <div id="page-content" class="row">
                     <div id="region-main-box" class="col-xs-12 col-md-12">
                         <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
@@ -94,6 +89,7 @@
                                 {{/hasregionmainsettingsmenu}}
                                 {{{ output.course_content_header }}}
                                 {{{ output.main_content }}}
+                                {{{ output.activity_navigation }}}
                                 {{{ output.course_content_footer }}}
                             </div>
                         </section>

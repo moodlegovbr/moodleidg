@@ -44,9 +44,10 @@ $THEME->layouts = [
     // The site home page.
     'frontpage' => array(
         'file' => 'frontpage.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre',
+                                'home-left', 'home-middle', 'home-right',
+                                'footer-left', 'footer-middle', 'footer-right'),
         'defaultregion' => 'side-pre',
-        'options' => array('nonavbar' => true, 'langmenu' => true),
+        'options' => array('nonavbar' => true),
     ),
 ];
-

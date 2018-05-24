@@ -15,7 +15,7 @@ ul#accessibility {
   margin-right: 0;
 }
 .nav-drawer {
-  top: 225px;
+  top: 190px;
   position: absolute;
 }
 .nav-drawer-sticky {
@@ -263,5 +263,17 @@ div.contraste .btn-primary {
 .navbar {
   position: relative;
   padding: .3rem 1rem;
+}
+.block-controls {
+  margin: 20px;
+}
+.card-title {
+  text-transform: none;
+}
+main div.container .module .outstanding-title,
+main div.container-fluid .module .outstanding-title,
+main div.container .block .outstanding-title,
+main div.container-fluid .block .outstanding-title {
+  text-transform: none;
 }
 /*# sourceMappingURL=moodleidg.css.map */

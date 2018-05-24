@@ -17,17 +17,25 @@
      {{/arialabel}}>
 
     {{! Block contents }}
-    <div class="card-block">
+    <div class="card-block card-body">
 
-        {{#hascontrols}}
-            <div class="block-controls pull-xs-right header">
-                {{{controls}}}
-            </div>
-        {{/hascontrols}}
+
 
         {{! Block header }}
         {{#title}}
-            <h3 id="instance-{{blockinstanceid}}-header" class="card-title">{{{title}}}</h3>
+        <div class="outstanding-header ">
+
+            {{#hascontrols}}
+                <div class="block-controls pull-xs-right header">
+                    {{{controls}}}
+                </div>
+            {{/hascontrols}}
+
+            <h3 id="instance-{{blockinstanceid}}-header" class="card-title outstanding-title">{{{title}}}</h3>
+
+
+
+        </div>
         {{/title}}
 
         <div class="card-text content">

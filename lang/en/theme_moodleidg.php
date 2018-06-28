@@ -13,7 +13,6 @@ $string['configtitle'] = 'Moodle IDG';
 $string['choosereadme'] = 'O tema MoodleIDG é um tema filho do boost. É um tema baseado na identidade digital do governo brasileiro.';
 $string['configtitle'] = 'Configurações do Moodle IDG';
 $string['generalsettings'] = 'Configurações Gerais';
-$string['pluginname'] = 'moodleidg';
 
 $string['organization'] = 'Organização';
 $string['organization_desc'] = 'Denominação do órgão.';

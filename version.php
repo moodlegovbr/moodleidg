@@ -14,7 +14,7 @@ $plugin->requires = '2016070700';
 
 $plugin->component = 'theme_moodleidg';
 
-$plugin->release = '1.01a';
+$plugin->release = 'v1.01-alpha';
 
 $plugin->dependencies = [
     'theme_boost' => '2016102100'

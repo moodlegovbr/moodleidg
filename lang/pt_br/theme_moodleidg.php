@@ -6,8 +6,6 @@
  * Time: 09:57
  */
 
-defined('MOODLE_INTERNAL') || die();
-
 $string['pluginname'] = 'Moodle IDG';
 $string['configtitle'] = 'Moodle IDG';
 $string['choosereadme'] = 'O tema MoodleIDG é um tema filho do boost. É um tema baseado na identidade digital do governo brasileiro.';

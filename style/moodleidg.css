@@ -2,9 +2,6 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
-#page {
-  background-image: url([[pix:theme|bg]]);
-}
 header#page-header {
   background: none;
 }
@@ -14,28 +11,12 @@ ul#accessibility {
 #social-icons ul {
   margin-right: 0;
 }
-.nav-drawer {
-  top: 190px;
-  position: absolute;
-}
-.nav-drawer-sticky {
-  top: 50px;
-  position: fixed;
-}
 #page {
   margin-top: 235px;
 }
-.sticky.is-sticky {
-  position: fixed;
-  left: 0;
-  right: 285px;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-}
 .pos-a-t {
   position: absolute;
-  top: 0;
+  top: 32px;
   right: 0;
   left: 0;
   z-index: 1030;
@@ -209,14 +190,13 @@ footer address p {
   font-size: 1.2em;
   margin-bottom: 25px;
 }
-main div.container .block_rss_client .header,
-main div.container-fluid .block_rss_client .header {
-  border: none;
-  padding: 0;
-  margin-top: -5px;
+header div.sobre nav.sobre a {
+  font-size: .85rem;
 }
-header div.sobre .menubar .dropdown-menu a {
-  color: black;
+header div.sobre .menubar .dropdown-menu a,
+header div.sobre .popover-region-container a,
+header div.sobre .popover-region-container {
+  color: black !important;
 }
 header div.contraste div.sobre .menubar .dropdown-menu a {
   color: yellow;
@@ -234,9 +214,17 @@ header div.contraste .dropdown-menu .dropdown-item {
   height: 45px;
   background: #eeeff2;
   text-transform: uppercase;
-  font-size: .85em;
+  font-size: .75em;
   line-height: 1em;
   color: #0a5517;
+}
+[data-region="drawer"] {
+  top: 220px;
+  position: absolute;
+}
+#nav-drawer.nav-drawer-sticky {
+  top: 80px;
+  position: fixed;
 }
 div.contraste [data-region="drawer"] {
   background-color: #000!important;
@@ -264,16 +252,24 @@ div.contraste .btn-primary {
   position: relative;
   padding: .3rem 1rem;
 }
-.block-controls {
-  margin: 20px;
-}
 .card-title {
   text-transform: none;
 }
-main div.container .module .outstanding-title,
-main div.container-fluid .module .outstanding-title,
-main div.container .block .outstanding-title,
-main div.container-fluid .block .outstanding-title {
-  text-transform: none;
+#barra-brasil {
+  position: fixed;
+  left: 0;
+  right: 285px;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+}
+.dropdown {
+  vertical-align: -webkit-baseline-middle;
+}
+.navbar-dark a .icon {
+  color: black !important;
+}
+.navbar-brand {
+  padding-top: 8px;
 }
 /*# sourceMappingURL=moodleidg.css.map */

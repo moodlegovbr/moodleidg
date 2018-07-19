@@ -1,30 +1,34 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: Lucart
- * Date: 18/08/2017
- * Time: 10:05
+ * Version info
+ *
+ * @package    theme
+ * @subpackage moodleidg
+ * @copyright  2018 Fábio Rodrigues dos Santos - fabio.santos@ifrr.edu.br
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+require_once(__DIR__ . '/lib.php');
+
 $THEME->name = 'moodleidg';
+$THEME->sheets = [];
+$THEME->editor_sheets = [];
 $THEME->parents = ['boost'];
+$THEME->enable_dock = false;
+$THEME->yuicssmodules = array();
+$THEME->rendererfactory = 'theme_overridden_renderer_factory';
+$THEME->requiredblocks = '';
+$THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 
 $THEME->sheets = array(
     get_config('theme_moodleidg', 'preset'),
     'fontes',
     'font-awesome\css\font-awesome',
+    'sticky-navbar',
     'moodleidg');
 
-// Additional theme options.
-//$THEME->supportscssoptimisation = false;
-
-$THEME->yuicssmodules = array();
-$THEME->enable_dock = false;
-$THEME->rendererfactory = 'theme_overridden_renderer_factory';
-$THEME->requiredblocks = '';
-$THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 $THEME->scss = function($theme) {
     return theme_moodleidg_get_main_scss_content($theme);
 };
@@ -45,8 +49,8 @@ $THEME->layouts = [
     'frontpage' => array(
         'file' => 'frontpage.php',
         'regions' => array('side-pre',
-                                'home-left', 'home-middle', 'home-right',
-                                'footer-left', 'footer-middle', 'footer-right'),
+            'home-left', 'home-middle', 'home-right',
+            'footer-left', 'footer-middle', 'footer-right'),
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar' => true),
     ),

@@ -1,32 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: fabio
- * Date: 08/11/17
- * Time: 08:48
- */
-
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * A two column layout for the boost theme.
+ * Version info
  *
- * @package   theme_boost
- * @copyright 2016 Damyon Wiese
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package    theme
+ * @subpackage moodleidg
+ * @copyright  2018 Fábio Rodrigues dos Santos - fabio.santos@ifrr.edu.br
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -50,26 +29,43 @@ $hasblocks = strpos($blockshtml, 'data-block=') !== false;
 
 $homeleftblock = $OUTPUT->blocks('home-left');
 $homelefthasblocks = strpos($homeleftblock, 'data-block=') !== false;
+
 $homemiddleblock = $OUTPUT->blocks('home-middle');
 $homemiddlehasblocks = strpos($homemiddleblock, 'data-block=') !== false;
+
 $homerightblock = $OUTPUT->blocks('home-right');
 $homerighthasblocks = strpos($homerightblock, 'data-block=') !== false;
+
 $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
 
 $container = get_config('theme_moodleidg', 'layout')?'container-fluid':'container';
 
-/* Problema de lentidão no tema ao carregar o dodapé de um json */
-// Rodapé
-//$polos = array();
-//$rodape = file_get_contents(get_config('theme_moodleidg', 'address'));
-//$foot = json_decode($rodape);
-//foreach ($foot as $linha){
-//    if ($tmp++ >6) {
-//    $polos[]['info'] = $linha->Info;
-//    }
-//}
+$templatecontext = [
+    // Moodle IDG
+    'fullname' => format_string($SITE->fullname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
+    'shortname' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
+    'organization' => get_config('theme_moodleidg', 'organization'),
+    'subordination' => get_config('theme_moodleidg', 'subordination'),
+    'addressm' => get_config('theme_moodleidg', 'addressm'),
+    'container' => $container,
+    'brand' => $OUTPUT->image_url('ifrr-brand','theme_moodleidg'),
+
+    //Boost
+
+    'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
+    'output' => $OUTPUT,
+
+    'sidepreblocks' => $blockshtml,
+    'hasblocks' => $hasblocks,
+
+    'bodyattributes' => $bodyattributes,
+    'navdraweropen' => $navdraweropen,
+    'regionmainsettingsmenu' => $regionmainsettingsmenu,
+    'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
+];
+
+$templatecontext['flatnavigation'] = $PAGE->flatnav;
 
 $PAGE->requires->jquery();
-// $PAGE->requires->js('/theme/moodleidg/javascript/jquery.cookie.js'); // precisa de atualização
-// $PAGE->requires->js('/theme/moodleidg/javascript/template.js'); // precisa de atualização
+$PAGE->requires->js('/theme/moodleidg/javascript/sticky_navbar.js');
 $PAGE->requires->js('/theme/moodleidg/javascript/moodleidg.js');

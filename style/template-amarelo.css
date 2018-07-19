@@ -371,28 +371,28 @@ header #social-icons a:hover {
 header #social-icons span {
   display: none !important;
 }
-header div.sobre {
+header nav.sobre {
   background-color: #f9a503;
   border-bottom: 2px solid #f9a503;
 }
-header div.sobre ul {
+header nav.sobre ul {
   margin: 8px 0;
   line-height: 1em;
 }
-header div.sobre li {
+header nav.sobre li {
   border-right: 1px solid #1c4799;
   padding: 0 10px;
   line-height: 1em;
 }
-header div.sobre li:last-child {
+header nav.sobre li:last-child {
   border: none;
   padding-right: 0;
 }
-header div.sobre a {
+header nav.sobre a {
   color: #1c4799;
   font-size: 0.88em;
 }
-header div.sobre a:hover {
+header nav.sobre a:hover {
   text-decoration: underline;
 }
 main .container {
@@ -1059,24 +1059,24 @@ footer .footer-ferramenta p {
   header #social-icons {
     display: none !important;
   }
-  header div.sobre {
+  header nav.sobre {
     background: transparent !important;
     text-align: center;
     padding-bottom: 10px;
   }
-  header div.sobre .pull-right {
+  header nav.sobre .pull-right {
     float: none !important;
   }
-  header div.sobre * {
+  header nav.sobre * {
     margin: 0;
     padding: 0;
     display: inline;
     border: none;
   }
-  header div.sobre .hide {
+  header nav.sobre .hide {
     display: none;
   }
-  header div.sobre a {
+  header nav.sobre a {
     font-size: 0.9em;
   }
   main .container {

@@ -1,10 +1,13 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: dipead
- * Date: 05/09/2017
- * Time: 12:06
+ * Version info
+ *
+ * @package    theme
+ * @subpackage moodleidg
+ * @copyright  2018 Fábio Rodrigues dos Santos - fabio.santos@ifrr.edu.br
  */
+
 require_once('../../../config.php');
 require_once('../lib.php');
 

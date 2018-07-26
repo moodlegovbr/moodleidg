@@ -149,8 +149,23 @@ footer address p {
 .contraste #content.internas .borderHeading,
 .contraste #region-main .borderHeading,
 .contraste #content.internas h2,
-.contraste #region-main h2 {
-  color: white;
+.contraste #region-main h2,
+.contraste .close:hover,
+.contraste .moodle-dialogue-base .closebutton:hover,
+.contraste .close:focus,
+.contraste .moodle-dialogue-base .closebutton:focus,
+.contraste header div.sobre .menubar .dropdown-menu a,
+.contraste header div.sobre .popover-region-container a,
+.contraste header div.sobre .popover-region-container,
+.contraste .navbar-dark a .icon {
+  color: white!important;
+}
+.contraste .dropdown-item:hover,
+.contraste .dropdown-item:focus,
+.contraste .form-item:nth-child(even),
+.contraste .fitem:nth-child(even) {
+  color: white !important;
+  background-color: #2E2D2D;
 }
 .contraste .page-link,
 .contraste .modal-content,
@@ -161,14 +176,16 @@ footer address p {
 .contraste .fitem:nth-child(even) {
   background-color: #0d0d0d;
 }
-.contraste .custom-select {
-  color: white;
+.contraste .custom-select,
+.contraste .btn-secondary,
+.contraste .btn-default,
+.contraste .popover-region-container {
+  color: white !important;
   background-color: #2E2D2D;
 }
-.contraste .btn-secondary,
-.contraste .btn-default {
-  color: white;
-  background-color: yellow;
+.contraste .popover-region-footer-container {
+  color: white !important;
+  background-color: #0f0f0f;
 }
 /* FIM CONTRASTE*/
 .navigation button.btn:after {

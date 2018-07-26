@@ -11,9 +11,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'theme_moodleidg';
-$plugin->version = 2018071903;
+$plugin->version = 2018072600;
 $plugin->requires = 2018050800;
-$plugin->release = 'v1.01-beta';
+$plugin->release = 'v1.01';
 
 $plugin->dependencies = [
     'theme_boost' => 2018051400

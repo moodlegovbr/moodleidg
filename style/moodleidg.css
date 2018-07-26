@@ -53,7 +53,7 @@ footer address p {
   padding-left: 10px;
 }
 .card-body {
-  padding: 20px;
+  padding: 10px;
 }
 #region-main .card {
   min-height: 0;
@@ -144,6 +144,31 @@ footer address p {
 .contraste #nav-drawer nav a.list-group-item:first-child {
   background-color: black;
   color: white;
+}
+.contraste #page-header .page-header-headings h1,
+.contraste #content.internas .borderHeading,
+.contraste #region-main .borderHeading,
+.contraste #content.internas h2,
+.contraste #region-main h2 {
+  color: white;
+}
+.contraste .page-link,
+.contraste .modal-content,
+.contraste .moodle-dialogue-base .moodle-dialogue-wrap.moodle-dialogue-content {
+  background-color: #262626 !important;
+}
+.contraste .form-item:nth-child(even),
+.contraste .fitem:nth-child(even) {
+  background-color: #0d0d0d;
+}
+.contraste .custom-select {
+  color: white;
+  background-color: #2E2D2D;
+}
+.contraste .btn-secondary,
+.contraste .btn-default {
+  color: white;
+  background-color: yellow;
 }
 /* FIM CONTRASTE*/
 .navigation button.btn:after {
@@ -271,5 +296,9 @@ div.contraste .btn-primary {
 }
 .navbar-brand {
   padding-top: 8px;
+}
+div.container-fluid .outstanding-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=moodleidg.css.map */

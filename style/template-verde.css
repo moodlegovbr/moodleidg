@@ -1024,6 +1024,13 @@ footer .footer-ferramenta p {
   header {
     padding-left: 5px;
     padding-right: 5px;
+    /*nav.sobre {
+            background:transparent !important;  text-align:center; padding-bottom:10px;
+            .pull-right { float:none !important }
+            * { margin:0; padding:0; display:inline; border:none }
+            .hide { display:none }
+            a { font-size:0.9em }
+        }*/
   }
   header #logo {
     padding-left: 10px;
@@ -1057,26 +1064,6 @@ footer .footer-ferramenta p {
   }
   header #social-icons {
     display: none !important;
-  }
-  header nav.sobre {
-    background: transparent !important;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-  header nav.sobre .pull-right {
-    float: none !important;
-  }
-  header nav.sobre * {
-    margin: 0;
-    padding: 0;
-    display: inline;
-    border: none;
-  }
-  header nav.sobre .hide {
-    display: none;
-  }
-  header nav.sobre a {
-    font-size: 0.9em;
   }
   main .container {
     padding-top: 10px !important;

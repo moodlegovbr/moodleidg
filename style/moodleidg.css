@@ -349,4 +349,9 @@ div.container-fluid .outstanding-header {
     display: block;
   }
 }
+@media (max-width: 767px) {
+  #moodleidg-searchbox {
+    display: none;
+  }
+}
 /*# sourceMappingURL=moodleidg.css.map */

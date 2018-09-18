@@ -52,6 +52,7 @@ $templatecontext = [
     'barracodigo' => get_config('theme_moodleidg', 'barracodigo'),
     'googlemetasearch' => get_config('theme_moodleidg', 'googlemetasearch'),
 
+
     //Boost
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,

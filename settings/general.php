@@ -82,14 +82,14 @@ $page->add($setting);
 
 
 // Código da Instituição para a Barra do Governo.
-$setting = new admin_setting_confightmleditor('theme_moodleidg/barracodigo', get_string('barracodigo',
+$setting = new admin_setting_configtext('theme_moodleidg/barracodigo', get_string('barracodigo',
     'theme_moodleidg'), get_string('barracodigo_desc', 'theme_moodleidg'), '',
     PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
 // Tag Meta para o Google Search Console.
-$setting = new admin_setting_confightmleditor('theme_moodleidg/googlemetasearch', get_string('googlemetasearch',
+$setting = new admin_setting_configtext('theme_moodleidg/googlemetasearch', get_string('googlemetasearch',
     'theme_moodleidg'), get_string('googlemetasearch_desc', 'theme_moodleidg'), '',
     PARAM_RAW);
 $setting->set_updatedcallback('theme_reset_all_caches');

@@ -47,13 +47,19 @@ $setting = new admin_setting_confightmleditor('theme_moodleidg/acessibilidade', 
 $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
-
+// Variable $brand-color.
+// We use an empty default value because the default colour should come from the preset.
+$name = 'theme_moodleidg/brandcolor';
+$title = get_string('brandcolor', 'theme_moodleidg');
+$description = get_string('brandcolor_desc', 'theme_moodleidg');
+$setting = new admin_setting_configcolourpicker($name, $title, $description, '');
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
 
 $name = 'theme_moodleidg/preset';
 $title = get_string('preset', 'theme_moodleidg');
 $description = get_string('preset_desc', 'theme_moodleidg');
 $default = 'template-verde.scss';
-
 
 $context = context_system::instance();
 $fs = get_file_storage();
@@ -75,5 +81,18 @@ $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
 
+// Código da Instituição para a Barra do Governo.
+$setting = new admin_setting_confightmleditor('theme_moodleidg/barracodigo', get_string('barracodigo',
+    'theme_moodleidg'), get_string('barracodigo_desc', 'theme_moodleidg'), '',
+    PARAM_RAW);
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
+
+// Tag Meta para o Google Search Console.
+$setting = new admin_setting_confightmleditor('theme_moodleidg/googlemetasearch', get_string('googlemetasearch',
+    'theme_moodleidg'), get_string('googlemetasearch_desc', 'theme_moodleidg'), '',
+    PARAM_RAW);
+$setting->set_updatedcallback('theme_reset_all_caches');
+$page->add($setting);
 
 $settings->add($page);

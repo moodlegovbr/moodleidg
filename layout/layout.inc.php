@@ -49,9 +49,10 @@ $templatecontext = [
     'addressm' => get_config('theme_moodleidg', 'addressm'),
     'container' => $container,
     'brand' => $OUTPUT->image_url('ifrr-brand','theme_moodleidg'),
+    'barracodigo' => get_config('theme_moodleidg', 'barracodigo'),
+    'googlemetasearch' => get_config('theme_moodleidg', 'googlemetasearch'),
 
     //Boost
-
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
 
@@ -62,6 +63,7 @@ $templatecontext = [
     'navdraweropen' => $navdraweropen,
     'regionmainsettingsmenu' => $regionmainsettingsmenu,
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
+
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

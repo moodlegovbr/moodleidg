@@ -11,7 +11,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'theme_moodleidg';
-$plugin->version = 2018072600;
+$plugin->version = 2018091800;
 $plugin->requires = 2018050800;
 $plugin->release = 'v1.01';
 

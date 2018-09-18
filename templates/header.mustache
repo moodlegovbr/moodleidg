@@ -62,7 +62,11 @@
                     <!-- <div id="logo" class="col-md-8 big"> <div id="logo" class="col-md-8 small"> -->
                     <a href="http://localhost/moodle/?redirect=0" title="Descrição do Portal Padrão">
                         <span class="portal-title-1">{{{ organization }}}</span>
-                        <h1  class="portal-title corto">{{{ fullname }}}</h1>
+                        <h1 class="portal-title corto">
+                            <span id="header-fullname">{{{ fullname }}}</span>
+                            <span id="header-shortname">{{{ shortname }}}</span>
+                        </h1>
+
                         <span class="portal-description">{{{ subordination }}}</span>
                     </a>
                 </div>

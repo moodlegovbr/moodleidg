@@ -333,4 +333,20 @@ div.container-fluid .outstanding-header {
 .usermenu .login a:hover {
   color: #4bb1cf;
 }
+@media (max-width: 1030px) {
+  #header-shortname {
+    display: block;
+  }
+  #header-fullname {
+    display: none;
+  }
+}
+@media (min-width: 1030px) {
+  #header-shortname {
+    display: none;
+  }
+  #header-fullname {
+    display: block;
+  }
+}
 /*# sourceMappingURL=moodleidg.css.map */

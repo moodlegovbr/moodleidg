@@ -67,6 +67,14 @@ $string['layout_desc'] = 'Esta opção por padrão torna o layout fluído, o lay
 $string['acessibilidade'] = 'Acessibilidade';
 $string['acessibilidade_desc'] = 'Conteúdo da página de acessibilidade.';
 
+$string['brandcolor'] = 'Cor da Marca';
+$string['brandcolor_desc'] = 'Selecione uma cor, para adicionar em links e títulos.';
+
+$string['barracodigo'] = 'barracodigo';
+$string['barracodigo_desc'] = 'Código da instituição a ser adicionado a Barra do Governo.';
+
+$string['googlemetasearch'] = 'Tag HTML - Google Search Console';
+$string['googlemetasearch_desc'] = 'Copie a metatag abaixo para ser adicionada na seção <head> da página inicial do seu site, antes da primeira seção <body>.';
 
 // BOOST
 

@@ -354,4 +354,12 @@ div.container-fluid .outstanding-header {
     display: none;
   }
 }
+#content.internas ul li,
+#region-main ul li {
+  font-size: 1.1em!important;
+}
+#content.internas p,
+#region-main p {
+  font-size: 1.2em!important;
+}
 /*# sourceMappingURL=moodleidg.css.map */

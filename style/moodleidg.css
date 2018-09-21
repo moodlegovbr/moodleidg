@@ -356,13 +356,14 @@ div.container-fluid .outstanding-header {
 }
 #content.internas ul li,
 #region-main ul li {
-  font-size: 1.1em!important;
+  font-size: 1em!important;
 }
 #content.internas p,
 #region-main p {
-  font-size: 1.2em!important;
+  font-size: 1em!important;
 }
-#region-main div.qtext h3 {
-  font-size: 1.1em;
+#region-main div.qtext h3,
+#region-main div.info h3 {
+  font-size: 1em;
 }
 /*# sourceMappingURL=moodleidg.css.map */

@@ -362,4 +362,7 @@ div.container-fluid .outstanding-header {
 #region-main p {
   font-size: 1.2em!important;
 }
+#region-main div.qtext h3 {
+  font-size: 1.1em;
+}
 /*# sourceMappingURL=moodleidg.css.map */

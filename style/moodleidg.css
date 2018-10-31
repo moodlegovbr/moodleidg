@@ -366,4 +366,7 @@ div.container-fluid .outstanding-header {
 #region-main div.info h3 {
   font-size: 1.6em;
 }
+#region-main #login-footlogo img {
+  margin: 10px;
+}
 /*# sourceMappingURL=moodleidg.css.map */

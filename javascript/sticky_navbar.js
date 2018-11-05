@@ -12,10 +12,10 @@
 $(document).ready(function() {
   // Custom function which toggles between sticky class (is-sticky)
   var stickyToggle = function(sticky, stickyWrapper, scrollElement, navdrawer) {
-    var stickyHeight = sticky.outerHeight();
+    //var stickyHeight = sticky.outerHeight();
     var stickyTop = stickyWrapper.offset().top;
     if (scrollElement.scrollTop() >= stickyTop-35){
-      stickyWrapper.height(stickyHeight);
+      //stickyWrapper.height(stickyHeight);
       sticky.addClass("is-sticky");
       navdrawer.addClass("nav-drawer-sticky");
     }
